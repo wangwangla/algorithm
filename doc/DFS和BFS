@@ -1,0 +1,82 @@
+#  DFS和BFS
+
+DFS深度优先速索，深度优先速索以深度为目标进行的。使用递归实现
+
+```java
+void dfs (TreeNode root){
+    if(root	== null){
+        return;
+    }
+    
+    dfs(root.left);
+    dfs(root.right);
+}
+```
+
+BFS广度优先速索:
+
+它需要引入一个队列，先从一个点开始，进入队列，然后孩子加入完成之后，就一个一个出，一个一个的进行遍历，在一个一个的孩子进入队列。 这个是一个二叉树的案例，其实如果是图就遍历所有的孩子就可以了。
+
+```java
+void bfs(TreeNode root) {
+    //创建队列  ，开始加入根节点
+    Queue<TreeNode> queue = new ArrayDeque<>();
+    queue.add(root);
+    while (!queue.isEmpty()) {
+        TreeNode node = queue.poll(); // Java 的 pop 写作 poll()
+        if (node.left != null) {
+            queue.add(node.left);
+        }
+        if (node.right != null) {
+            queue.add(node.right);
+        }
+    }
+}
+```
+
+## 层序遍历
+
+很容易想得到遍历的顺序，深度是从一个开始，一直从顶找到底部，广度是从左到右进行，可能会想到层序遍历，是的可以，输出一个一维数组。
+
+如果需要输出二维数组，怎么做呢？？
+
+首先第一层进来之后，然后出了一个队列，然后将孩子加进来，所以上一行和下一行一起了，无法区分。
+
+处理方法：
+
+我们就先将每一个层的孩子一次遍历完成。
+
+```java
+public List<List<Integer>> levelOrder(TreeNode root) {
+    List<List<Integer>> res = new ArrayList<>();
+
+    Queue<TreeNode> queue = new ArrayDeque<>();
+    if (root != null) {
+        queue.add(root);
+    }
+    while (!queue.isEmpty()) {
+        int n = queue.size();
+        List<Integer> level = new ArrayList<>();
+        for (int i = 0; i < n; i++) { 
+            TreeNode node = queue.poll();
+            level.add(node.val);
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+        res.add(level);
+    }
+
+    return res;
+}
+```
+
+## 最短距离
+
+最短距离可以的原因是：从一个顶点出发，一层一层的遍历，当遍历到一层的时候，发现了目标值，应该就是最短了，（权为1）
+
+
+
