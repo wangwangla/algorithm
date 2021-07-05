@@ -51,4 +51,12 @@ public class Question1 {
             trav(root.right,list);
         }
     }
+
+    public void  trav(TreeNode root){
+        if (root!=null){
+            trav(root.right);
+            trav(root.left);
+            System.out.println(root.val);
+        }
+    }
 }
