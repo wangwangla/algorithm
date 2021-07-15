@@ -5,7 +5,7 @@ package com.algorithm.dongtaiguihua;
  * 1.n个物体
  * 2.每个物体的重量是nv……
  * 3.包的承重是m
- * 4.求出最大多少重量
+ * 4.求出最大多少jiazhi
  */
 public class Question5 {
     public void soul(int M,int m[],int v[]){

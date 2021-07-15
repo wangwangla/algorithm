@@ -1,5 +1,6 @@
 package com.dongtaiguihua;
 
+//一个数组  数组组成的水槽，水槽可以装多少水
 public class Question02 {
 //    public int trap(int[] height) {
 //        int dp[] = new int[height.length];
@@ -46,6 +47,9 @@ public class Question02 {
                 }
             }
             tatal += right-left+1;
+        }
+        for (int i = 0; i < height.length; i++) {
+            tatal-=height[i];
         }
         return tatal;
     }

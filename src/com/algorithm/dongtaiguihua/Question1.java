@@ -23,7 +23,9 @@ package com.algorithm.dongtaiguihua;
  */
 public class Question1 {
 
+    int num = 0;
     public int digui(int x){
+        num ++;
         if (x == 0)
             return 0;
         int res = Integer.MAX_VALUE;
@@ -36,6 +38,41 @@ public class Question1 {
         if (x >= 7){
             res = Math.min(digui(x - 7)+1,res);
         }
+        return res;
+    }
+
+    public static void main(String[] args) {
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = -1;
+//        }
+        int arr[] = {2,5,7};
+        Question1 q = new Question1();
+        q.digui(27);
+        System.out.println(q.num);
+    }
+
+
+
+    static int arr[] = new int[28];
+    public int digui1(int x){
+        num++;
+        if (x==0)return 0;
+        if (arr[x]!=-1){
+            return arr[x];
+        }
+        if (x == 0)
+            return 0;
+        int res = Integer.MAX_VALUE;
+        if (x >= 2){
+            res = Math.min(digui1(x - 2)+1,res);
+        }
+        if (x >= 5){
+            res = Math.min(digui1(x - 5)+1,res);
+        }
+        if (x >= 7){
+            res = Math.min(digui1(x - 7)+1,res);
+        }
+        arr[x] = res;
         return res;
     }
 
@@ -61,6 +98,7 @@ public class Question1 {
      *          }
      *      }
      *
+     * 需要注意：数据不可以取到的时候，不能使用前一个数据。
      * @param a
      * @param m
      * @return
@@ -77,7 +115,7 @@ public class Question1 {
             for (int i1 = 0; i1 < n; i1++) {
                 //使用硬币
                 //为什么不判断i-a[i1]是不是小于0    这个题肯定是不会大于的i>[a[i1]]
-                if (i>a[i1]&&f[i-a[i1]]!=Integer.MAX_VALUE&&f[i-a[i1]]+1<f[i]){
+                if (i>a[i1]&&f[i-a[i1]]+1<f[i]){
                     f[i] = f[i-a[i1]]+1;
                 }
             }
@@ -87,6 +125,39 @@ public class Question1 {
         }else {
             return f[m];
         }
+    }
+
+    public static void soul(int arr[],int target){
+        int dp[] = new int[target+1];
+        dp[0] = 0;
+        for(int i=1;i<=target;i++){
+            //为最大值表示取不到
+            dp[i] =Integer.MAX_VALUE;
+            for(int j = 0;j<arr.length;j++){
+                if(i>=arr[j]&&dp[i-arr[j]]!=Integer.MAX_VALUE){
+                    dp[i] = dp[i-arr[j]]+1;
+                }
+            }
+        }
+        System.out.println("");
+    }
+
+
+    public void coinNum1(int num[],int target){
+        int []dp = new int[target+1];
+        for (int i = 0; i < dp.length; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        dp[0] = 0;
+        for (int i = 0; i <= target; i++) {
+            for (int i1 = 0; i1 < num.length; i1++) {
+                if (i>=num[i1]&&dp[i-num[i1]]!=Integer.MAX_VALUE){
+                    if (dp[i]>dp[i-num[i1]]+1)
+                    dp[i] = dp[i-num[i1]]+1;
+                }
+            }
+        }
+        System.out.println("=======================");
     }
 
     /**
@@ -119,6 +190,22 @@ public class Question1 {
 
         }
         return f[m-1][n-1];
+    }
+
+
+    public int unn(int m,int n){
+        int [][] dp = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i==0||j==0){
+                    dp[i][j] = 0;
+                }else {
+                    dp[i][j] = dp[i-1][j]+dp[i][j-1];
+                }
+            }
+        }
+        return dp[m-1][n-1];
+
     }
 
     /**
@@ -169,6 +256,15 @@ public class Question1 {
             }
         }
         return f[n-1];
+    }
+
+    public void jimpp(int arr[]){
+        int length = arr.length;
+        int dp[] = new int[length];
+        dp[0] = 1;
+        for (int i = 0; i < 0; i++) {
+
+        }
     }
 
     /**
@@ -414,12 +510,6 @@ public class Question1 {
         }
 
     }
-
-    public static void main(String[] args) {
-//        test();
-        oneNum();
-    }
-
     /**
      * 一列数据，求出最小值，去掉某个值之后的最小值
      * */

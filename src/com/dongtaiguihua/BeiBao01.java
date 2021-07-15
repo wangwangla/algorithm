@@ -82,4 +82,56 @@ public class BeiBao01 {
         dp[i][j] = res;
         return res;
     }
+
+    public void soul(int M,int m[],int v[]){
+        //我们创建数组，将重量进行罗列
+        //重量
+//        int dp[] = new int[M+1];
+//        for (int i = 0; i <= M; i++) {
+//            dp[i] = 0; //设置为0
+//        }
+//        for (int i = 0; i < m.length; i++) {
+//
+//        }
+//        int dp[] = new int[M+1];
+//        for (int i = 0; i < M + 1; i++) {
+//            dp[i] = 0;
+//        }
+//        //一共有n个物品  加入取i个物品的时候，可以得到的最大重量。
+//        for (int i = 0; i < m.length; i++) {
+//            for (int j = M; j >= 0; j--) {
+//                if (j>m[i]){
+//                    dp[j] = Math.min(dp[j],dp[j-m[i-1]]+v[i-1]);
+//                }
+//            }
+//        }
+    }
+
+    /**
+     * 一个数组  将值放入到 一个包中  从中得到最接近的值
+     * @param M
+     * @param m
+     */
+    public void soul02(int M,int m[]){
+        //m个物体
+        int dp[][] = new int[m.length][M];
+        for (int i = 0; i < M; i++) {
+            dp[0][i] = 0;
+        }
+
+        for (int i = 0; i < m.length; i++) {
+            dp[i][0] = 0;
+        }
+
+        for (int i = 1; i < m.length; i++) {
+            for (int i1 = 1; i1 < M; i1++) {
+                if (i1 < m[i-1]){
+                    dp[i][i1] = dp[i-1][i1];
+                }else {
+                    dp[i][i1] = Math.max(dp[i-1][i1],dp[i-1][i1-m[i-1]]+m[i-1]);
+                }
+            }
+        }
+    }
+
 }
