@@ -1,6 +1,6 @@
 package com.algorithm.sort.test;
 
-import com.algorithm.sort.Student;
+import com.algorithm.sort.compare.Student;
 
 class StudentTest {
     public static void main(String[] args) {

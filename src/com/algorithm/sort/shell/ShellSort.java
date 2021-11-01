@@ -14,11 +14,15 @@ public class ShellSort extends SortAbstr {
         }
 
         while (h >= 1) {
+
             for (int i = h; i < comparable.length; i++) {
+                System.out.println("=====================");
                 for (int j = i; j > 0; j -= h) {
+                    System.out.println(i+"====="+(j-1));
                     if (greater(comparable[j], comparable[j - 1])) {
                         exch(comparable, j, j - 1);
-                    } else {
+                    }
+                    else {
                         break;
                     }
                 }
@@ -31,7 +35,7 @@ public class ShellSort extends SortAbstr {
 //        Integer integer[] = {2,4,2,5,3,7,8};
 //        sort(integer);
 //        System.out.printf("integer arr"+ Arrays.toString(integer));
-        int n = 100000;
+        int n = 10;
         Integer[] arr = new Integer[n];
         for (int i = 0; i < n; i++) {
             arr[i] = n-i;

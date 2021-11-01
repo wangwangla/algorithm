@@ -1,4 +1,4 @@
-package com.algorithm.sort;
+package com.algorithm.sort.compare;
 
 /**
  * 我们需要进行比较的时候，就需要给他们提供一个比较规则，这个比较规则就需要实现接口
@@ -40,5 +40,13 @@ public class Student implements Comparable<Student>{
     @Override
     public int compareTo(Student o) {
         return this.getAge() - o.getAge();
+    }
+
+
+    public static void main(String[] args) {
+        Student stu1 = new Student("kangwang",1);
+        Student stu2 = new Student("kangwang",5);
+        int i = stu2.compareTo(stu1);
+        System.out.println(i);
     }
 }
