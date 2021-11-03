@@ -9,6 +9,15 @@ import com.algorithm.sort.father.SortAbstr;
  *
  * 比较的结构是最后一个值为最值
  *
+ * 时间复杂度
+ * N-1 +  N-2  + N-3 + …… + 1
+ * 等差数列
+ * na = 1/2(1 + n)n = 1/2 (n^2 + n)
+ *
+ * 交换
+ * 也是那么多次
+ * n^2 + n
+ *
  */
 public class Bubble extends SortAbstr {
     /**

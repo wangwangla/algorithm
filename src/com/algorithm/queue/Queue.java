@@ -2,6 +2,10 @@ package com.algorithm.queue;
 
 import org.omg.CORBA.Object;
 
+/**
+ * 单队列（非循环）
+ * @param <T>
+ */
 public class Queue<T> {
     private T item[];
     private int N;
@@ -15,13 +19,26 @@ public class Queue<T> {
         this.front = -1;
         this.rear = -1;
     }
+    //队尾加
+    public void enque(T t){
+        if (isFull())return;
+        this.item[++rear] = t;
+        N++;
+    }
 
+    public T outQue(){
+        if (isEmpty()) {
+            return item[++front];
+        }
+        return null;
+    }
 
     private boolean isFull(){
-        return N == maxSize-1;
+        return maxSize == rear - front;
     }
 
     private boolean isEmpty(){
         return front == rear;
     }
+
 }
