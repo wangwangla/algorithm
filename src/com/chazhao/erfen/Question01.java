@@ -1,4 +1,4 @@
-package com.erfen;
+package com.chazhao.erfen;
 
 /**
  * 不仅仅是差值的二分搜索
