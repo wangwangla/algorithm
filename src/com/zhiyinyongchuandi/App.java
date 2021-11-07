@@ -1,11 +1,15 @@
-package com.test;
+package com.zhiyinyongchuandi;
 
-public class Demo02 {
+/**
+ * 值传递  和   引用传递
+ */
+public class App {
     public static void main(String[] args) {
-        Demo02 demo02 = new Demo02();
+        App demo02 = new App();
         People kang = new People("kang", 12);
         demo02.ceshi(kang);
         System.out.printf(""+kang);
+
         int i = 3;
         demo02.ceshi1(i);
         System.out.printf("i   "+ i);

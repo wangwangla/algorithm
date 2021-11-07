@@ -37,30 +37,62 @@ public class LinkSequence {
 
     //删除末尾
     public void deleteRear(){
-
+        Node x = head;
+        while (x.next != null) {
+            if (x.next.next == null){
+                x.next = null;
+                break;
+            }
+            x = x.next;
+        }
     }
 
     //删除开头
     public void deleteStart(){
-
+        Node x = head;
+        if (x.next!=null){
+            x.next = x.next.next;
+        }
     }
 
     public void insert(int i,int data){
-
+        if (i<0)return;
+        Node x = head;
+        int index = 0;
+        Node node = new Node();
+        node.data = data;
+        while (x.next != null) {
+            if (index == i){
+                break;
+            }
+            x = x.next;
+        }
+        if (x!=null){
+            Node next = x.next;
+            x.next = node;
+            node.next = next;
+        }
     }
 
     public void inset(int data){
-
+        Node x = head;
+        while (x.next!=null){
+            x = x.next;
+        }
+        Node node = new Node();
+        node.data = data;
+        x.next = node;
     }
 
-    public void insertHead(int data){
-
-    }
     public static void main(String[] args) {
         LinkSequence sequence = new LinkSequence();
         sequence.addData(1);
         sequence.addData(3);
         sequence.addData(4);
+        sequence.inset(5);
+//        sequence.insert(0,1);
+//        sequence.deleteRear();
+//        sequence.deleteStart();
         sequence.print();
     }
 

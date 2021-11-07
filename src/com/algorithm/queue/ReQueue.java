@@ -20,25 +20,31 @@ public class ReQueue<T> {
     }
     //队尾加
     public void enque(T t){
+        if (isFull())return;
         int index = ++rear % maxSize;
         this.item[index] = t;
+        N++;
     }
 
     public T outQue(){
         if (isEmpty()) {
+            N--;
             return item[++front%maxSize];
         }
         return null;
     }
 
     private boolean isFull(){
-//        return ((rear - front)+maxSize) == 1;
-//        return maxSize - front + maxSize == maxSize;
         return (rear+1)%maxSize == front;
     }
 
     private boolean isEmpty(){
         return front == rear;
+    }
+
+    private int getSize(){
+        int num = (rear + maxSize - front)%maxSize;
+        return num;
     }
 
     public static void main(String[] args) {
