@@ -1,6 +1,6 @@
 package com.algorithm.bina;
 
-import com.queue.Queue;
+import com.algorithm.Queue;
 
 /**
  * 二叉树

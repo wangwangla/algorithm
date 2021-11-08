@@ -1,6 +1,6 @@
 package com.algorithm.graph;//package com.algorithm.graph;
 //
-//import com.queue.Queue;
+//import com.algorithm.Queue;
 //
 //public class EdgeWeight {
 //    private final int V;

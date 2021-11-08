@@ -1,6 +1,6 @@
 package com.algorithm.graph;
 
-import com.queue.Queue;
+import com.algorithm.Queue;
 
 /**
  * 使用邻接表的方式存储

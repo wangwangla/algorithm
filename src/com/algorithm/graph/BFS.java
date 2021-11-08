@@ -1,6 +1,6 @@
 package com.algorithm.graph;
 
-import com.queue.Queue;
+import com.algorithm.Queue;
 
 public class BFS {
     private Queue<Integer> queue;

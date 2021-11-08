@@ -1,6 +1,6 @@
 package com.algorithm.graph;
 
-import com.queue.Queue;
+import com.algorithm.Queue;
 
 /**
  * 判断是不是环
