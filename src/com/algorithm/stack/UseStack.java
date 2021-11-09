@@ -1,8 +1,13 @@
 package com.algorithm.stack;
 
+import com.algorithm.sort.util.SortUtils;
+
+import java.nio.charset.StandardCharsets;
+
 public class UseStack {
     public static void main(String[] args) {
-        String expression = "7 * 2 * 2 - 5 + 1 - 5 + 3 - 4";
+        String expression = "7" +
+                "*2*2-5+1-5+3-4";
         Stack<Integer> numStack = new Stack<>(10);
         Stack<Integer> operStack = new Stack<>(10);
 
@@ -14,6 +19,7 @@ public class UseStack {
         char ch = ' ';
         String keepNum = "";
         while (true){
+            //如果是一个
             ch = expression.substring(index ,index+1).charAt(0);
             if (operStack.isOper(ch)){
                 if (!operStack.isEmpty()){
@@ -28,10 +34,35 @@ public class UseStack {
                         operStack.push((int)ch);
                     }
                 }else {
-
+                    keepNum+=ch;
+                    if (index == expression.length() - 1){
+                        numStack.push(Integer.parseInt(keepNum));
+                    }else {
+                        if (operStack.isOper(expression.substring(index+1,index+2).charAt(0))){
+                            numStack.push(Integer.parseInt(keepNum));
+                            keepNum = "";
+                        }
+                    }
                 }
             }
+
+            index++;
+            if (index > expression.length()){
+                break;
+            }
         }
+        while (true){
+            if (operStack.isEmpty()){
+                break;
+            }
+            num1 = numStack.pop();
+            num2 = numStack.pop();
+            oper = operStack.pop();
+            res = numStack.cal(num1,num2,oper);
+            numStack.push(res);
+        }
+        int res2 = numStack.pop();
+        System.out.println(res2);
     }
 
     static class Stack<T>{

@@ -14,14 +14,7 @@ public class BinTree<T extends Comparable> {
         }
     }
     private Node root;
-//    public BinTree(){
-//        root = new Node(null,null,null);
-//    }
      public void insert(T t){
-//         if (root==null){
-//             root = new Node(t,null,null);
-//             return;
-//         }
          root = insert(root,t);
      }
 
