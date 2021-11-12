@@ -1,45 +1,10 @@
-# 图
+package com.algorithm.graph;
 
-> 引入：
->
-> - 线性表和树
-> - 线性表局限于一个前驱和以后后驱
-> - 树也只有一个前驱（父节点）
-> - 那么多对多表示就使用图
+import com.sun.jmx.remote.internal.ArrayQueue;
 
-## 图举例
-
-图是数据结构，包含了0到多给相邻节点，连线叫做边，还有顶点。
-
-### 图的概念
-
-*名词：*
-
-- 顶点
-- 边
-- 路径
-- 无向图（没有方向的）
-- 有向图
-- 带权图
-
-### 图的表示
-
-那么我们如何表示呢？
-
-- 二维数组(矩阵)
-- 链表（邻接表）
-
-#### 临接矩阵
-
-临界矩阵是表示图形中顶点之间相邻关系的矩阵，没个顶点都表示1到n个点。相邻的为1，不相邻的为0.会存在空间浪费的情况。
-
-#### 邻接表
-
-临界表就不会
-
-邻接表的是实现：
-
-```java
+import java.util.ArrayList;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class LinJieBiao {
     private LinkedBlockingQueue queue[];
@@ -84,21 +49,3 @@ public class LinJieBiao {
     }
 
 }
-```
-
-
-
-####  图入门
-
-1.存储
-
-- 二维数组
-- 相邻的就写1，其他的写0
-
-2.思路
-
-
-
-## 加权无向图
-
-![image-20200326081555470](images/image-20200326081555470.png)![image-20200326081639156](images/image-20200326081639156.png)![image-20200326085924249](images/image-20200326085924249.png)
