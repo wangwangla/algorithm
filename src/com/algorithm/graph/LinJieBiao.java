@@ -34,8 +34,6 @@ public class LinJieBiao {
         biao.add(1,7);
         biao.add(1,6);
         biao.print(biao);
-
-
     }
 
     public void print(LinJieBiao biao){
@@ -48,4 +46,9 @@ public class LinJieBiao {
         }
     }
 
+    //图的深度
+    /**
+     * 图的介绍
+     * 深度
+     */
 }

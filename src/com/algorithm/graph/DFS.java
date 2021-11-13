@@ -1,5 +1,7 @@
 package com.algorithm.graph;
 
+import com.algorithm.Queue;
+
 public class DFS {
     //标记图的结点
     private boolean[] marked;
@@ -22,5 +24,19 @@ public class DFS {
         int i = 3;
         int j = 3*6;
         System.out.println();
+    }
+
+    /**
+     * 深度变量的原理
+     * 图 的存储，一个数组队列
+     * 数据加入到队列中，
+     */
+    public void dfs1(Graph g,int s){
+        Queue<Integer> ver = g.getVer(s);
+        marked[s] = true;
+        for (int i = 0; i < ver.size(); i++) {
+            if (!marked[i])
+                dfs(g,ver.dequeue());
+        }
     }
 }

@@ -27,4 +27,20 @@ public class BFS {
         }
         count++;
     }
+
+    /**
+     * 广度
+     */
+//    先第一i个顶点进行 遍历
+//    进入队列
+//    遍历之后设置已经遍历
+//    在出队列，再次进行
+    public void xx(Graph g,int v){
+        marked[v] = true;
+        queue.enqueue(v);
+        while (!queue.idEmpty()){
+            int wait = queue.dequeue();
+//            出一个在遍历
+        }
+    }
 }
