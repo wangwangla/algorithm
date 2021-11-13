@@ -1,5 +1,8 @@
 package com.algorithm.chazhao;
 
+/**
+ * 数据分布均匀的地方比较好 ，     分布不均匀的时候不怎样。
+ */
 public class ChazhiFind {
     public static int insertValueSearch(int[] arr, int start, int end, int findValue) {
         System.out.println("插值查找被调用了！");
