@@ -46,5 +46,6 @@ public class FbnqSearch {
         while (hight > f[k] - 1){
             k++;
         }
+        return 0;
     }
 }
