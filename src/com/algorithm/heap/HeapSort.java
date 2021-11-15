@@ -1,7 +1,5 @@
 package com.algorithm.heap;
 
-import com.sun.xml.internal.ws.api.BindingID;
-
 public class HeapSort<T extends Comparable<T>> {
     public boolean less(Comparable[] heap ,int i,int j){
         return heap[i].compareTo(heap[j])<0;

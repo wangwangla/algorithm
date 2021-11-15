@@ -33,10 +33,5 @@ public class Learn01 {
         if (node1.val != node2.val)return false;
         return isSame(node1.left,node2.left) && isSame(node1.right,node2.right);
     }
-
-
-
     //相同的树
-
-
 }

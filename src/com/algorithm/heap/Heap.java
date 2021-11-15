@@ -18,6 +18,13 @@ package com.algorithm.heap;
  * 删除数据：
  *  删除最大的数据，最大数据在跟的地方，将跟与最下方的进行比较
  *  temp[1] = temp[N-1];
+ *
+ *  使用数组存储，从1开始存储
+ *  0（不用）
+ *  1 2 3 4 5 6
+ *  基本
+ *  - 1的孩子2*1  2*1+1
+ *  - 下沉，如果存在有子树，那么就比较两个孩子，否则就直接走左子树。比较是否需要交换。
  */
 public class Heap<T extends Comparable<T>>{
     //存储堆中的元素
@@ -50,6 +57,8 @@ public class Heap<T extends Comparable<T>>{
         swim(N);
     }
 
+//    堆使用是数组层序存储
+//    2n+1  2n
     //上浮
     private void swim(int k){
         while (k>1){
@@ -91,5 +100,18 @@ public class Heap<T extends Comparable<T>>{
         temp[N--] = null;
         sink(1);
         return null;
+    }
+
+    public static void main(String[] args) {
+        Heap<Integer> heap = new Heap<>(10);
+        heap.insert(1);
+        heap.insert(2);
+        heap.insert(3);
+        heap.insert(4);
+        heap.insert(5);
+        heap.insert(6);
+        heap.insert(7);
+        heap.delMax();
+
     }
 }
