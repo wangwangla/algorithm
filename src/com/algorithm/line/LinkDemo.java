@@ -1,12 +1,12 @@
 package com.algorithm.line;
 
 public class LinkDemo {
-    private class Node<T>{
+    private static class Node<T>{
         private T t;
         private Node next;
-        public Node(T t, Node node){
+        public Node(T t){
             this.t = t;
-            this.next = node;
+            this.next = null;
         }
     }
 
@@ -39,12 +39,28 @@ public class LinkDemo {
 
     public void xuanzhuan(){
         //前插法
-        Node temp = head;
         Node t = head;
-        while (t!=null){
-
-            t = t.next;
-
+        Node temp = head;
+        if (t.next!=null) {
+            temp = t.next.next;
         }
+        while (temp!=null){
+            Node next = head.next;
+            head.next = temp;
+            next.next = temp.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        Node<Integer> node1 = new Node<Integer>(1);
+        Node<Integer> node2 = new Node<Integer>(2);
+        Node<Integer> node3 = new Node<Integer>(3);
+        Node<Integer> node4 = new Node<Integer>(4);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+
+
     }
 }

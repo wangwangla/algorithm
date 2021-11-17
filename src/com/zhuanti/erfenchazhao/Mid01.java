@@ -166,6 +166,106 @@ public class Mid01 {
     }
 
 
+    public boolean findMin1(int[] nums,int target) {
+        if (nums == null|| nums.length == 0)return false;
+        int start = 0;
+        int end = nums.length - 1;
+        int mid = 0;
+        while (end >= start){
+            mid = start + (mid - start) / 2;
+            if (nums[mid] == target){
+                return true;
+            }
+            if(nums[start] == nums[mid]){
+                start++;
+                continue;
+            }
+            if (nums[start] < nums[mid]){
+                if (nums[start]>target && nums[mid]<target){
+                    //在这一部分
+                    end = mid-1;
+                }else {
+                    start = mid + 1;
+                }
+            }else {
+                if (nums[mid]<target && nums[end]>target){
+                    start = mid + 1;
+                }else {
+                    end = end -1;
+                }
+            }
+
+        }
+        return false;
+    }
+
+    /**
+     *
+     * 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,4,4,5,6,7] 在变化后可能得到：
+     * 若旋转 4 次，则可以得到 [4,5,6,7,0,1,4]
+     * 若旋转 7 次，则可以得到 [0,1,4,4,5,6,7]
+     * 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。
+     *
+     * 给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 最小元素 。
+     *
+     *  
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
+     *
+     *
+     *
+     * 执行结果：
+     * 通过
+     * 显示详情
+     * 添加备注
+     *
+     * 执行用时：
+     * 0 ms
+     * , 在所有 Java 提交中击败了
+     * 100.00%
+     * 的用户
+     * 内存消耗：
+     * 38.4 MB
+     * , 在所有 Java 提交中击败了
+     * 9.29%
+     * 的用户
+     * 通过测试用例：
+     * 193 / 193
+     * @param nums
+     * @return
+     */
+    public int findMin2(int[] nums) {
+        int min = nums[0];
+        if (nums[0]>=nums[nums.length-1]){
+            min = nums[nums.length-1];
+            for (int i = nums.length - 1; i >= 1; i--) {
+                if (nums[i]>nums[i-1]){
+                    min = nums[i-1];
+                }
+                if (nums[i]<nums[i-1]){
+                    break;
+                }
+            }
+        }else {
+            min = nums[0];
+            for (int i = 0; i < nums.length-1; i++) {
+                if (nums[i+1]>nums[i]){
+                    min = nums[i];
+                    break;
+                }
+                if (nums[i+1]<nums[i]){
+                    if(nums[i+1]<min){
+                        min = nums[i+1];
+                    }
+                    break;
+                }
+            }
+        }
+        return min;
+    }
     /**
      * 给你一个整数数组 nums ，找到其中最长严格递增子序列的长度。
      *
@@ -202,6 +302,9 @@ public class Mid01 {
 //        mid01.searchRange(arr,2);
 //        System.out.println(mid01.findMin(arr));
         mid01.lengthOfLIS(arr);
+
+        int arr1[] = {1,2,2,2,0,1,1};
+        mid01.findMin2(arr1);
     }
 
 }
