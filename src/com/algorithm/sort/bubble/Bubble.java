@@ -36,4 +36,15 @@ public class Bubble extends SortAbstr {
             }
         }
     }
+
+    public static <T extends Comparable<T>> void sort1(T[] a){
+        for (int i = 0; i < a.length - 1; i++) { //比较次数
+//
+            for (int i1 = 0; i1 < a.length - 1 - i; i1++) {
+                if (greater(a[i1],a[i1+1])){
+
+                }
+            }
+        }
+    }
 }
