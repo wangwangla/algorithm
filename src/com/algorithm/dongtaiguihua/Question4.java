@@ -70,11 +70,46 @@ public class Question4 {
     }
 
     public static void method3(int arr[],int target){
+        int length = arr.length;
+        // 个数  目标
+        boolean dp[][] = new boolean[length][target];
+        dp[0][0] = true;
+        for (int i = 1; i < target; i++) {
+            dp[0][i] = false;  //开始为0  取0个是无法满足要求的
+        }
 
+        for (int i = 1; i < length; i++) {
+            for (int i1 = 0; i1 < target; i1++) {
+                if (i1>arr[i]){
+                    dp[i][i1] = dp[i][i1] || dp[i][i1 - arr[i-1]];
+                }
+            }
+        }
+    }
+
+    public static void mm(int arr[],int target){
+        int num = arr.length;
+        int dp[][] = new int[num][target];
+        for (int i = 0; i < num; i++) {
+            for (int i1 = 0; i1 < target; i1++) {
+                if (i == 0||i1 == 0){
+                    dp[i][i1] = 0;//取0的时候为0
+                }else {
+                    if (i1<arr[i]){
+                        dp[i][i1] = dp[i-1][i1];
+                    }else {
+                        //我们要拿
+                        dp[i][i1] = Math.max(dp[i - 1][i1], dp[i - 1][i1 - arr[i1 - 1]] + arr[i1 - 1]);
+                    }
+                }
+
+            }
+        }
     }
 
     public static void main(String[] args) {
 //        int arr[] = {2,3,5,7};
+        //价值
         int arr[] = {1,2,3,3,7};
         int target = 7;
         method1(target,arr);
