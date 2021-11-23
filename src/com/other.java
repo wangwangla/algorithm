@@ -2,10 +2,16 @@ package com;
 
 public class other {
     public static void main(String[] args) {
-        String st = new String("/sjh/sjss/sjjs/sjhs/sd/1.mp3");
-        int i = st.lastIndexOf("/");
-        String substring = st.substring(0, i);
-        String substring1 = substring.substring(0, substring.length() - 4);
-        System.out.println(st.substring(0,i));
+        String musicNamePath = new String("/sjh/sjss/sjjs/sjhs/sd/1.mp3");
+        int i = musicNamePath.lastIndexOf("/");
+        String musicRootPath = musicNamePath.substring(0, i);
+        String musicName = musicNamePath.substring(i+1,musicNamePath.length());
+        int i1 = musicName.lastIndexOf(".");
+        String name = musicName.substring(0, i1);
+        i = musicRootPath.lastIndexOf("/");
+        musicRootPath = musicRootPath.substring(0, i)+"/lyric/";
+        System.out.println(musicRootPath+name+".lyric");
+//        System.out.println(h);
+//        System.out.println(substring);
     }
 }

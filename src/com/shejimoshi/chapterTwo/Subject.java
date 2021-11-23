@@ -1,4 +1,4 @@
-package kw.other.observer;
+package com.shejimoshi.chapterTwo;
 
 /**
  * 有一个什么样的主题·

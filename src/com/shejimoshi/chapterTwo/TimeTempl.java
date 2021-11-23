@@ -1,4 +1,4 @@
-package kw.other.observer;
+package com.shejimoshi.chapterTwo;
 
 public class TimeTempl implements Obsever {
     @Override

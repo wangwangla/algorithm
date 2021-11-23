@@ -1,4 +1,4 @@
-package kw.other.observer;
+package com.shejimoshi.chapterTwo;
 
 import java.util.ArrayList;
 

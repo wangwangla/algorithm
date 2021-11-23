@@ -7,6 +7,6 @@ package kw.other.fanxing;
 public class App<T> extends BaseActor<Actor>{
     public static void main(String[] args) {
         App<Actor> app = new App<>();
-        app.add(1);
+//        app.add(1);
     }
 }
