@@ -1,4 +1,4 @@
-package com.shejimoshi.chapterFour.factory;
+package com.shejimoshi.chapterFour.simplefactory;
 
 public class Factory {
     public BaseFactory getInstance(int type){
