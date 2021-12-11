@@ -17,7 +17,7 @@ public class Looper {
     }
 
     public void add(){
-        mQueue.
+//        mQueue.
     }
 
     public static void loop() {
