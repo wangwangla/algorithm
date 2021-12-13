@@ -16,9 +16,9 @@ public class Huiwen {
             xx = xx.next;
         }
         while (!stack.isEmpty()){
-            if (stack.pop().num == xx.num){
-
-            }
+//            if (stack.pop().num == xx.num){
+//
+//            }
         }
     }
 }
