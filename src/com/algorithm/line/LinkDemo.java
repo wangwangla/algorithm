@@ -61,6 +61,10 @@ public class LinkDemo {
         node2.next = node3;
         node3.next = node4;
 
+        LinkDemo demo = new LinkDemo();
+        demo.head = node1;
+        demo.xuanzhuan();
+        System.out.println("====");
 
     }
 }
