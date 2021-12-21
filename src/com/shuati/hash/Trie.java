@@ -13,6 +13,7 @@ public class Trie {
         head = new Node();
     }
 
+
     public void insert(String word) {
         Node cur = head;
         char[] chars = word.toCharArray();
@@ -20,18 +21,28 @@ public class Trie {
             char aChar = chars[i];
             int z = aChar - 'a';
             cur.chars = aChar;
-            cur.node[z] = new Node();
+            if (cur.node[z]==null) {
+                cur.node[z] = new Node();
+            }
             cur.starNum++;
             if (i == chars.length-1){
                 cur.end ++;
             }
-            cur = cur.node[i];
+            cur = cur.node[z];
         }
     }
-
     public static void main(String[] args) {
         Trie trie = new Trie();
-        trie.insert("word");
+//        [],["app"],["apple"],["beer"],["add"],["jam"],["rental"],["apps"],["app"]
+
+        trie.insert("app");
+        trie.insert("apple");
+        trie.insert("beer");
+        trie.insert("add");
+        trie.insert("jam");
+        trie.insert("rental");
+        trie.search("apps");
+        trie.search("app");
         System.out.println("-------");
     }
 
@@ -40,9 +51,10 @@ public class Trie {
         Node cur = head;
         Node pre = head;
         for (int i = 0; i < chars.length; i++) {
-            if (cur.node[i]!=null) {
+            int ssss = chars[i] - 'a';
+            if (cur.node[ssss]!=null) {
                 pre = cur;
-                cur = cur.node[i];
+                cur = cur.node[ssss];
             }else {
                 return false;
             }
@@ -53,13 +65,15 @@ public class Trie {
             return false;
         }
     }
-//
+//["Trie","insert","insert","insert","insert","insert","insert","search","search","search","search","search","search","search","search","search","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith"]
+//[[],["app"],["apple"],["beer"],["add"],["jam"],["rental"],["apps"],["app"],["ad"],["applepie"],["rest"],["jan"],["rent"],["beer"],["jam"],["apps"],["app"],["ad"],["applepie"],["rest"],["jan"],["rent"],["beer"],["jam"]]
     public boolean startsWith(String prefix) {
         char[] chars = prefix.toCharArray();
         Node cur = head;
         for (int i = 0; i < chars.length; i++) {
-            if (cur.node[i]!=null) {
-                cur = cur.node[i];
+            int ss = chars[i];
+            if (cur.node[ss]!=null) {
+                cur = cur.node[ss];
             }else {
                 return false;
             }
