@@ -15,6 +15,9 @@ public class DailyTemperatures {
             }
             deque.push(i);
         }
+
+        System.out.println(this);
+        System.out.println();
         return null;
     }
 }
