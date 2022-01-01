@@ -11,7 +11,9 @@ public class DailyTemperatures {
             int temp = temperatures[i];
             while ( !stack.isEmpty()&&temp > temperatures[stack.peek()]){
                 int pre = stack.pop();
+                stack.pop();
                 ans[pre] = i - pre;
+
             }
             stack.push(i);
         }
