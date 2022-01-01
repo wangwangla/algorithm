@@ -18,6 +18,7 @@ public class Queue<T> implements Iterable<T>{
         public MyIter (){
             this.n = head;
         }
+
         @Override
         public boolean hasNext() {
             return n.next!=null;

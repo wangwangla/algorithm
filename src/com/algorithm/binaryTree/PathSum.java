@@ -20,6 +20,11 @@ package com.algorithm.binaryTree;
  *             sumSearch(root->right, pre, sum);
  *     }
  *
+ *
+ * 给定一个二叉树的根节点 root ，和一个整数 targetSum ，求该二叉树里节点值之和等于 targetSum 的 路径 的数目。
+ *
+ * 路径 不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。
+ *
  * 作者：fengziluo
  * 链接：https://leetcode-cn.com/problems/path-sum-iii/solution/2chong-jie-fa-xiang-jie-xi-jie-wen-ti-by-txip/
  * 来源：力扣（LeetCode）
@@ -27,6 +32,7 @@ package com.algorithm.binaryTree;
  */
 public class PathSum {
     public int pathSum(TreeNode root,int targetNum){
+        if (root == null)return 0;
         return sumSearch(root,0,targetNum)+
                 pathSum(root.left,targetNum)+
                 pathSum(root.right,targetNum);
@@ -67,22 +73,14 @@ public class PathSum {
         TreeNode node7 = new TreeNode(3);
         TreeNode node8 = new TreeNode(-2);
         TreeNode node9 = new TreeNode(1);
-
         node1.left = node2;
         node1.right = node5;
-
         node2.left = node4;
         node2.right = node5;
-
         node4.left = node7;
         node4.right = node8;
-
         node5.right = node9;
-
         node3.right=node6;
-
-
-
         PathSum sum = new PathSum();
         sum.ss(node1,8);
         System.out.println("==========="+num);
