@@ -5,7 +5,15 @@ import java.util.HashMap;
 public class App {
     public static void main(String[] args) {
         HashMap hashMap = new HashMap();
-        hashMap.put("1",1);
+        for (int i = 0; i < 15; i++) {
+            hashMap.put(i,1);
+        }
+        System.out.println("---------------------------------");
+        for (int i = 16; i < 132; i++) {
+            hashMap.put(i,1);
+        }
+
+
 
 
 //        App app = new App();
