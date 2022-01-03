@@ -37,7 +37,8 @@ public class Question11 {
         int right = height.length - 1;
         int ar = 0;
         while(right>left){
-            ar=(Math.min(height[left], height[right])*(right-left))>ar?(Math.min(height[left], height[right])*(right-left)):ar;
+            ar=(Math.min(height[left], height[right])*(right-left))>ar
+                    ?(Math.min(height[left], height[right])*(right-left)):ar;
 
             if(height[left]>height[right]){
                 right--;

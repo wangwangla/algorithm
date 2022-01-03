@@ -1,6 +1,6 @@
 package com.zhuanti.zhuzi;
 
-public class MaxArea {
+public class LargestRectangleArea {
     public int largestRectangleArea(int[] heights) {
         int max = 0;
         int curMax = max;
@@ -50,7 +50,7 @@ public class MaxArea {
 
     public static void main(String[] args) {
         int arr [] = {2,1,2};
-        MaxArea area = new MaxArea();
+        LargestRectangleArea area = new LargestRectangleArea();
         System.out.println(area.largestRectangleArea(arr));
     }
 }

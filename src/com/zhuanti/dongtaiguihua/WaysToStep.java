@@ -1,7 +1,5 @@
 package com.zhuanti.dongtaiguihua;
 
-import com.zhuanti.zhuzi.MaxArea;
-
 public class WaysToStep {
     public int waysToStep(int n) {
         int dp[] = new int[n+1];
