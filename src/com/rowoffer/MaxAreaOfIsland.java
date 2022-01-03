@@ -41,6 +41,15 @@ package com.rowoffer;
 public class MaxAreaOfIsland {
     public int maxAreaOfIsland(int[][] grid) {
         //找到岛屿，就把所有的位置变为0
+        int x = grid.length;
+        int y = grid[0].length;
+        for (int i = 0; i < x; i++) {
+            for (int i1 = 0; i1 < y; i1++) {
+                if (grid[i][i1] == 1){
+
+                }
+            }
+        }
         return 0;
     }
 }
