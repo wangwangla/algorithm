@@ -1,22 +1,20 @@
 package com.algorithm.line.sequence;
 
-import java.util.Objects;
-
 /**
- * 线性表
+ * 线性表  数组实现
  *
  * @param <T>
  */
-public class SequenceList<T> {
+public class SequenceListArray<T> {
     private T[] elements;
 
     private int N;
 
-    public SequenceList(){
+    public SequenceListArray(){
             elements = (T[]) new Object[10];
     }
 
-    public SequenceList(int capacity){
+    public SequenceListArray(int capacity){
         elements = (T[]) new Object[capacity];
         this.N = 0;
     }
@@ -80,14 +78,14 @@ public class SequenceList<T> {
     }
 
     public static void main(String[] args) {
-        SequenceList<Integer> sequenceList = new SequenceList<>(3);
-        sequenceList.insert(1);
-        sequenceList.insert(2);
-        sequenceList.print();
-        sequenceList.insert(3);
-        sequenceList.insert(4);
-        sequenceList.print();
-        sequenceList.delete(1);
-        sequenceList.print();
+        SequenceListArray<Integer> sequenceListArray = new SequenceListArray<>(3);
+        sequenceListArray.insert(1);
+        sequenceListArray.insert(2);
+        sequenceListArray.print();
+        sequenceListArray.insert(3);
+        sequenceListArray.insert(4);
+        sequenceListArray.print();
+        sequenceListArray.delete(1);
+        sequenceListArray.print();
     }
 }

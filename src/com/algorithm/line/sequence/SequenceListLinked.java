@@ -1,8 +1,11 @@
 package com.algorithm.line.sequence;
 
-public class LinkSequence {
+/**
+ * 顺序表  链表方式实现
+ */
+public class SequenceListLinked {
     private Node<Integer> head;
-    public LinkSequence(){
+    public SequenceListLinked(){
         head = new Node<>();
     }
 
@@ -22,11 +25,10 @@ public class LinkSequence {
         temp.next = node;
     }
 
-    class Node<T>{
-        private int data;
-        private Node next;
-    }
 
+    /**
+     * 没有到结尾那么就一直寻找下一个
+     */
     private void print(){
         Node x = head;
         while (x.next!=null){
@@ -35,7 +37,11 @@ public class LinkSequence {
         }
     }
 
-    //删除末尾
+    /**
+     *删除末尾
+     * 单链表，那么找到需要删除数据的前两个节点
+     *
+     */
     public void deleteRear(){
         Node x = head;
         while (x.next != null) {
@@ -84,8 +90,13 @@ public class LinkSequence {
         x.next = node;
     }
 
+    class Node<T>{
+        private int data;
+        private Node next;
+    }
+
     public static void main(String[] args) {
-        LinkSequence sequence = new LinkSequence();
+        SequenceListLinked sequence = new SequenceListLinked();
         sequence.addData(1);
         sequence.addData(3);
         sequence.addData(4);
