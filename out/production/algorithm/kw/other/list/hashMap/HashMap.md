@@ -151,6 +151,10 @@ if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)
 3).最后如果是链表
 - 进行遍历是逃不过了
 - hash为0特殊处理，好像是放nullkey的
+进行hash得到得到和为0和不为0的，然后将它们给新的数组下标。
+  
 
+
+## get
 
 

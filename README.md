@@ -1,2 +1,5 @@
 "# algorithm" 
 
+![image-20220103095308082](README.assets/image-20220103095308082.png)![image-20220103095331652](README.assets/image-20220103095331652.png)
+
+![image-20220103095345984](README.assets/image-20220103095345984.png) 
