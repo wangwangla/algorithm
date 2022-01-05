@@ -3,6 +3,11 @@ package com.zhuanti.array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 78
+ *
+ * 找到所有的子集
+ */
 public class Subsets {
     List<List<Integer>> lists = new ArrayList<>();
     public List<List<Integer>> subsets(int[] nums) {
