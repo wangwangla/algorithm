@@ -2,6 +2,10 @@ package com.zhuanti.huisu;
 
 import java.util.ArrayList;
 
+/**
+ * 60
+ *
+ */
 public class GetPermutation {
 //    boolean f = false;
 //    StringBuilder builder = new StringBuilder();
