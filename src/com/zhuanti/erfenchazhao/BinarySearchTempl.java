@@ -12,9 +12,15 @@ public class BinarySearchTempl {
             }else if (arr[mid] > target){
                 hight = mid - 1;
             }else {
-                low = mid - 1;
+                low = mid + 1;
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4,6,7,8};
+        BinarySearchTempl templ = new BinarySearchTempl();
+        System.out.println(templ.binarySearch(arr, 8));
     }
 }
