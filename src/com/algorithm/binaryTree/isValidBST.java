@@ -35,4 +35,29 @@ public class isValidBST {
             trav(root.right);
         }
     }
+
+
+
+    private boolean xx = true;
+    private Integer last = null;
+    public boolean isValidBST2(TreeNode root) {
+
+        tav(root);
+        return xx;
+    }
+
+    private void tav(TreeNode root) {
+        if(root == null) return;
+        tav(root.left);
+        if (last==null){
+            last = root.val;
+        }else {
+            if (root.val > last) {
+                last = root.val;
+            } else {
+                xx = false;
+            }
+        }
+        tav(root.right);
+    }
 }

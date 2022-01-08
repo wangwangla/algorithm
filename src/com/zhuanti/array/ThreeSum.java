@@ -1,6 +1,7 @@
 package com.zhuanti.array;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class ThreeSum {
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
             nums[i] = 0;
-            int [] currentNum = twoSum(nums,-num);
+            int [] currentNum = twoSum(nums,-num,i);
             if (currentNum != null){
                 ArrayList arrayList = new ArrayList<Integer>();
                 arrayList.add(currentNum[0]);
@@ -39,9 +40,10 @@ public class ThreeSum {
         return list;
     }
 
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target,int i1) {
         HashMap<Integer,Integer> hashMap = new HashMap();
         for (int i = 0; i < nums.length; i++) {
+            if (i1 == i)continue;
             int num = nums[i];
             if (hashMap.containsKey(num)){
                 int arr[] = new int[2];
@@ -55,8 +57,15 @@ public class ThreeSum {
     }
 
 
+    public List<List<Integer>> threeSum1(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
 
-    public static void main(String[] args) {
+        }
+        return null;
+    }
+
+        public static void main(String[] args) {
         int arr[] = {-1,0,1,2,-1,-4};
         ThreeSum sum = new ThreeSum();
         sum.threeSum(arr);

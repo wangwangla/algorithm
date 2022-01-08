@@ -1,17 +1,26 @@
+
 package com.zhuanti.array;
 
 public class findDuplicate {
     public int findDuplicate(int[] nums) {
-        int length = nums.length;
-        int end = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            end = end^nums[i];
+//        int length = nums.length;
+//        int end = nums[0];
+//        for (int i = 1; i < nums.length; i++) {
+//            end = end^nums[i];
+//        }
+//
+//        for (int i = 1; i < nums.length; i++) {
+//            end = end ^ i;
+//        }
+//        return end;
+//        int dp[] = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+//            if (nums[nums[i]] <0){
+//                return i;
+//            }
+//            nums[i] < 0.if
         }
-
-        for (int i = 1; i < nums.length; i++) {
-            end = end ^ i;
-        }
-        return end;
+        return 0;
     }
 
 
