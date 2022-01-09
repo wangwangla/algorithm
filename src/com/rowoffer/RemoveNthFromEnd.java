@@ -28,6 +28,13 @@ public class RemoveNthFromEnd {
         }
         return newHead.next;
     }
+
+    public static void main(String[] args) {
+        RemoveNthFromEnd removeNthFromEnd = new RemoveNthFromEnd();
+//        removeNthFromEnd.removeNthFromEnd2(new ListNode(1),1);
+    }
+
+
     public ListNode removeNthFromEnd1(ListNode head, int n) {
         Deque<ListNode> deque = new LinkedList<>();
         ListNode newHead = new ListNode(0,head);
