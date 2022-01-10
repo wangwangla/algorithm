@@ -99,7 +99,7 @@ public class Heap<T extends Comparable<T>>{
         //3.下沉操作
         temp[N--] = null;
         sink(1);
-        return null;
+        return old;
     }
 
     public static void main(String[] args) {
