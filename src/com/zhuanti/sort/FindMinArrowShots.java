@@ -16,10 +16,12 @@ import java.util.Comparator;
  */
 public class FindMinArrowShots {
     public static void main(String[] args) {
+//        int arr[][] = {{10,16},{2,8},{1,6},{7,12}};
         int arr[][] = {{10,16},{2,8},{1,6},{7,12}};
         FindMinArrowShots arrowShots = new FindMinArrowShots();
-        arrowShots.findMinArrowShots(arr);
+        arrowShots.findMinArrowShots1(arr);
     }
+
     public int findMinArrowShots(int[][] points) {
         //排序
 //        是不是存在重叠
@@ -38,14 +40,42 @@ public class FindMinArrowShots {
             if (start==Integer.MAX_VALUE){
                 start = points[i][0];
                 end = points[i][1];
-            }else
-            if (end>=points[i][0]){
+            }else if (end>=points[i][0]){
                 xx ++;
                 start = Integer.MAX_VALUE;
                 end = Integer.MAX_VALUE;
             }
         }
+        int length = points.length;
+        xx = length - 2 * xx;
 //        System.out.println(xx);
         return xx;
     }
+
+    public int findMinArrowShots1(int[][] points) {
+        if (points.length == 0) {
+            return 0;
+        }
+        Arrays.sort(points, new Comparator<int[]>() {
+            public int compare(int[] point1, int[] point2) {
+                if (point1[1] > point2[1]) {
+                    return 1;
+                } else if (point1[1] < point2[1]) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            }
+        });
+        int pos = points[0][1];
+        int ans = 1;
+        for (int[] balloon: points) {
+            if (balloon[0] > pos) {
+                pos = balloon[1];
+                ++ans;
+            }
+        }
+        return ans;
+    }
+
 }
