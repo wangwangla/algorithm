@@ -2,6 +2,12 @@ package com.zhuanti.sort;
 
 import java.util.Arrays;
 
+/**
+ * 满足孩子
+ *
+ *
+ * sort after，child content min g
+ */
 public class FindContentChildren {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
