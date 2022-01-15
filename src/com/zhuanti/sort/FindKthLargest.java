@@ -5,14 +5,22 @@ import java.util.Arrays;
 public class FindKthLargest {
     public int findKthLargest(int[] nums, int k) {
         Arrays.sort(nums);
-        int index = 1;
-        if (k>=nums.length){
+        if (k<nums.length){
             return nums[nums.length-k];
         }
         return 0;
     }
 
 
+    /**
+     * 分为两半找
+     *
+     * 找最大值   找最小值  根据k进行确定
+     *
+     * @param nums
+     * @param k
+     * @return
+     */
     public int findKthLargest1(int[] nums, int k) {
         int length = nums.length;
         int max = Integer.MAX_VALUE;
