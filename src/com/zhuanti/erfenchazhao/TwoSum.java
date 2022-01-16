@@ -1,5 +1,9 @@
 package com.zhuanti.erfenchazhao;
 
+import com.algorithm.binaryTree.TreeNode;
+
+import java.util.HashSet;
+
 /**
  *
  * 167
@@ -31,5 +35,17 @@ public class TwoSum {
             }
         }
         return new int[]{start,end};
+    }
+
+    public boolean findTarget(TreeNode root, int target) {
+        if (root == null)return false;
+        return find(root,target,new HashSet<Integer>());
+    }
+
+    private boolean find(TreeNode root, int target,HashSet<Integer> hashSet) {
+        if (root == null)return false;
+        if (hashSet.contains(target - root.val))return true;
+        hashSet.add(root.val);
+        return find(root.left,target,hashSet) || find(root.right,target,hashSet) ;
     }
 }
