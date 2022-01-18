@@ -12,3 +12,5 @@ private transient int size = 0;
 //修改次数，主要是为并发做的，比如在遍历的时候，执行了其他修改操作，就会抛出异常。
 private transient int modCount = 0;
 ```
+
+是一个红黑树，
