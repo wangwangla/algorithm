@@ -1,0 +1,14 @@
+# TreeMap
+
+TreeSet是对TreeMap的一层封装
+
+##  常量
+
+```java
+//treemap需要排序
+private final Comparator<? super K> comparator;
+private transient Entry<K,V> root;
+private transient int size = 0;
+//修改次数，主要是为并发做的，比如在遍历的时候，执行了其他修改操作，就会抛出异常。
+private transient int modCount = 0;
+```
