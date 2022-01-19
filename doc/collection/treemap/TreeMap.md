@@ -13,4 +13,59 @@ private transient int size = 0;
 private transient int modCount = 0;
 ```
 
-是一个红黑树，
+## Entry
+
+节点是一个红黑树节点，有key value left right 和颜色
+
+```java
+static final class Entry<K,V> implements Map.Entry<K,V> {
+    K key;
+    V value;
+    Entry<K, V> left;
+    Entry<K, V> right;
+    Entry<K, V> parent;
+    boolean color = BLACK;
+}
+```
+
+set值返回原来的值  
+
+相等判断：
+比较key和value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

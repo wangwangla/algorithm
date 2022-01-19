@@ -73,6 +73,8 @@ public class Question2 {
     public static void main(String[] args) {
         Question2 question2 = new Question2();
         List<TreeNode> list = question2.generateTrees(3);
-        System.out.println(list);
+        for (TreeNode treeNode : list) {
+            System.out.println(treeNode.val);
+        }
     }
 }

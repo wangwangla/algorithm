@@ -119,13 +119,10 @@ public class RedBlackTree<Key extends Comparable<Key>,Value> {
     }
 
     public void put(Key key,Value value){
-        Node xroot = put(root,key,value);
+        root = put(root,key,value);
         //根节点黑
-        if (root == null){
-            root = xroot;
-            root.color = BLACK;
+        root.color = BLACK;
 
-        }
     }
 
     private Node put(Node root, Key key, Value value) {
@@ -137,20 +134,20 @@ public class RedBlackTree<Key extends Comparable<Key>,Value> {
         }
         int cmp = root.key.compareTo(key);
         //插入的小于当前值，去左分支   否则去右分支  等于就将值覆盖
-        if (cmp<0){
+        if (cmp>0){
             root.left = put(root.left,key,value);
-        }else if (cmp>0){
+        }else if (cmp<0){
             root.right = put(root.right,key,value);
         }else {
             root.value = value;
         }
         //右边为红，需要左旋转
         if (!isRed(root.left)&&isRed(root.right)) {
-            rotateLeft(root);
+            root = rotateLeft(root);
         }
         //需要右旋转
         if (isRed(root.left)&&isRed(root.left.left)){
-            rotateRight(root);
+            root = rotateRight(root);
         }
         //左右都为红，需要翻转
         if (isRed(root.left)&&isRed(root.right)){

@@ -9,16 +9,16 @@ package com.algorithm.binaryTree;
  */
 public class InvertTree {
     public TreeNode invertTree(TreeNode root) {
-        ssss(root);
+        afterInvert(root);
         return root;
     }
 
-    private void ssss(TreeNode root){
+    private void afterInvert(TreeNode root){
         if (root == null){
             return;
         }
-        ssss(root.left);
-        ssss(root.right);
+        afterInvert(root.left);
+        afterInvert(root.right);
         TreeNode temp = root.left;
         root.left = root.right;
         root.right = temp;
