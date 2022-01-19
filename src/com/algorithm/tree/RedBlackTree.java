@@ -3,6 +3,8 @@ package com.algorithm.tree;
 //import com.sun.org.apache.regexp.internal.RE;
 //import sun.plugin2.ipc.windows.WindowsIPCFactory;
 
+import com.algorithm.binaryTree.TreeNode;
+
 /**
  * 我认为这个很重要的地方技术  左右旋转，
  * 什么时候需要变色
@@ -22,6 +24,15 @@ package com.algorithm.tree;
  * 那么 会出现几种情况
  * a.左边不为红    右为红就进行旋转
  * b.左边为红  左边的左边为红
+ *
+ *
+ *
+ * 左树为红，右树不为红
+ * 只能有一个红 不可以连续
+ * 根节点为黑
+ * 红节点接两个黑节点
+ * null为黑节点
+ *
  * @param <Key>
  * @param <Value>
  */
@@ -108,16 +119,24 @@ public class RedBlackTree<Key extends Comparable<Key>,Value> {
     }
 
     public void put(Key key,Value value){
-        put(root,key,value);
-        root.color = BLACK;
+        Node xroot = put(root,key,value);
+        //根节点黑
+        if (root == null){
+            root = xroot;
+            root.color = BLACK;
+
+        }
     }
 
     private Node put(Node root, Key key, Value value) {
+        //插入的节点是一个红节点
         if (root == null){
             N++;
-            return new Node(key,value,null,null,RED);
+            root = new Node(key,value,null,null,RED);
+            return root;
         }
         int cmp = root.key.compareTo(key);
+        //插入的小于当前值，去左分支   否则去右分支  等于就将值覆盖
         if (cmp<0){
             root.left = put(root.left,key,value);
         }else if (cmp>0){
@@ -125,13 +144,15 @@ public class RedBlackTree<Key extends Comparable<Key>,Value> {
         }else {
             root.value = value;
         }
-        //进行旋转
+        //右边为红，需要左旋转
         if (!isRed(root.left)&&isRed(root.right)) {
             rotateLeft(root);
         }
+        //需要右旋转
         if (isRed(root.left)&&isRed(root.left.left)){
             rotateRight(root);
         }
+        //左右都为红，需要翻转
         if (isRed(root.left)&&isRed(root.right)){
             flipColor(root);
         }
@@ -155,5 +176,16 @@ public class RedBlackTree<Key extends Comparable<Key>,Value> {
         }else {
             return root;
         }
+    }
+
+    public static void main(String[] args) {
+        RedBlackTree<Integer,Integer> tree = new RedBlackTree();
+        tree.put(80,80);
+        tree.put(20,20);
+        tree.put(30,30);
+        tree.put(40,80);
+        tree.put(120,80);
+        tree.put(25,80);
+        System.out.println("-------------------");
     }
 }
