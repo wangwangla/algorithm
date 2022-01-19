@@ -1,8 +1,10 @@
 package com.algorithm.binaryTree;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import com.beust.ah.A;
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+import java.util.*;
+
 /**
  * @author:28188
  * @date: 2021/6/28
@@ -26,6 +28,28 @@ public class CengxuBianli {
         return lis;
     }
 
+    public void bl(TreeNode root){
+        if (root==null)return;
+        LinkedList<TreeNode> stack = new LinkedList<>();
+        stack.addLast(root);
+        List<List<Integer>> list = new ArrayList<>();
+        while (!stack.isEmpty()){
+            int size = stack.size();
+            List<Integer> aa = new ArrayList<>();
+            for (int i = 0; i < size; i++) {
+                TreeNode pop = stack.removeFirst();
+                aa.add(pop.val);
+                if (pop.left!=null){
+                    stack.addLast(pop.left);
+                }
+                if (pop.right!=null){
+                    stack.addLast(pop.right);
+                }
+            }
+            list.add(aa);
+        }
+        System.out.println(list);
+    }
 
     public int maxDepth(TreeNode root) {
         if (root == null){
@@ -42,7 +66,7 @@ public class CengxuBianli {
             list = new ArrayList();
         }
         list.add(root.val);
-        hashMap.put(max+1,list);
+        hashMap.put(max,list);
         return max+1;
     }
 
@@ -62,7 +86,8 @@ public class CengxuBianli {
         node5.right = node7;
 
         CengxuBianli cengxuBianli = new CengxuBianli();
-        System.out.println(cengxuBianli.levelOrder(node1));
+        cengxuBianli.bl(node1);
+//        System.out.println(cengxuBianli.levelOrder(node1));
     }
 
     public int getMax(TreeNode root){
@@ -71,7 +96,7 @@ public class CengxuBianli {
         }
         int i = getMax(root.left);
         int i1 = getMax(root.right);
-        int max = Math.max(i,i1);
+        int max = Math.max(i,i1)+1;
         return max;
     }
 }

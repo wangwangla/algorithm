@@ -9,7 +9,6 @@ package com.algorithm.binaryTree;
  *
  */
 public class isValidBST {
-
     private int lastVla = Integer.MAX_VALUE;
     private boolean flag = true;
     public boolean isValidBST(TreeNode root) {
@@ -41,7 +40,6 @@ public class isValidBST {
     private boolean xx = true;
     private Integer last = null;
     public boolean isValidBST2(TreeNode root) {
-
         tav(root);
         return xx;
     }
