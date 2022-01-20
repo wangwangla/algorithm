@@ -1,5 +1,9 @@
 package com.algorithm.stack;
 
+/**
+ * util的实现通过Vector实现
+ * @param <T>
+ */
 public class Stack<T> {
     private int length;
     private T element[];

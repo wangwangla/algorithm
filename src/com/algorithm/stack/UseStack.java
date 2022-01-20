@@ -6,11 +6,9 @@ import java.nio.charset.StandardCharsets;
 
 public class UseStack {
     public static void main(String[] args) {
-        String expression = "7" +
-                "*2*2-5+1-5+3-4";
+        String expression = "7*2*2-5+1-5+3-4";
         Stack<Integer> numStack = new Stack<>(10);
         Stack<Integer> operStack = new Stack<>(10);
-
         int index = 0; //用于扫描
         int num1 = 0;
         int num2 = 0;
@@ -138,26 +136,5 @@ public class UseStack {
             }
             return res;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

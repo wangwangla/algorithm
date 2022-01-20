@@ -27,18 +27,22 @@ public class Queue<T> {
     }
 
     public T outQue(){
-        if (isEmpty()) {
+        if (!isEmpty()) {
+            N--;
             return item[++front];
         }
         return null;
     }
 
     private boolean isFull(){
-        return maxSize == rear - front;
+        return maxSize == rear - 1;
     }
 
     private boolean isEmpty(){
         return front == rear;
     }
 
+    public int getSize(){
+        return N;
+    }
 }

@@ -66,3 +66,10 @@ public synchronized boolean add(E e) {
 
 ## 其他属性
 
+## 简单总结
+
+初始化的容量是10，每次扩容为原理的2倍，它的所有方法，都使用synchronized关键字进行修饰。
+它是线程安全的。
+
+Arraylist中也进行一些并发操作，每次修改操作会加一个遍历。
+
