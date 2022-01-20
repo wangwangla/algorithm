@@ -141,6 +141,8 @@ public class RedBlackTree<Key extends Comparable<Key>,Value> {
         }else {
             root.value = value;
         }
+
+
         //右边为红，需要左旋转
         if (!isRed(root.left)&&isRed(root.right)) {
             root = rotateLeft(root);
