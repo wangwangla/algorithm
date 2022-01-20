@@ -8,6 +8,11 @@ public class Fuxi {
         soul(arr1);
     }
 
+    /**
+     * 237  组成目标值  所有的最小个数
+     * @param arr
+     * @param target
+     */
     public static void soul(int arr[],int target){
         int dp[] = new int[target+1];
         dp[0] = 0;
@@ -15,6 +20,10 @@ public class Fuxi {
             //为最大值表示取不到
             dp[i] =Integer.MAX_VALUE;
             for(int j = 0;j<arr.length;j++){
+                //比如现在未为0.其实数字都大于0，完全没有必要在继续
+                /**
+                 * 可以排序， 然后直接跳过本次循环 
+                 */
                 if(i>=arr[j]&&dp[i-arr[j]]!=Integer.MAX_VALUE){
                     dp[i] = dp[i-arr[j]]+1;
                 }
