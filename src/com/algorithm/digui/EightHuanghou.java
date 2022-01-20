@@ -8,6 +8,12 @@ package com.algorithm.digui;
  * 次数 8x8x8x8x8x8x8x8
  */
 public class EightHuanghou {
+
+    int max = 8;
+    int []array = new int[max];
+    static int count = 0;
+    static int judgeCount = 0;
+
     public static void main(String[] args) {
         EightHuanghou huanghou = new EightHuanghou();
         huanghou.check(0);
@@ -45,8 +51,4 @@ public class EightHuanghou {
         System.out.println();
     }
 
-    int max = 4;
-    int []array = new int[max];
-    static int count = 0;
-    static int judgeCount = 0;
 }

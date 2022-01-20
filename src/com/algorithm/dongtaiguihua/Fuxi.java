@@ -7,6 +7,7 @@ public class Fuxi {
          //        soul(arr,27);
         soul(arr1);
     }
+
     public static void soul(int arr[],int target){
         int dp[] = new int[target+1];
         dp[0] = 0;
