@@ -1,5 +1,9 @@
 package com.algorithm.stack;
 
+/**
+ * 工具包使用vectorc'y
+ * @param <T>
+ */
 public class Stack<T> {
     private int length;
     private T element[];
