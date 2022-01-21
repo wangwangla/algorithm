@@ -8,11 +8,11 @@ package com.algorithm.binaryTree;
 public class Question03 {
     public class TreeNode {
         int val;
-        Question2.TreeNode left;
-        Question2.TreeNode right;
+        BuildTree.TreeNode left;
+        BuildTree.TreeNode right;
         TreeNode() {}
         TreeNode(int val) { this.val = val; }
-        TreeNode(int val, Question2.TreeNode left, Question2.TreeNode right) {
+        TreeNode(int val, BuildTree.TreeNode left, BuildTree.TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
@@ -47,8 +47,14 @@ public class Question03 {
  *   return dp[n];
  * };
  *
+ *
+ * 给你一个整数 n ，求恰由 n 个节点组成且节点值从 1 到 n 互不相同的 二叉搜索树 有多少种？返回满足题意的二叉搜索树的种数。
+ *
+ *
+ *
+ *
  * 作者：xiao_ben_zhu
- * 链接：https://leetcode-cn.com/problems/unique-binary-search-trees/solution/shou-hua-tu-jie-san-chong-xie-fa-dp-di-gui-ji-yi-h/
+ * 链接：zsolution/shou-hua-tu-jie-san-chong-xie-fa-dp-di-gui-ji-yi-h/
  * 来源：力扣（LeetCode）
  * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
  */

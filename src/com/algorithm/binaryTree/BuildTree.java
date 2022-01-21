@@ -28,7 +28,7 @@ import java.util.List;
  * 3.进入右子树   ……
  * 4.如果节点为
  */
-public class Question2 {
+public class BuildTree {
     public class TreeNode {
         int val;
         TreeNode left;
@@ -56,6 +56,7 @@ public class Question2 {
         }
 
         for (int i = start; i <= end; i++) {
+            System.out.println(start +"----------------"+end);
             List<TreeNode> leftNodes = generaTree(start,i-1);
             List<TreeNode> rightNodes = generaTree(i+1,end);
             for (TreeNode leftNode : leftNodes) {
@@ -71,10 +72,19 @@ public class Question2 {
     }
 
     public static void main(String[] args) {
-        Question2 question2 = new Question2();
+        BuildTree question2 = new BuildTree();
         List<TreeNode> list = question2.generateTrees(3);
         for (TreeNode treeNode : list) {
-            System.out.println(treeNode.val);
+            print(treeNode);
+            System.out.println("-----------");
         }
+    }
+
+    public static void print(TreeNode treeNode){
+        if (treeNode == null)return;
+        System.out.println(treeNode.val);
+        print(treeNode.left);
+        print(treeNode.right);
+
     }
 }

@@ -46,31 +46,6 @@ public class PathSum {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public int pathSum(TreeNode root,int targetNum){
         if (root == null)return 0;
         return sumSearch(root,0,targetNum)+
