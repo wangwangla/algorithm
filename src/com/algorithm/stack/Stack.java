@@ -1,7 +1,7 @@
 package com.algorithm.stack;
 
 /**
- * 工具包使用vectorc'y
+ * util的实现通过Vector实现
  * @param <T>
  */
 public class Stack<T> {

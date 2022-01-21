@@ -1,5 +1,9 @@
 package com.algorithm.queue;
 
+/**
+ * 最小堆
+ * @param <T>
+ */
 public class MinPriorityQueue<T extends Comparable> {
     private T[] items;
     private int N;

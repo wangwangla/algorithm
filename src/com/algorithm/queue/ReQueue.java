@@ -27,7 +27,7 @@ public class ReQueue<T> {
     }
 
     public T outQue(){
-        if (isEmpty()) {
+        if (!isEmpty()) {
             N--;
             return item[++front%maxSize];
         }
@@ -53,6 +53,5 @@ public class ReQueue<T> {
         queue.enque(new Integer(1));
         queue.enque(new Integer(1));
         System.out.println("==============");
-
     }
 }

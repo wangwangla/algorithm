@@ -12,7 +12,7 @@ static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;
 static final int MAXIMUM_CAPACITY = 1 << 30;
 
 负载因子
-static final int MAXIMUM_CAPACITY = 1 << 30;
+static final int DEFAULT_LOAD_FACTOR = 0.75F;
 
 节点的拉链长度  如果为8，那么就需要转换为tree
 static final int TREEIFY_THRESHOLD = 8;
