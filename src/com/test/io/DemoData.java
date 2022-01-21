@@ -1,4 +1,4 @@
-package com.test.data;
+package com.test.io;
 
 import java.io.*;
 

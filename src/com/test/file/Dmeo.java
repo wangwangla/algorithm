@@ -61,7 +61,7 @@ public class Dmeo {
 
     //写入磁盘
     public void save() throws Exception {
-        FileOutputStream stream = new FileOutputStream(new File("demo.text"));
+        FileOutputStream stream = new FileOutputStream(new File("demo.txt"));
         byte b[] = new byte[10];
         b[0] = 1;
         b[1] = 2;
@@ -72,14 +72,14 @@ public class Dmeo {
 
     public void save1() throws Exception {
         BufferedOutputStream stream = new BufferedOutputStream(
-                new FileOutputStream(new File("demo.text")));
+                new FileOutputStream(new File("demo.txt")));
         byte[] b= new byte[10];
         stream.write(b);
         stream.flush();
     }
 
     public void save2() throws Exception {
-        FileWriter stream = new FileWriter(new File("demo.text"));
+        FileWriter stream = new FileWriter(new File("demo.txt"));
         stream.write("sssss");
         stream.flush();
     }
@@ -88,7 +88,7 @@ public class Dmeo {
         BufferedWriter stream =
                 new BufferedWriter(
                         new FileWriter(
-                                new File("demo.text")));
+                                new File("demo.txt")));
         stream.write("sjd");
         stream.flush();
     }

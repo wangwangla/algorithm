@@ -31,6 +31,46 @@ package com.algorithm.binaryTree;
  * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
  */
 public class PathSum {
+    /**
+     * 根节点计算方式：
+     *
+     *
+     * @param root
+     * @param targetNum
+     * @return
+     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public int pathSum(TreeNode root,int targetNum){
         if (root == null)return 0;
         return sumSearch(root,0,targetNum)+
