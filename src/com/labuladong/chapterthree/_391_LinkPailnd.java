@@ -2,6 +2,8 @@ package com.labuladong.chapterthree;
 
 import com.algorithm.binaryTree.ListNode;
 
+import java.util.Stack;
+
 public class _391_LinkPailnd {
     public String palindrome(String s,int left,int right){
 //        while (left>=0 && right<s.length() && s.charAt(left) == s.charAt(right)){
@@ -42,6 +44,59 @@ public class _391_LinkPailnd {
         res = res&&node.val == left.val;
         left = left.next;
         return res;
+    }
+
+
+    public boolean isPalindrome(ListNode head) {
+        Stack<Integer> stack = new Stack<>();
+        ListNode node1 = head;
+        while (node1!=null) {
+            stack.push(node1.val);
+            node1 = node1.next;
+        }
+        while (head!=null){
+            Integer pop = stack.pop();
+            if (pop != head.val){
+                return false;
+            }
+            head = head.next;
+        }
+        if (!stack.isEmpty()){
+            return false;
+        }
+        return true;
+    }
+
+    public boolean isPalindrome1(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast !=null && fast.next!=null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        if (fast == null) {
+            //偶数
+        }else {
+            //奇数
+        }
+        return true;
+    }
+
+    private ListNode nnn;
+    public boolean isp(ListNode node){
+        if (node==null)return true;
+        nnn = nnn.next;
+        isp(node);
+        System.out.println(node.val);
+        if (nnn.val!=node.val){
+            return false;
+        }
+        return true;
+    }
+
+    public boolean isPalindrome2(ListNode head) {
+        nnn = head;
+        return isp(head);
     }
 
     public static void main(String[] args) {
