@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * 排列组合
  */
-public class _431_permute {
+public class _413_permute {
     public void permute(int arr[]){
         int vv [] = new int[arr.length];
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -30,7 +30,7 @@ public class _431_permute {
 
     public static void main(String[] args) {
         int arr[] = {1,2,3};
-        _431_permute permute = new _431_permute();
+        _413_permute permute = new _413_permute();
         permute.permute(arr);
     }
 }

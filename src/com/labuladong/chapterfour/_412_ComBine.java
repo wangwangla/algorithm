@@ -2,7 +2,7 @@ package com.labuladong.chapterfour;
 
 import java.util.ArrayList;
 
-public class _421_ComBine {
+public class _412_ComBine {
     public void comBine(int arr[]){
         ArrayList<Integer> arrayList = new ArrayList<>();
         su(arrayList,0,arr,2);
@@ -22,7 +22,7 @@ public class _421_ComBine {
 
     public static void main(String[] args) {
         int arr[] = {1,2,3};
-        _421_ComBine comBine = new _421_ComBine();
+        _412_ComBine comBine = new _412_ComBine();
         comBine.comBine(arr);
     }
 }
