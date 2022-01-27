@@ -73,7 +73,6 @@ public class _351_Codec {
             TreeNode cur = queue.poll();
             if (cur.left!=null){
                 queue.offer(cur.left);
-
             }
         }
     }
