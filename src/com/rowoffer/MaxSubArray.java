@@ -13,6 +13,17 @@ public class MaxSubArray {
         return maxVal;
     }
 
+    public int maxSubArray2(int arr[]){
+        int n = arr.length;
+        if (n == 0) return 0;
+        int dp[] = new int[n];
+        dp[0] = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            dp[i] = Math.max(arr[i],dp[i-1] + arr[i]);
+        }
+        return 0;
+    }
+
     public int maxSubArray1(int arr[]){
         int sum = 0;
         int maxVal = Integer.MIN_VALUE;
