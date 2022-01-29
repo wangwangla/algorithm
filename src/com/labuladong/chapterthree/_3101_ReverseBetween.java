@@ -8,14 +8,52 @@ import java.util.List;
  * 反转 链表
  */
 public class _3101_ReverseBetween {
-    public ListNode reverse(ListNode head){
-        if (head == null || head.next == null){
+    public ListNode reverse(ListNode head) {
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode last = reverse(head.next);
         head.next.next = head;
         head.next = null;
         return last;
+    }
+
+    public ListNode res(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode last = res(head);
+        head.next.next = head;
+        head.next = null;
+        return last;
+    }
+
+
+    /**
+     * 反转前n个
+     */
+    ListNode xx = null;
+
+    public ListNode ddd(ListNode head, int n) {
+        if (n == 1) {
+            xx = head.next;
+            return head;
+        }
+        ListNode last = res(head);
+        head.next.next = head;
+        head.next = xx;
+        return last;
+    }
+
+    public ListNode ss(ListNode head, int m, int n) {
+        if (m == 1) {
+            return ddd(head, n);
+        }
+        /**
+         * 一直减去m，
+         */
+        head.next = ss(head.next, m - 1, n - 1);
+        return head;
     }
 
 
