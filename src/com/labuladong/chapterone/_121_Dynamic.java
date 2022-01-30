@@ -24,7 +24,6 @@ public class _121_Dynamic {
         int dp[] = new int[amount+1];
         dp[0] = 0;//初始值
         for (int i = 1; i <= amount; i++) {
-
             //当前值
             dp[i] = Integer.MAX_VALUE;
             for (int i1 = 0; i1 < coins.length; i1++) {

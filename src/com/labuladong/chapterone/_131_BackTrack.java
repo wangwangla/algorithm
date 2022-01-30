@@ -46,6 +46,21 @@ public class _131_BackTrack{
         }
     }
 
+    private void backTrack2(int[] arr, ArrayList<Integer> arrayList,int []v) {
+        //结束条件
+        if (arrayList.size() == 3){
+            System.out.println(arrayList);
+            return;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (v[i] == 1)continue;
+            v[i] = 1;
+            arrayList.add(arr[i]);
+            backTrack2(arr,arrayList,v);
+            arrayList.remove(arrayList.size() - 1);
+            v[i] = 0;
+        }
+    }
     /**
      * 八皇后
      * @param args

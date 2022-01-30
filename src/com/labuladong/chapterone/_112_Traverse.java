@@ -18,6 +18,28 @@ public class _112_Traverse {
         }
     }
 
+
+    public TreeNode buildTree(int pre[],int inorder[]){
+        return helper(0,0,inorder.length-1,pre,inorder);
+    }
+
+    public TreeNode helper(int preStart,int inStart,int inEnd,int []pre,int []inorder){
+        if (preStart>pre.length-1||inStart>inEnd)return null;
+        TreeNode root = new TreeNode(pre[preStart]);
+        int index = 0;
+        for (int i = inStart;i<inEnd;i++){
+            if (inorder[i]==root.val){
+                index = i;
+                break;
+            }
+        }
+        root.left = helper(preStart+1,inStart,index-1,pre,inorder);
+        root.right = helper(preStart+index-inStart+1,index+1,inEnd,pre,inorder);
+        return root;
+    }
+
+
+
     private void traverse2(ListNode head){
         if (head==null){
             return;
@@ -33,8 +55,6 @@ public class _112_Traverse {
         int right = Math.max(0,oneSideMax(root.right));
         return Math.max(left,right)+root.val;
     }
-
-
 
     private void traverse1(ListNode head){
         while (head!=null){
