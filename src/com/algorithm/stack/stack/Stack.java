@@ -1,4 +1,4 @@
-package com.algorithm.line.stack;
+package com.algorithm.stack.stack;
 
 import java.util.Iterator;
 
