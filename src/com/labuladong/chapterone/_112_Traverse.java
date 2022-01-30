@@ -22,8 +22,18 @@ public class _112_Traverse {
         if (head==null){
             return;
         }
-
+        System.out.println("链表前序");
         travese2(head.next);
+        System.out.println("链表后");
+    }
+
+//    反转   后序
+    public ListNode rev(ListNode head){
+        if (head==null || head.next == null)return head;
+        ListNode rev = rev(head.next);
+        head.next.next = head;
+        head.next = null;
+        return rev;
     }
 
     public int ans = Integer.MIN_VALUE;
@@ -33,8 +43,6 @@ public class _112_Traverse {
         int right = Math.max(0,oneSideMax(root.right));
         return Math.max(left,right)+root.val;
     }
-
-
 
     private void traverse1(ListNode head){
         while (head!=null){
@@ -60,6 +68,12 @@ public class _112_Traverse {
         }
     }
 
+    /**
+     * 全排列
+     * @param arr
+     * @param v
+     * @param track
+     */
     public void br(int arr[], int v[] ,LinkedList<Integer> track){
         if (track.size() == arr.length){
             System.out.println("----");
@@ -70,8 +84,29 @@ public class _112_Traverse {
             track.add(arr[i]);
             br(arr,track);
             track.removeLast();
-            v[i] = 1;
+            v[i] = 0;
         }
     }
+
+    public static void main(String[] args) {
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+        ListNode node4 = new ListNode(4);
+        ListNode node5 = new ListNode(5);
+        ListNode node6 = new ListNode(6);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = node6;
+
+        _112_Traverse traverse = new _112_Traverse();
+        traverse.rev(node1);
+        System.out.println("--------------------------");
+
+    }
+
 
 }
