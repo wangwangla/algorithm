@@ -8,7 +8,7 @@ public class _113_BinaTree {
         traverse(head.right);
     }
 
-    int ans = Integer.MIN_VALUE;
+    int ans = Integer.MIN_VALUE; 
     public int maxPathSum(TreeNode head){
         int left = maxPathSum(head.left);
         int right = maxPathSum(head.right);

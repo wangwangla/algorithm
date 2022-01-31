@@ -74,10 +74,34 @@ public class _141_BFS {
                 if (cur == target){
                     return 1;
                 }
-
             }
         }
         return 0;
     }
+
+    public int minDepth(TreeNode root){
+        if (root == null)return 0;
+        Queue<TreeNode> queue = new Queue<>();
+        queue.enqueue(root);
+        int depth = 1;
+        while (!queue.idEmpty()){
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode cur = queue.dequeue();
+                if (cur.left == null && cur.right == null){
+                    return depth;
+                }
+                if (cur.left != null){
+                    queue.enqueue(cur.left);
+                }
+                if (cur.right != null){
+                    queue.enqueue(cur.right);
+                }
+            }
+            depth++;
+        }
+        return depth;
+    }
+
 
 }
