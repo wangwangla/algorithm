@@ -2,7 +2,7 @@ package com.labuladong.chapterfive;
 
 import java.util.Arrays;
 
-public class CountPrimes {
+public class _511_CountPrimes {
     /**
      *
      * @param n

@@ -31,7 +31,8 @@ public class _331_BinaTree {
         if (left == null && right == null)return true;
         if (left ==  null || right == null)return false;
         if (left.val != right.val)return false;
-        return isVTree(left.left,right.right) && isVTree(left.right,right.left);
+        return isVTree(left.left,right.right)
+                && isVTree(left.right,right.left);
     }
 
     /**
@@ -54,6 +55,52 @@ public class _331_BinaTree {
         if (root == null)return false;
         if (root.val == target)return true;
         return isInBST(root.left,target)||isInBST(root.right,target);
+    }
+
+    public boolean isInBST1(TreeNode root,int target){
+        if (root == null)return false;
+        if (root.val == target)return true;
+        if (root.val < target){
+            isInBST(root.right,target);
+        }else {
+            isInBST(root.left,target);
+        }
+        return false;
+    }
+
+    public TreeNode insertBST(TreeNode root,int val){
+        if (root == null)return new TreeNode(val);
+        if (root.val == val){
+            return root;
+        }
+        if (root.val <val){
+            root.left = insertBST(root,val);
+        }else if (root.val>val){
+            root.right = insertBST(root,val);
+        }
+        return root;
+    }
+
+    public TreeNode deleteNode(TreeNode root,int val){
+        if (root == null)return null;
+        if (root.val == val){
+//            return root;
+            if (root.left == null && root.right == null){
+                return null;
+            }else if (root.left==null){
+                return root.right;
+            }else if (root.right == null){
+                return root.left;
+            }else {
+
+            }
+        }
+        if (root.val <val){
+            root.left = insertBST(root,val);
+        }else if (root.val>val){
+            root.right = insertBST(root,val);
+        }
+        return root;
     }
 
     public int numsNodes(TreeNode node){

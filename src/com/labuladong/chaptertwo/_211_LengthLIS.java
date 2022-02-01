@@ -5,7 +5,6 @@ public class _211_LengthLIS {
          int dp[] = new int[nums.length];
          dp[0] = 1;
          int length = nums.length;
-
          for (int i = 0; i < length; i++) {
              dp[i] = 1;
              for (int j = 0; j < i; j++) {

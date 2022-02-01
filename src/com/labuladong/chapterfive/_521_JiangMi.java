@@ -1,5 +1,5 @@
 package com.labuladong.chapterfive;
 
-public class JiangMi {
+public class _521_JiangMi {
 
 }

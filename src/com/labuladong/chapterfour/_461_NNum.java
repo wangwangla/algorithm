@@ -1,5 +1,6 @@
 package com.labuladong.chapterfour;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class _461_NNum {
@@ -38,6 +39,40 @@ public class _461_NNum {
                 while (lo<hi&&arr[lo]==left)lo++;
                 while (lo<hi&&arr[lo]==right)hi++;
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        _461_NNum nNum = new _461_NNum();
+        int arr[] = new int[]{-1,0,1,2,-1,-4};
+        nNum.threeSum(arr);
+    }
+    public void threeSum(int arr[]){
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        int t[] = new int[arr.length];
+        xxx(arr,arrayList,t);
+        System.out.println(xxks);
+    }
+
+    private int xxks = 0;
+    private void xxx(int arr[],ArrayList<Integer> arrayList,int[]dp){
+        if (arrayList.size() == 3){
+            int sum = 0;
+            for (Integer integer : arrayList) {
+                sum += integer;
+            }
+            if (sum == 0){
+                xxks++;
+            }
+            return;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (dp[i] == 1)continue;
+            dp[i] = 1;
+            arrayList.add(arr[i]);
+            xxx(arr,arrayList,dp);
+            arrayList.remove(arrayList.size()-1);
+            dp[i] = 0;
         }
     }
 }

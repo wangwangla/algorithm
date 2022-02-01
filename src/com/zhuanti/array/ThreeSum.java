@@ -3,6 +3,10 @@ package com.zhuanti.array;
 import java.util.*;
 
 /**
+ *
+ *
+ * 有空学习一下
+ *
  * 15 - threeSum
  *
  * 三数之和为0
@@ -11,6 +15,38 @@ import java.util.*;
  * 可以先转成字符串在去重，也可以将结果排序在去重
  */
 public class ThreeSum {
+
+
+    List<List<Integer>> a = new ArrayList<>();
+    public List<List<Integer>> threeSum121(int[] arr) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        int t[] = new int[arr.length];
+        xxx(arr,arrayList,t);
+        return a;
+    }
+
+    private int xxks = 0;
+    private void xxx(int arr[],ArrayList<Integer> arrayList,int[]dp){
+        if (arrayList.size() == 3){
+            int sum = 0;
+            for (Integer integer : arrayList) {
+                sum += integer;
+            }
+
+            if (sum == 0){
+                a.add(new ArrayList(arrayList));
+            }
+            return;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (dp[i] == 1)continue;
+            dp[i] = 1;
+            arrayList.add(arr[i]);
+            xxx(arr,arrayList,dp);
+            arrayList.remove(arrayList.size()-1);
+            dp[i] = 0;
+        }
+    }
     /**
      * 暴力解法
      * @param nums

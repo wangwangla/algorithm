@@ -1,5 +1,8 @@
 package com.labuladong.chapterone;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 /**
  * 1.base
  * 2.state
@@ -27,13 +30,43 @@ public class _121_Dynamic {
             //当前值
             dp[i] = Integer.MAX_VALUE;
             for (int i1 = 0; i1 < coins.length; i1++) {
+                if (i - coins[i1] <0)continue;
                 if (dp[i - coins[i1]] == Integer.MAX_VALUE){
                     continue;
                 }
-                if (i - coins[i1] <0)continue;
                 dp[i] = Math.min(dp[i - coins[i1]]+1,dp[i]);
             }
         }
         return dp[amount];
+    }
+
+    int coinChange3(int []coins,int amount){
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        cc(coins,amount,arrayList);
+        return 0;
+    }
+
+    public void cc(int arr[], int target, ArrayList<Integer> arrayList){
+        int count = 0;
+        for (int i = 0; i < arrayList.size(); i++) {
+            count += arrayList.get(i);
+        }
+        if (count == target){
+            System.out.println("找到了 --------"+ arrayList.size());
+            return;
+        }
+        if (count>target)return;
+        int length = arr.length;
+        for (int i = 0; i < arr.length; i++) {
+            arrayList.add(arr[i]);
+            cc(arr,target,arrayList);
+            arrayList.remove(arrayList.size() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1,2,5};
+        _121_Dynamic dynamic = new _121_Dynamic();
+        dynamic.coinChange3(arr,11);
     }
 }

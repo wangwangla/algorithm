@@ -1,6 +1,7 @@
 package com.labuladong.chapterfour;
 
 public class _421_SolveSudoku {
+
     void solveSudoku(char [][] board){
 
     }
