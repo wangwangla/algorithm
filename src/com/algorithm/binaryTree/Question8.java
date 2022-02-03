@@ -11,24 +11,6 @@ import java.util.ArrayList;
  *
  */
 public class Question8 {
-    public TreeNode buildTree1(int[] preorder, int[] inorder) {
-        int root = preorder[0];
-        ArrayList<Integer> arrayLeft = new ArrayList<>();
-        int index = 0;
-        for (int i : inorder) {
-            if (i!=root){
-                arrayLeft.add(i);
-            }else {
-                index = i;
-                break;
-            }
-        }
-        //得到右子树
-
-//        同理重复上面的步骤
-//        到达结尾之后   开始创建
-        return null;
-    }
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return buildTreeHelper(preorder,  inorder, (long)Integer.MAX_VALUE + 1);

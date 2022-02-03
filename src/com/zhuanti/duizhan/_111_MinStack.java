@@ -10,10 +10,10 @@ import java.util.Stack;
  *
  * 处理方法：每个数据都记录一个最小值
  */
-public class MinStack {
+public class _111_MinStack {
     public Stack<Integer> stackData;
     public Stack<Integer> stackMin;
-    public MinStack(){
+    public _111_MinStack(){
         this.stackData = new Stack<>();
         this.stackMin = new Stack<>();
     }

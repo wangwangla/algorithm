@@ -26,11 +26,12 @@ public class TreeDepth {
     }
 
     public int maxDepth(TreeNode root) {
-        int i = maxDepth(root.left);
-        int i1 = maxDepth(root.right);
         if (root == null){
             return 0;
         }
+        int i = maxDepth(root.left);
+        int i1 = maxDepth(root.right);
+
         int max = Math.max(i, i1);
         return max+1;
     }

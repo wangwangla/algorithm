@@ -2,6 +2,8 @@ package com.labuladong.chapterthree;
 
 import com.algorithm.binaryTree.ListNode;
 
+import javax.swing.plaf.LabelUI;
+
 public class _3111_ReseverseKGroup {
     public ListNode rev(ListNode head){
         ListNode pre = null;
@@ -15,6 +17,46 @@ public class _3111_ReseverseKGroup {
         }
         return pre;
     }
+
+    public ListNode rev1(ListNode head){
+        ListNode nex = null;
+        ListNode pre = null;
+        while (head!=null){
+            nex = head.next;
+            head.next = pre;
+            pre = head;
+            head = nex;
+        }
+        return pre;
+    }
+
+    public ListNode kGroupPev1(ListNode start, ListNode end){
+        ListNode pre,cur,nxt;
+        pre = null;
+        cur = start;
+        nxt = start;
+        while (cur!=end){
+            nxt = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = nxt;
+        }
+        return pre;
+    }
+
+    public ListNode kGroupPev2(ListNode head, int k){
+        if (head == null)return null;
+        ListNode a,b;
+        a = b = head;
+        for (int i = 0; i < k; i++) {
+            if (b == null) return head;
+            b = b.next;
+        }
+        ListNode newHead = kGroupPev1(a,b);
+        a.next = kGroupPev2(b,k);
+        return newHead;
+    }
+
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);

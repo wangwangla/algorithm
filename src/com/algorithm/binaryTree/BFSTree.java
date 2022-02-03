@@ -6,7 +6,7 @@ package com.algorithm.binaryTree;
  * @time: 18:01
  */
 import java.util.*;
-public class Question18 {
+public class BFSTree {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> levelOrder = new LinkedList<List<Integer>>();
         if (root == null) {
