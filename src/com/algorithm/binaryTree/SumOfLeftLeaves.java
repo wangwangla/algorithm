@@ -4,6 +4,8 @@ package com.algorithm.binaryTree;
  * @author:28188
  * @date: 2021/6/27
  * @time: 18:13
+ *
+ * 所有的叶子加起来
  */
 public class SumOfLeftLeaves {
     class TreeNode {

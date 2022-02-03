@@ -149,6 +149,13 @@ public class SortBinaryTree<Key extends Comparable<Key>,Value> {
         return keys;
     }
 
+    /**
+     * 求树高
+     *
+     * 左右节点 最大值 +1
+     * @param node
+     * @return
+     */
     public int depth(Node node){
         if (node == null){
             return 0;

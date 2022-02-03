@@ -5,8 +5,10 @@ import java.util.*;
  * @author:28188
  * @date: 2021/7/5
  * @time: 7:56
+ *
+ * 有序的单链表，变为一棵树
  */
-public class Question20 {
+public class SortListedToBst {
     private TreeNode sortListedToBst(ListNode head){
         //平衡二叉树  找中间结点   二分
         if(head == null)return null;

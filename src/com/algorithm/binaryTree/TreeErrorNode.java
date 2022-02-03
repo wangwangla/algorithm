@@ -34,7 +34,7 @@ package com.algorithm.binaryTree;
  * 链接：https://leetcode-cn.com/problems/recover-binary-search-tree
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Question19 {
+public class TreeErrorNode {
     //中序遍历的时候数据是递增的，所以当我们得到的值不是递增的，那么就说明数据是存在问题的，我们找到 两个然后进行交换。
     public void dizeng(TreeNode node){
         rrr(node);
