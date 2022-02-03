@@ -3,7 +3,7 @@ package com.algorithm.dongtaiguihua;
 /**
  * k个抄写员超写n本书，使用的最短时间
  */
-public class Demo04 {
+public class ChaoxieYuan {
     /**
      * 书被抄写完成
      * @param arr
