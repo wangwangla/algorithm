@@ -55,6 +55,17 @@ public class IsSymmetric {
         }
     }
 
+
+    public boolean isSymmetric1(TreeNode left,TreeNode right){
+        if (left==null&&right!=null)return false;
+        if (left!=null&&right == null)return false;
+        if (left.val!=right.val){
+            return false;
+        }
+        return isSymmetric1(left.left,right.right) &&
+                isSymmetric1(left.right,left.right);
+    }
+
     public static void main(String[] args) {
         TreeNode node = new TreeNode(2);
         TreeNode node1 = new TreeNode(1);

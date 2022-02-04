@@ -40,6 +40,5 @@ public class UFyouhua {
         }
         eleAndGroup[qGroup] = pGroup;
         count--;
-
     }
 }

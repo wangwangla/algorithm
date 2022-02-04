@@ -20,10 +20,10 @@ public class Demo01 {
             }else if (end<interval[0]){
                 System.out.println(interval[0]+"    "+interval[1]);
             }else {
-                if (start>interval[0]){
+                if (start>=interval[0]){
                     xx = interval[0];
                 }
-                if (end<interval[1]){
+                if (end<=interval[1]){
                     System.out.println(xx+"  "+end);
                 }
             }

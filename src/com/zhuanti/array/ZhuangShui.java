@@ -5,7 +5,10 @@ public class ZhuangShui {
         int arr[] = {1,8,6,2,5,4,8,3,7};
         ZhuangShui zhuangShui = new ZhuangShui();
         System.out.println(zhuangShui.maxArea(arr));
+        System.out.println(zhuangShui.maxArea1(arr));
+
     }
+
     public int maxArea(int[] height){
         int max = Integer.MIN_VALUE;
         for (int i : height) {
@@ -31,10 +34,24 @@ public class ZhuangShui {
                     break;
                 }
             }
-
             count = (end - start) * i;
             maxCount = Math.max(count,maxCount);
         }
         return maxCount;
+    }
+
+    public int maxArea1(int[] height){
+        int start = 0;
+        int end = height.length-1;
+        int max = 0;
+        while (start<end){
+            max = Math.max(max,Math.max(height[start],height[end])*(end - start-1));
+            if (height[start]>height[end]){
+                end--;
+            }else {
+                start++;
+            }
+        }
+        return max;
     }
 }

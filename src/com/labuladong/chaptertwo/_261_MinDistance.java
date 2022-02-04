@@ -15,7 +15,7 @@ public class _261_MinDistance {
         for (int i = 1; i <= m; i++) {
             for (int i1 = 1; i1 <= n; i1++) {
                 if (s1.charAt(i-1) == s2.charAt(i1-1)) {
-                    System.out.println("--------");
+                    dp[i][i1] = dp[i-1][i1-1];
                 }else {
 //                    max(dp[i-1][i1]);
 

@@ -1,8 +1,8 @@
 package kw.other.observer;
 
-import com.shejimoshi.chapterTwo.ShowTempl;
-import com.shejimoshi.chapterTwo.TimeTempl;
-import com.shejimoshi.chapterTwo.Weather;
+import kw.shejimoshi.chapterTwo.ShowTempl;
+import kw.shejimoshi.chapterTwo.TimeTempl;
+import kw.shejimoshi.chapterTwo.Weather;
 
 public class App {
     public static void main(String[] args) {

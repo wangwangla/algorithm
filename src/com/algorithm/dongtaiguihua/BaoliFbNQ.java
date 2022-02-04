@@ -24,7 +24,7 @@ public class BaoliFbNQ {
         }
         else {
             arr[n] = fib1(arr,n-1) + fib1(arr,n-2);
-            return fib1(arr,n-1) + fib1(arr,n-2);
+            return arr[n];
         }
     }
 //    动态规划使用的是自下向上的方式。

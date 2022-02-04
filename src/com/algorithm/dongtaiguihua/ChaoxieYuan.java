@@ -22,7 +22,7 @@ public class ChaoxieYuan {
         }
 
         int sum = 0;
-        for (k = 0; k < K; k++) {
+        for (k = 1; k <= K; k++) {
             //二维数组  K个抄写员
             for (i = 0; i < n; i++) {
                 f[k][i] = Integer.MAX_VALUE;

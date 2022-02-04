@@ -3,6 +3,8 @@ package com.algorithm.tree;
 import java.util.Objects;
 
 public class BinTree<T extends Comparable> {
+    private Node root;
+
     private class Node<T>{
         private T t;
         private Node left;
@@ -13,14 +15,14 @@ public class BinTree<T extends Comparable> {
             this.right = right;
         }
     }
-    private Node root;
-     public void insert(T t){
+
+    public void insert(T t){
          root = insert(root,t);
      }
 
     private Node insert(Node root, T t) {
          if (root == null){
-             return root = new Node(t,null,null);
+             return new Node(t,null,null);
          }
          if (t.compareTo(root.t)>0){
              root.left = insert(root.left,t);
@@ -72,9 +74,9 @@ public class BinTree<T extends Comparable> {
          }
          //找到结点
         if (t.compareTo(root.t)<0){
-            root.left = delete(root,t);
+            root.left = delete(root.left,t);
         }else if (t.compareTo(root.t)>0){
-            root.right = delete(root,t);
+            root.right = delete(root.right,t);
         }else {
             //找到之后
             //左右子树是不是为null
