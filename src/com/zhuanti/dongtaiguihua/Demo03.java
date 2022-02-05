@@ -1,5 +1,8 @@
 package com.zhuanti.dongtaiguihua;
 
+/**
+ * 解法存在问题
+ */
 public class Demo03 {
     public void mathod(int arr[][]){
         //这个不需要创建多余的空间

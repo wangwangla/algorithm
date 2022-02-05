@@ -36,7 +36,9 @@ public class CombinationSum2 {
                 }
             }
             list.add(arr[i]);
-            xxx(arr,i+1,target,sum + arr[i],list);
+            sum+=arr[i];
+            xxx(arr,i+1,target,sum,list);
+            sum-=arr[i];
             list.remove(list.size()-1);
         }
     }

@@ -14,6 +14,7 @@ public class CombinationSum {
         CombinationSum sum = new CombinationSum();
         sum.combinationSum(arr,7);
     }
+
     private List<List<Integer>> listss = new ArrayList<>();
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<Integer> list = new ArrayList<>();
@@ -39,7 +40,9 @@ public class CombinationSum {
                 }
             }
             list.add(arr[i]);
-            xxx(arr,i+1,target,sum + arr[i],list);
+            sum = sum+arr[i];
+            xxx(arr,i+1,target,sum,list);
+            sum = sum-arr[i];
             list.remove(list.size()-1);
         }
     }

@@ -26,6 +26,7 @@ public class Question3 {
         int f[] = new int[n+1];
         f[0] = 0;
         for (int i = 1; i <= n; i++) {
+            System.out.println("------------");
             f[i] = Integer.MAX_VALUE;
             for (int j = 1; j*j <= i; j++) {
                 if (f[i-j*j]+1<f[i]){
@@ -36,6 +37,7 @@ public class Question3 {
         }
         return f[n];
     }
+
 
     /**
      * 给一个字符串s[0,N-1]
@@ -224,13 +226,14 @@ public class Question3 {
 //        System.out.println(method4(3));
 //        mathodOne(25);
 
-        boolean b = true || false;
-        System.out.println(b);
+//        boolean b = true || false;
+//        System.out.println(b);
 
         /**
          * 有一个必胜，那么他就必败，因为不会傻到故意让对方胜利。
          */
         //
+        mathodOne(13);
     }
 
 

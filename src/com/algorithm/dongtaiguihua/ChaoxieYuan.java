@@ -72,4 +72,45 @@ public class ChaoxieYuan {
         }
     }
 
+
+    /**
+     * k 个抄写员
+     * @param arr
+     * @param K
+     */
+    public void ul(int arr[],int K){
+        int num = arr.length;
+        int [][] x = new int[K+1][num+1];
+        //0 本书 0 个人，结果为0
+        x[0][0] = 0;
+        for (int i = 1; i <= num; i++) {
+            //没有抄写员的时候为最大时间
+            x[0][i] = Integer.MAX_VALUE;
+        }
+//        num本书
+        for (int i = 1; i < num; i++) {
+            int sum = 0;
+            for (int i1 = 0; i1 < i; i1++) {
+                x[1][i] = Math.min(sum,x[1][i]);
+                if (i1>0){
+                    sum += arr[i1];
+                }
+
+            }
+        }
+
+
+
+//        int num = arr.length;
+//        int [] x = new int[num+1];
+//        //0 本书 0 个人，结果为0
+//        x[0] = 0;
+//        for (int i = 1; i <= num; i++) {
+//            //没有抄写员的时候为最大时间
+//            x[i] = Integer.MAX_VALUE;
+//        }
+
+
+    }
+
 }
