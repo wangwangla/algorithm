@@ -1,17 +1,11 @@
-package com.algorithm.line;
+package com.algorithm.line.demo;
+
+import com.algorithm.line.node.Node;
 
 public class LinkDemo {
-    private static class Node<T>{
-        private T t;
-        private Node next;
-        public Node(T t){
-            this.t = t;
-            this.next = null;
-        }
-    }
 
     private Node head;
-//    node  size
+
     public int num(){
         Node temp = head;
         int num = 0;
@@ -22,8 +16,12 @@ public class LinkDemo {
         return num;
     }
 
-    public void find(int i){
-//        找出倒数第i个节点
+    /**
+     * 快慢指针
+     * @param i
+     */
+    public void findLastIndexData(int i){
+//        找出第i个节点
         Node temp = head;
         int xx = 0;
         Node man = head;
@@ -34,20 +32,27 @@ public class LinkDemo {
                 man = man.next;
             }
         }
-        System.out.println(man.t);
+        System.out.println(man.data);
     }
 
     public void xuanzhuan(){
         //前插法
+//        Node t = head;
+//        Node temp = head;
+//        if (t.next!=null) {
+//            temp = t.next.next;
+//        }
+//        while (temp!=null){
+//            Node next = head.next;
+//            head.next = temp;
+//            next.next = temp.next;
+//        }
         Node t = head;
-        Node temp = head;
-        if (t.next!=null) {
-            temp = t.next.next;
-        }
-        while (temp!=null){
-            Node next = head.next;
-            head.next = temp;
-            next.next = temp.next;
+        while (t!=null){
+            Node te = t.next;
+            t.next = head;
+            head = t;
+            t = te;
         }
     }
 

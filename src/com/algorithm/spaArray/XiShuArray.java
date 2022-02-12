@@ -1,9 +1,4 @@
-package com.algorithm.xishu;
-
-import com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI;
-
-import java.io.*;
-import java.lang.reflect.Array;
+package com.algorithm.spaArray;
 
 public class XiShuArray {
 
@@ -22,10 +17,15 @@ public class XiShuArray {
         int[][] array = new int[count + 1][3];
         array[0][0] = h;
         array[0][1] = l;
+        count = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int i1 = 0; i1 < arr[0].length; i1++) {
                 //将数字存起来，   x,y,v
-
+                if (arr[i][i1] == '1'){
+                    array[count][0] = i;
+                    array[count][1] = i1;
+                    array[count][2] = arr[i][i1];
+                }
             }
         }
 

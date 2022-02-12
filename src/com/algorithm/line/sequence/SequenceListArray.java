@@ -11,13 +11,14 @@ public class SequenceListArray<T> {
     private int N;
 
     public SequenceListArray(){
-            elements = (T[]) new Object[10];
+        elements = (T[]) new Object[10];
     }
 
     public SequenceListArray(int capacity){
         elements = (T[]) new Object[capacity];
         this.N = 0;
     }
+
     public void clear(){
         this.N = 0;
     }

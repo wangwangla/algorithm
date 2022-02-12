@@ -1,18 +1,19 @@
-package com.algorithm.line.shuangxiang;
+package com.algorithm.line.doublelink;
+
+import com.algorithm.line.node.DoubleNode;
 
 public class ShuangxiangLianbiao<T> {
-    private Node head;
+    private DoubleNode head;
     public ShuangxiangLianbiao(){
-        head = new Node();
+        head = new DoubleNode();
         head.pre = null;
         head.next = null;
     }
 
     private void addNode(T data){
-        Node node = new Node();
+        DoubleNode node = new DoubleNode();
         node.data = data;
-        node.next = null;
-        Node x = head;
+        DoubleNode x = head;
         while (x.next != null) {
             x = x.next;
         }
@@ -22,32 +23,27 @@ public class ShuangxiangLianbiao<T> {
     }
 
     private void delete(T data){
-        Node node = head;
+        DoubleNode node = head;
         while (node.next != null) {
             node = node.next;
             if (node.data == data) {
                 break;
             }
         }
-        Node pre = node.pre;
+        DoubleNode pre = node.pre;
         pre.next = pre.next.next;
-        Node next = node.next;
+        DoubleNode next = node.next;
         next.pre = pre.pre;
     }
 
     private void print(){
-        Node node = head;
+        DoubleNode node = head;
         while (node.next != null) {
             node = node.next;
             System.out.println(node.data);
         }
     }
 
-    class Node<T>{
-        private T data;
-        private Node next;
-        private Node pre;
-    }
 
     public static void main(String[] args) {
         ShuangxiangLianbiao<Integer> shuangxiangLianbiao = new ShuangxiangLianbiao<>();

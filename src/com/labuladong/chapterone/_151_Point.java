@@ -1,7 +1,6 @@
 package com.labuladong.chapterone;
 
 import com.algorithm.binaryTree.ListNode;
-import com.algorithm.line.LinkDemo;
 
 public class _151_Point {
     /**

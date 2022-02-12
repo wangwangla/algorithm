@@ -1,6 +1,6 @@
-package com.algorithm.line;
+package com.algorithm.line.doublelink;
 
-public class TwoLianbiao<T> {
+public class DoubleLianbiao<T> {
     private class Node{
         private T item;
         private Node pre;
@@ -16,7 +16,7 @@ public class TwoLianbiao<T> {
     private Node last;
     private int N;
 
-    public TwoLianbiao(){
+    public DoubleLianbiao(){
         this.head = new Node(null,null,null);
         this.last = null;
         this.N = 0;

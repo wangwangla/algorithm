@@ -1,4 +1,4 @@
-package com.algorithm.line.sequence;
+package com.algorithm.line.other;
 
 import java.io.Serializable;
 import java.util.RandomAccess;

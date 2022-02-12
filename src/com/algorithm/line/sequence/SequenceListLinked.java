@@ -1,10 +1,14 @@
 package com.algorithm.line.sequence;
 
+import com.algorithm.line.node.Node;
+
 /**
  * 顺序表  链表方式实现
  */
 public class SequenceListLinked {
+
     private Node<Integer> head;
+
     public SequenceListLinked(){
         head = new Node<>();
     }
@@ -90,10 +94,6 @@ public class SequenceListLinked {
         x.next = node;
     }
 
-    class Node<T>{
-        private int data;
-        private Node next;
-    }
 
     public static void main(String[] args) {
         SequenceListLinked sequence = new SequenceListLinked();
@@ -102,8 +102,8 @@ public class SequenceListLinked {
         sequence.addData(4);
         sequence.inset(5);
 //        sequence.insert(0,1);
-//        sequence.deleteRear();
-//        sequence.deleteStart();
+        sequence.deleteRear();
+        sequence.deleteStart();
         sequence.print();
     }
 

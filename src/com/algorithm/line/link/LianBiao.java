@@ -1,24 +1,14 @@
-package com.algorithm.line;
+package com.algorithm.line.link;
+
+import com.algorithm.line.node.Node;
 
 import java.util.Iterator;
 
 public class LianBiao<T> implements Iterable<T> {
-    @Override
-    public Iterator<T> iterator() {
-        return new It<T>();
-    }
-
-    private class Node<T>{
-        private T t;
-        private Node next;
-        public Node(T t,Node node){
-            this.t = t;
-            this.next = node;
-        }
-    }
 
     private Node head;
     private int N;
+
     public LianBiao(){
         head = new Node(null,null);
         this.N = 0;
@@ -31,6 +21,7 @@ public class LianBiao<T> implements Iterable<T> {
             currentNode = currentNode.next;
         }
         currentNode.next = temp;
+        N++;
     }
 
     public void insert(T t,int index){
@@ -58,8 +49,7 @@ public class LianBiao<T> implements Iterable<T> {
                 break;
             }
         }
-        currentNode.t = t;
-
+        currentNode.data = t;
     }
 
     public void delete(int index){
@@ -77,6 +67,7 @@ public class LianBiao<T> implements Iterable<T> {
 
     private  class It<T> implements Iterator<T>{
         private Node current;
+
         public It(){
             current = head.next;
         }
@@ -88,7 +79,7 @@ public class LianBiao<T> implements Iterable<T> {
 
         @Override
         public T next() {
-            T t = (T)current.t;
+            T t = (T)current.data;
             current = current.next;
             return t;
         }
@@ -109,18 +100,9 @@ public class LianBiao<T> implements Iterable<T> {
         }
     }
 
-    public void reseve(){
-
+    @Override
+    public Iterator<T> iterator() {
+        return new It<T>();
     }
 
-    public Node reseve(Node curr){
-        if (curr.next == null){
-            return curr;
-        }
-        Node pre = reseve(curr.next);
-        pre.next = curr;
-        curr.next = null;
-        return curr;
-
-    }
 }

@@ -1,18 +1,21 @@
-package com.algorithm.line;
+package com.algorithm.line.sequence;
 
 import java.util.Iterator;
 
-public class Seq<T> implements Iterable<T> {
+public class SeqApp<T> implements Iterable<T> {
+
     private T[] elements;
     private int N;
-    public Seq(){
+    public SeqApp(){
         elements = (T[]) new Object[10];
         this.N = 0;
     }
-    public Seq(int capacity){
+
+    public SeqApp(int capacity){
         elements = (T[])new Object[capacity];
         this.N = 0;
     }
+
     public void clear(){
         //为了赶紧释放
         for (T element : elements) {
@@ -20,9 +23,11 @@ public class Seq<T> implements Iterable<T> {
         }
         this.N = 0;
     }
+
     public boolean isEmpty(){
         return N == 0;
     }
+
     public T get(int i){
         return elements[i];
     }
@@ -50,18 +55,6 @@ public class Seq<T> implements Iterable<T> {
         
     }
 
-    public static void main(String[] args) {
-        Seq s = new Seq<Integer>();
-        s.insert(2);
-        s.insert(3);
-        s.insert(5,2);
-        s.delete(1);
-        Iterator iterator = s.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-        }
-    }
-
     @Override
     public Iterator iterator() {
         return new It();
@@ -77,6 +70,18 @@ public class Seq<T> implements Iterable<T> {
         @Override
         public T next() {
             return elements[index++];
+        }
+    }
+
+    public static void main(String[] args) {
+        SeqApp s = new SeqApp<Integer>();
+        s.insert(2);
+        s.insert(3);
+        s.insert(5,2);
+        s.delete(1);
+        Iterator iterator = s.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
         }
     }
 }
