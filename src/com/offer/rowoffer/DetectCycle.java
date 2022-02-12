@@ -4,6 +4,9 @@ import com.zhuanti.binaryTree.ListNode;
 
 import java.util.HashSet;
 
+/**
+ * 链表是不是存在环
+ */
 public class DetectCycle {
     public ListNode detectCycle(ListNode head) {
         HashSet<ListNode> set = new HashSet<>();
@@ -15,10 +18,14 @@ public class DetectCycle {
             set.add(ne);
             ne = ne.next;
         }
-
         return ne;
     }
 
+    /**
+     * 环的位置
+     * @param node
+     * @return
+     */
     public ListNode dectectCycle1(ListNode node){
         ListNode fast = node.next.next;
         ListNode slow = node.next;
@@ -28,7 +35,7 @@ public class DetectCycle {
         }
         ListNode other = node;
         while (other != slow){
-            slow = node;
+            slow = slow.next;
             other = other.next;
         }
         return slow;

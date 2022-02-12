@@ -5,6 +5,9 @@ import com.zhuanti.binaryTree.ListNode;
 import java.util.Deque;
 import java.util.LinkedList;
 
+/**
+ * 两个链表值相加
+ */
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         Deque<ListNode> deque1 = new LinkedList();
@@ -26,7 +29,6 @@ public class AddTwoNumbers {
             ListNode pop = deque1.poll();
             ListNode pop1 = deque2.poll();
             int i = pop.val + pop1.val + ccc;
-            ccc = 0;
             res = i % 10;
             ccc = i / 10;
 //            dd.push();
@@ -39,7 +41,6 @@ public class AddTwoNumbers {
         while (!deque1.isEmpty()){
             ListNode pop = deque1.poll();
             int i = pop.val + ccc;
-            ccc = 0;
             res = i % 10;
             ccc = i / 10;
 //            dd.push(new ListNode(res));
@@ -52,22 +53,16 @@ public class AddTwoNumbers {
         while (!deque2.isEmpty()){
             ListNode pop1 = deque2.poll();
             int i =  pop1.val + ccc;
-            ccc = 0;
             res = i % 10;
             ccc = i / 10;
-//            dd.push(new ListNode(res));
-
             ListNode listNode = new ListNode(res);
-//            listNode.next = newNode.next;
             newNode.next = listNode;
             newNode = listNode;
         }
 
         if (ccc != 0){
             ListNode listNode = new ListNode(ccc);
-//            listNode.next = newNode.next;
             newNode.next = listNode;
-            newNode = listNode;
         }
         return nn.next;
     }

@@ -4,6 +4,10 @@ public class CountBits {
 
     public static void main(String[] args) {
         CountBits bits = new CountBits();
+        int[] a = bits.countBits(10);
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
     }
 
     public int[] countBits(int n) {
@@ -11,7 +15,7 @@ public class CountBits {
         for (int i = 0; i < n; i++) {
             bits[i] = countOnes(i);
         }
-        return null;
+        return bits;
     }
 
     public int countOnes(int n){
@@ -22,4 +26,5 @@ public class CountBits {
         }
         return ones;
     }
+
 }

@@ -21,13 +21,13 @@ public class CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         Arrays.sort(candidates);
         ArrayList<Integer> arrayList = new ArrayList<>();
-        dsf(candidates,arrayList,target,0,0);
+        persim(candidates,arrayList,target,0,0);
         return ans;
     }
 
     public List<List<Integer>> ans = new ArrayList<>();
 
-    private void dsf(int []candidates,List<Integer> list,int target,int pos ,int sum){
+    private void persim(int []candidates, List<Integer> list, int target, int pos , int sum){
         if (sum > target){
             return;
         }
@@ -35,9 +35,9 @@ public class CombinationSum {
             // ans.add(list);
             ans.add(new ArrayList<>(list));
         }
-        for (int i = pos; i < candidates.length; i++) {
+        for (int i = 0; i < candidates.length; i++) {
             list.add(candidates[i]);
-            dsf(candidates,list,target,i,sum + candidates[i]);
+            persim(candidates,list,target,i,sum + candidates[i]);
             list.remove(list.size()-1);
         }
     }

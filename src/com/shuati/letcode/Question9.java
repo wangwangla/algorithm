@@ -120,6 +120,7 @@ public class Question9 {
         }
         return num;
     }
+
     public static void main(String[] args) {
         String str = "words and 987";
         str = "- words and 987";

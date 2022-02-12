@@ -4,7 +4,9 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * 内存
+ * 二进制相加
+ *
+ * 二进制的每一位进行相加
  */
 public class AddBinary {
     public static void main(String[] args) {
@@ -27,51 +29,52 @@ public class AddBinary {
         for (String aChar : bSplit) {
             deque2.push(Integer.valueOf(aChar));
         }
-        int xx = 0;
+        //进位
+        int c = 0;
         while (!deque1.isEmpty() && !deque2.isEmpty()) {
             int pop = deque1.pop();
             int pop1 = deque2.pop();
-            int xxx = pop + pop1 + xx;
-            if (xxx == 2){
-                xxx = 0;
-                xx = 1;
-            }else if (xxx == 3){
-                xxx = 1;
-                xx = 1;
+            int value = pop + pop1 + c;
+            if (value == 2){
+                value = 0;
+                c = 1;
+            }else if (value == 3){
+                value = 1;
+                c = 1;
             }else{
-                xx = 0;
+                c = 0;
             }
-            deque3.push(xxx);
+            deque3.push(value);
         }
         while (!deque1.isEmpty()){
-            int i = deque1.pop() + xx;
+            int i = deque1.pop() + c;
             if (i == 2){
-                xx = 1;
+                c = 1;
                 i = 0;
             }else if (i == 3){
                 i = 1;
-                xx = 1;
+                c = 1;
             }else {
-                xx = 0;
+                c = 0;
             }
             deque3.push(i);
         }
 
         while (!deque2.isEmpty()){
-            int i = deque2.pop() + xx;
+            int i = deque2.pop() + c;
             if (i == 2){
-                xx = 1;
+                c = 1;
                 i = 0;
             }else if (i == 3){
                 i = 1;
-                xx = 1;
+                c = 1;
             }else {
-                xx = 0;
+                c = 0;
             }
             deque3.push(i);
         }
-        if (xx == 1){
-            deque3.push(1);
+        if (c == 1){
+            deque3.push(c);
         }
         StringBuilder builder = new StringBuilder();
         while (!deque3.isEmpty()) {
@@ -239,7 +242,6 @@ public class AddBinary {
             index ++;
         }
         if (xx == 1){
-
             builder.insert(0,1);
         }
         return builder.toString();

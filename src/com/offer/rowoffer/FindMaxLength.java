@@ -20,13 +20,14 @@ public class FindMaxLength {
                 map.put(sum,i);
             }
         }
+        System.out.println(maxLength);
         return maxLength;
     }
 
     public static void main(String[] args) {
         FindMaxLength length = new FindMaxLength();
         int arr[] = {
-                0,1,0,1,0
+                1,0,1,0,0
         };
         length.findMaxLength(arr);
     }

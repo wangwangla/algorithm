@@ -32,18 +32,4 @@ public class DFS_cut {
             list.remove(arr[i]);
         }
     }
-
-    public void dfs1(int arr[],List<Integer> list,int target,int pos,int sum){
-        if (sum > target) return;
-        if (sum == target) {
-
-        }
-        for (int i = pos; i < arr.length; i++) {
-            list.add(arr[i]);
-            dfs(arr,list,i,target,sum+arr[i]);
-            list.remove(arr[i]);
-        }
-    }
-
-
 }

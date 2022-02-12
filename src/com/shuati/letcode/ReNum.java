@@ -8,24 +8,22 @@ public class ReNum {
     public static void main(String[] args) {
         ReNum num = new ReNum();
         int arr[] = new int[]{
-                1,2,3,4,5,2
+                1,2,3,4,5,6,7,8,9,5
         };
-        num.solution(arr);
+        System.out.println(num.duplicate(arr));
     }
+
+    public void so(int[] arr){
+        int res = 0;
+        for (int i = 0; i < arr.length; i++) {
+            res = res^arr[i];
+            res = res ^ i;
+        }
+        System.out.println("-------------------------");
+    }
+
     //没有任何限制
     public void solution(int arr[]){
-//        int tem = 0;
-//        while (true){
-//            if (arr[tem] == tem){
-//                continue;
-//            }else {
-//                if (arr[arr[tem]] == arr[tem]) {
-//                    break;
-//                }else {
-//                    tem = arr[tem];
-//                }
-//            }
-//        }
         int aa []= new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             if(aa [arr[i]] == arr[i]){

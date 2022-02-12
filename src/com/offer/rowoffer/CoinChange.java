@@ -1,5 +1,8 @@
 package com.offer.rowoffer;
 
+/**
+ * 硬币 求出得到目标钱树
+ */
 public class CoinChange {
     public int coinChange(int[] coins, int amount) {
         int dp [] = new int[amount + 1];
@@ -12,7 +15,7 @@ public class CoinChange {
                         dp[i] = Math.min(dp[i],1+dp[i-coins[i1]]);
                 }
             }
-            }
-            return dp[amount] == Integer.MAX_VALUE ? -1:dp[amount];
+        }
+        return dp[amount] == Integer.MAX_VALUE ? -1:dp[amount];
     }
 }

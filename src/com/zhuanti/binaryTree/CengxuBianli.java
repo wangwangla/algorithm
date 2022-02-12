@@ -67,6 +67,80 @@ public class CengxuBianli {
         return max+1;
     }
 
+    public List<List<Integer>> levelOrder3(TreeNode root) {
+        List<List<Integer>> lists = new ArrayList<>();
+        Deque<TreeNode> deque = new ArrayDeque<>();
+        deque.push(root);
+        while (deque.size()!=0){
+            TreeNode poll = deque.poll();
+            //访问一个
+            System.out.println(poll.val);
+            if (poll.left!=null){
+                deque.add(poll.left);
+            }
+            if (poll.right != null) {
+                deque.add(poll.right);
+            }
+
+        }
+        return lists;
+    }
+
+    public List<List<Integer>> levelOrder1(TreeNode root) {
+        List<List<Integer>> lists = new ArrayList<>();
+        Deque<TreeNode> deque = new ArrayDeque<>();
+        if (root!=null) {
+            deque.push(root);
+        }
+        while (deque.size()!=0){
+            int size = deque.size();
+            List<Integer> list = new ArrayList<>();
+            while (size>0){
+                TreeNode poll = deque.poll();
+                //访问一个
+                list.add(poll.val);
+                if (poll.left!=null){
+                    deque.add(poll.left);
+                }
+                if (poll.right != null) {
+                    deque.add(poll.right);
+                }
+                size --;
+            }
+            lists.add(list);
+        }
+        return lists;
+    }
+
+    public List<List<Integer>> levelOrder2(TreeNode root) {
+        List<List<Integer>> lists = new ArrayList<>();
+        Deque<TreeNode> deque = new ArrayDeque<>();
+        boolean flag = true;
+        if (root!=null) {
+            deque.push(root);
+        }
+        while (deque.size()!=0){
+            int size = deque.size();
+            ArrayList<Integer> list = new ArrayList<>();
+            while (size>0){
+                TreeNode poll = deque.poll();
+                //访问一个
+//                list.(poll.val);
+//                这里的插入顺序改变一下就可以了
+                if (poll.left!=null){
+                    deque.add(poll.left);
+                }
+                if (poll.right != null) {
+                    deque.add(poll.right);
+                }
+                size --;
+            }
+            lists.add(list);
+        }
+        return lists;
+    }
+
+
     public static void main(String[] args) {
         TreeNode node1 = new TreeNode(1);
         TreeNode node2 = new TreeNode(2);
