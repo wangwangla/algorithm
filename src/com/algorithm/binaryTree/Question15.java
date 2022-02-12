@@ -1,6 +1,6 @@
 package com.algorithm.binaryTree;
 
-import com.algorithm.Queue;
+import com.algorithm._3_queue.QueueLink;
 
 /**
  * @author:28188
@@ -45,7 +45,7 @@ public class Question15 {
 //  遍历所有
 
     public void bfs(Node root){
-        Queue<Node> queue = new Queue<>();
+        QueueLink<Node> queue = new QueueLink<>();
         queue.enqueue(root);
         while (!queue.idEmpty()){
 //            Node dequeue = queue.dequeue();

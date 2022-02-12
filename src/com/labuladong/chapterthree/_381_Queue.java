@@ -1,7 +1,5 @@
 package com.labuladong.chapterthree;
 
-import com.algorithm.stack.Stack;
-
 import java.util.Deque;
 import java.util.LinkedList;
 

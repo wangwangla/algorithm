@@ -1,10 +1,10 @@
 package com.chengxujingsai;
 
-import com.algorithm.Queue;
+import com.algorithm._3_queue.QueueLink;
 
 public class QueueDemo {
     public static void main(String[] args) {
-        Queue<Integer> queue = new Queue<>();
+        QueueLink<Integer> queue = new QueueLink<>();
         queue.enqueue(1);
         queue.enqueue(2);
         queue.dequeue();

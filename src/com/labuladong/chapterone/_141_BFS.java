@@ -1,13 +1,11 @@
 package com.labuladong.chapterone;
 
-import com.algorithm.Queue;
+import com.algorithm._3_queue.QueueLink;
 import com.algorithm.binaryTree.TreeNode;
-import com.algorithm.graph.Graph;
+import com.algorithm._5_graph.Graph;
 import com.test.hanshunping.lianbiao.Node;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.Set;
 
 /**
@@ -18,11 +16,11 @@ import java.util.Set;
  * * 替换字母变为另一个
  */
 public class _141_BFS {
-    private Queue<Integer> queue;
+    private QueueLink<Integer> queue;
     private boolean []marked;
     private int count;
 
-    private Queue<TreeNode> queu = new Queue<>();
+    private QueueLink<TreeNode> queu = new QueueLink<>();
 
     public void bfs(TreeNode root, int v){
         queu.enqueue(root);
@@ -49,7 +47,7 @@ public class _141_BFS {
         queue.enqueue(v);
         while (!queue.idEmpty()){
             int wait = queue.dequeue();
-            Queue<Integer> findQueue = graph.getVer(wait);
+            QueueLink<Integer> findQueue = graph.getVer(wait);
 //            if (findQueue.size()==0)return;
             for (Integer integer : findQueue) {
                 if (!marked[integer]){
@@ -61,7 +59,7 @@ public class _141_BFS {
     }
 
     int BFS(Node start,Node target){
-        Queue<Node> q = new Queue<>();
+        QueueLink<Node> q = new QueueLink<>();
         Set<Node> visited = new HashSet<Node>();
         q.enqueue(start);
         visited.add(target);
@@ -81,7 +79,7 @@ public class _141_BFS {
 
     public int minDepth(TreeNode root){
         if (root == null)return 0;
-        Queue<TreeNode> queue = new Queue<>();
+        QueueLink<TreeNode> queue = new QueueLink<>();
         queue.enqueue(root);
         int depth = 1;
         while (!queue.idEmpty()){

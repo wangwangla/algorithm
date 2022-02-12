@@ -1,6 +1,6 @@
 package com.algorithm.binaryTree;
 
-import com.algorithm.Queue;
+import com.algorithm._3_queue.QueueLink;
 
 /**
  * 二叉树
@@ -132,9 +132,9 @@ public class SortBinaryTree<Key extends Comparable<Key>,Value> {
         return root;
     }
 
-    public Queue<Key> Les(){
-        Queue<Key> keys = new Queue<Key>();
-        Queue<Node> nodes = new Queue<>();
+    public QueueLink<Key> Les(){
+        QueueLink<Key> keys = new QueueLink<Key>();
+        QueueLink<Node> nodes = new QueueLink<>();
         nodes.enqueue(root);
         while (!nodes.idEmpty()){
             Node node = nodes.dequeue();
