@@ -1,6 +1,6 @@
 package com.zhuanti.linklist;
 
-import com.algorithm.binaryTree.ListNode;
+import com.zhuanti.binaryTree.ListNode;
 
 public class Reverse {
     public void re(ListNode node){

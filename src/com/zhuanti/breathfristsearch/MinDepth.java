@@ -1,6 +1,6 @@
 package com.zhuanti.breathfristsearch;
 
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;

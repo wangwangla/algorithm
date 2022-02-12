@@ -1,6 +1,6 @@
 package com.zhuanti.sort;
 
-import com.algorithm.binaryTree.ListNode;
+import com.zhuanti.binaryTree.ListNode;
 
 public class InsertionSortList {
     public ListNode insertionSortList(ListNode head) {

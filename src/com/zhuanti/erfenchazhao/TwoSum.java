@@ -1,6 +1,6 @@
 package com.zhuanti.erfenchazhao;
 
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 import java.util.HashSet;
 

@@ -1,6 +1,6 @@
 package com.zhuanti.depthsearch;
 
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 public class SortedArrayToBST {
     public TreeNode sortedArrayToBST(int[] nums) {

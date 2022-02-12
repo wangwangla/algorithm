@@ -1,8 +1,6 @@
 package com.zhuanti.breathfristsearch;
 
-import com.algorithm.binaryTree.TreeNode;
-
-import java.util.ArrayList;
+import com.zhuanti.binaryTree.TreeNode;
 
 public class IsSymmetric {
     public static void main(String[] args) {

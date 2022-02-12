@@ -1,10 +1,6 @@
 package com.zhuanti.erfenchazhao;
 
-import com.algorithm.binaryTree.TreeNode;
-
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
+import com.zhuanti.binaryTree.TreeNode;
 
 public class KthSmallest {
     /**

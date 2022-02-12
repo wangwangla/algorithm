@@ -1,9 +1,9 @@
 package com.labuladong.chapterone;
 
 import com.algorithm._3_queue.QueueLink;
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 import com.algorithm._5_graph.Graph;
-import com.test.hanshunping.lianbiao.Node;
+import com.zhuanti.linklist.Node;
 
 import java.util.HashSet;
 import java.util.Set;

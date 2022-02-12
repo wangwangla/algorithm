@@ -1,7 +1,7 @@
 package com.labuladong.chapterone;
 
-import com.algorithm.binaryTree.ListNode;
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.ListNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 import java.util.LinkedList;
 

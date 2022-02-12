@@ -1,6 +1,6 @@
 package com.labuladong.chapterone;
 
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 public class _113_BinaTree {
     public void traverse(TreeNode head){

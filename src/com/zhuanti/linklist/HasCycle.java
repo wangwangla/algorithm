@@ -1,8 +1,6 @@
 package com.zhuanti.linklist;
 
-import com.algorithm.binaryTree.ListNode;
-
-import java.util.List;
+import com.zhuanti.binaryTree.ListNode;
 
 /**
  *

@@ -2,6 +2,9 @@ package com.algorithm._5_graph;
 
 import com.algorithm._3_queue.QueueLink;
 
+/**
+ * 层序遍历
+ */
 public class BFS {
     private QueueLink<Integer> queue;
     private boolean []marked;

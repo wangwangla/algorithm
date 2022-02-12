@@ -2,7 +2,7 @@ package com.zhuanti.dongtaiguihua;
 
 public class CoinChange {
     public static void main(String[] args) {
-        CoinChange coinChange = new CoinChange();
+        com.zhuanti.CoinChange coinChange = new com.zhuanti.CoinChange();
         int []a= {/*1,2,5*/474,83,404,3};
 //        [474,83,404,3]
 //        264

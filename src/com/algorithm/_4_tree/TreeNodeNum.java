@@ -1,6 +1,6 @@
 package com.algorithm._4_tree;
 
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 public class TreeNodeNum {
     private int countNodes(TreeNode node){

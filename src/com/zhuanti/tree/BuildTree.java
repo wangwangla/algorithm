@@ -1,6 +1,6 @@
 package com.zhuanti.tree;
 
-import com.algorithm.binaryTree.TreeNode;
+import com.zhuanti.binaryTree.TreeNode;
 
 public class BuildTree {
     public TreeNode buildTree(int[] preorder, int[] inorder) {

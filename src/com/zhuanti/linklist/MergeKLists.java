@@ -1,6 +1,6 @@
 package com.zhuanti.linklist;
 
-import com.algorithm.binaryTree.ListNode;
+import com.zhuanti.binaryTree.ListNode;
 
 import java.util.ArrayList;
 import java.util.Comparator;

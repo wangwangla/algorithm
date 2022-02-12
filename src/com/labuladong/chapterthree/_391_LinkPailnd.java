@@ -1,6 +1,6 @@
 package com.labuladong.chapterthree;
 
-import com.algorithm.binaryTree.ListNode;
+import com.zhuanti.binaryTree.ListNode;
 
 import java.util.Stack;
 

@@ -1,8 +1,6 @@
 package com.labuladong.chapterthree;
 
-import com.algorithm.binaryTree.ListNode;
-
-import java.util.List;
+import com.zhuanti.binaryTree.ListNode;
 
 /**
  * 反转 链表

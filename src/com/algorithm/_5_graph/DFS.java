@@ -21,8 +21,6 @@ public class DFS {
                 dfs(g, g.getVer(s).dequeue());
             }
         }
-        int i = 3;
-        int j = 3*6;
         System.out.println();
     }
 

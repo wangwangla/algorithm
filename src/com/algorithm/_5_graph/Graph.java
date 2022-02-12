@@ -4,6 +4,9 @@ import com.algorithm._3_queue.QueueLink;
 
 /**
  * 邻接表
+ *
+ *
+ * 一个表  关联了几个边  边通过queue存储
  */
 public class Graph {
     //顶点个数
