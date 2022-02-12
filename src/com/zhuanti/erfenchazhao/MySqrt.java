@@ -7,19 +7,19 @@ package com.zhuanti.erfenchazhao;
 public class MySqrt {
     public int mySqrt(int x) {
         int low = 0;
-        int end = x/2;
+        int end = x;
         int mid = 0;
-        int ans = 0;
         while (low <= end) {
             mid = (low + end) / 2;
-            if ((long)mid * mid <= x) {
-                ans = mid;
-                low += 1;
+            int i = mid * mid;
+            if(i == x)return mid;
+            if (mid * mid < x) {
+                low = mid + 1;
             } else {
-                end -= 1;
+                end = mid - 1;
             }
         }
-        return 0;
+        return end;
     }
 
     public static void main(String[] args) {
