@@ -1,5 +1,7 @@
 package com.offer.rowoffer;
 
+import com.labuladong._2_chaptertwo._221_CompletePack;
+
 /**
  * 硬币 求出得到目标钱树
  */
@@ -17,5 +19,12 @@ public class CoinChange {
             }
         }
         return dp[amount] == Integer.MAX_VALUE ? -1:dp[amount];
+    }
+
+    public static void main(String[] args) {
+        int arr[] = new int[]{2,3,5};
+        CoinChange completePack = new CoinChange();
+//        completePack.completePack1(arr,5);
+        completePack.coinChange(arr,21);
     }
 }

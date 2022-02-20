@@ -12,13 +12,16 @@ public class _261_MinDistance {
         for (int i = 0; i <= m; i++) {
             dp[i][0] = i;
         }
+        for (int i = 0; i <= n; i++) {
+            dp[0][i] = i;
+        }
         for (int i = 1; i <= m; i++) {
             for (int i1 = 1; i1 <= n; i1++) {
                 if (s1.charAt(i-1) == s2.charAt(i1-1)) {
                     dp[i][i1] = dp[i-1][i1-1];
                 }else {
-//                    max(dp[i-1][i1]);
-
+//                    max(dp[i-1][iq1]);
+//                    插入   删除   替换
 //                    dp[i-1][i1];
 //                    dp[i][i1+1];
 //                    dp[i-1][i1-1];
@@ -27,4 +30,9 @@ public class _261_MinDistance {
         }
         return 0;
     }
+
+    int min(int a, int b, int c) {
+        return Math.min(a, Math.min(b, c));
+    }
+
 }
