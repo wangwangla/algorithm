@@ -1,6 +1,7 @@
 package com.zhuanti.array;
 
-public class Jump {
+
+public class _Jump {
     public int jump(int[] nums) {
         int min = Integer.MAX_VALUE;
         int target = nums.length - 1;
@@ -65,7 +66,7 @@ public class Jump {
 
     public static void main(String[] args) {
         int arr[] = {2,3,1,1,4};
-        Jump jump = new Jump();
+        _Jump jump = new _Jump();
         jump.jump(arr);
     }
 }

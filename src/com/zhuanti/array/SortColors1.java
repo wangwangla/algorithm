@@ -1,6 +1,6 @@
 package com.zhuanti.array;
 
-public class Demo02 {
+public class SortColors1 {
     public static void main(String[] args) {
 
     }

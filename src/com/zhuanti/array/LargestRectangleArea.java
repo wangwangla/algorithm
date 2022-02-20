@@ -3,11 +3,9 @@ package com.zhuanti.array;
 public class LargestRectangleArea {
     public int largestRectangleArea(int[] heights) {
         int max = 0;
-        int curMax = max;
         int index = 0;
         for (int i = 0; i < heights.length; i++) {
             int curr = heights[i];
-            curMax = curr;
             index = i;
             for (int i1 = i+1; i1 < heights.length; i1++) {
                 if (heights[i1]>=curr){

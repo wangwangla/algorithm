@@ -17,6 +17,23 @@ public class Reverse {
         System.out.println("-----------------");
     }
 
+    public void resvere(ListNode head){
+        ListNode temp = head;
+        ListNode next = null;
+        ListNode newHead = null;
+        while (temp!=null){
+            next = temp.next;
+
+            ListNode old = newHead;
+            newHead = temp;
+            temp.next = old;
+
+            temp = next;
+        }
+    }
+
+
+
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);

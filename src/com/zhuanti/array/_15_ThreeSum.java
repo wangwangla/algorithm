@@ -237,16 +237,6 @@ public class _15_ThreeSum {
         return null;
     }
 
-
-    public List<List<Integer>> threeSum1(int[] nums) {
-        Arrays.sort(nums);
-        for (int i = 0; i < nums.length; i++) {
-
-        }
-        return null;
-    }
-
-
     public static void main(String[] args) {
         int arr[] = {-1,0,1,2,-1,-4};
         _15_ThreeSum sum = new _15_ThreeSum();

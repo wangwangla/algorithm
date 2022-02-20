@@ -14,6 +14,19 @@ public class Demo03 {
         Arrays.sort(nums1);
     }
 
+    public void mr(int[] nums1, int m, int[] nums2, int n){
+        int l1 = nums1.length-1;
+        for (int i = nums1.length-1; i > 0; i--) {
+            if (nums1[m]>nums2[n]){
+                nums1[i] = nums1[m];
+                m--;
+            }else if (nums1[m]<nums2[n]){
+                nums1[i] = nums2[n];
+                n--;
+            }
+        }
+    }
+
     /**
      * 把后半部分作为一个存储地方，遍历两个数组，将数据移动这个一部分
      *
