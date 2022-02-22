@@ -39,6 +39,12 @@ public class _121_Dynamic {
         return dp[amount];
     }
 
+    /**
+     * 排列组合的方式
+     * @param coins
+     * @param amount
+     * @return
+     */
     int coinChange3(int []coins,int amount){
         ArrayList<Integer> arrayList = new ArrayList<>();
         cc(coins,amount,arrayList);

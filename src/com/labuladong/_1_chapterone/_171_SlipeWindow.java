@@ -56,4 +56,11 @@ public class _171_SlipeWindow {
         }
         return len == Integer.MAX_VALUE?"":s.substring(start,len);
     }
+
+    /**
+     * 进入窗口，出窗口
+     */
+    public void sliderWindow(){
+
+    }
 }

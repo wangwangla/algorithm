@@ -158,5 +158,25 @@ public class _141_BFS {
         }
     }
 
+    /**
+     * 使用数组或者队列进行存储，每次一层一层进行遍历，如果是二叉树，不需要存储已经访问过的节点，
+     * 如果不是二叉树，是图，就需要进行记录，防止出现环
+     *
+     * @param start
+     * @param terget
+     * @return
+     */
+    public int BFS1(Node start,Node terget){
 
+        return 0;
+    }
+
+    /**
+     * 可以一岑一层的遍历  如果左右都为null，那么就已经到了结尾了
+     * @param node
+     * @return
+     */
+    public int minTreeHight(Node node){
+        return 0;
+    }
 }
