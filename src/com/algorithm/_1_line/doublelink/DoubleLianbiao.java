@@ -1,6 +1,11 @@
 package com.algorithm._1_line.doublelink;
 
 public class DoubleLianbiao<T> {
+
+    private Node head;
+    private Node last;
+    private int N;
+
     private class Node{
         private T item;
         private Node pre;
@@ -11,10 +16,6 @@ public class DoubleLianbiao<T> {
             this.next = next;
         }
     }
-
-    private Node head;
-    private Node last;
-    private int N;
 
     public DoubleLianbiao(){
         this.head = new Node(null,null,null);
