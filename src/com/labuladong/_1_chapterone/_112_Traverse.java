@@ -38,8 +38,6 @@ public class _112_Traverse {
     }
 
 
-    /*************       二叉树      ***********/
-
     private void traverse2(ListNode head){
         if (head==null){
             return;
@@ -59,6 +57,9 @@ public class _112_Traverse {
         return rev;
     }
 
+
+    /*************       二叉树      ***********/
+
     public int ans = Integer.MIN_VALUE;
     int oneSideMax(TreeNode root){
         if (root == null)return 0;
@@ -68,14 +69,28 @@ public class _112_Traverse {
         return Math.max(left,right)+root.val;
     }
 
+
+    /**
+     * 恢复
+     */
+    TreeNode pre,temp1,temp2;
     public void traverse(TreeNode root){
         if (root==null)return;
         traverse(root.left);
-
+        if (pre!=null){
+            if (pre.val>root.val){
+                if (temp1==null) {
+                    temp1 = root;
+                }else {
+                    temp2 = root;
+                }
+            }
+        }
+        pre = root;
         //找到两个点
-
         traverse(root.right);
     }
+
 
     public void br(int arr[], LinkedList<Integer> track){
         if (track.size() == arr.length){
