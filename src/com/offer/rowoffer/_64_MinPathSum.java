@@ -1,6 +1,6 @@
 package com.offer.rowoffer;
 
-public class MinPathSum {
+public class _64_MinPathSum {
     public int minPathSum(int[][] grid) {
         int r = grid.length;
         int l = grid[0].length;
@@ -52,7 +52,7 @@ public class MinPathSum {
                 {1,3,1},
                 {1,5,1},
                 {4,2,1}};
-        MinPathSum sum = new MinPathSum();
+        _64_MinPathSum sum = new _64_MinPathSum();
         sum.minPathSum(arr);
     }
 }
