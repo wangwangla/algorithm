@@ -19,22 +19,34 @@ public class _115_NumDistinct {
         int sLen = s.length();
         int tLen = t.length();
         int dp[][] = new int[tLen+1][sLen+1];
-        for (int i = 0; i < sLen; i++) {
-            for (int i1 = 0; i1 < tLen; i1++) {
+        for (int i = 0; i <= tLen; i++) {
+            for (int i1 = 0; i1 <= sLen; i1++) {
                 if (i==0 && i1==0){
                     dp[i][i1] = 1;
                 }else if (i==0){
                     dp[i][i1] = 1;
                 }else if (i1==0){
-                    dp[i][i1] = 1;
-                }
-                if (s.charAt(i-1) == t.charAt(i1-1)){
+                    dp[i][i1] = 0;
+                }else
+                if (s.charAt(i1-1) == t.charAt(i-1)){
                     dp[i][i1] = dp[i-1][i1-1] + dp[i][i1-1];
                 }else {
                     dp[i][i1] = dp[i][i1-1];
                 }
             }
         }
+        for (int i = 0; i < dp.length; i++) {
+            for (int i1 = 0; i1 < dp[0].length; i1++) {
+                System.out.print("  "+dp[i][i1]);
+            }
+            System.out.println();
+        }
         return dp[tLen][sLen];
+    }
+
+    public static void main(String[] args) {
+        String s = "rabbbit", t = "rabbit";
+        _115_NumDistinct distinct = new _115_NumDistinct();
+        System.out.println(distinct.numDistinct(s, t));
     }
 }
