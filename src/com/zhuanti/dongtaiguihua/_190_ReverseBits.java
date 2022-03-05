@@ -1,6 +1,10 @@
 package com.zhuanti.dongtaiguihua;
 
-public class ReverseBits {
+
+/**
+ * 看不懂
+ */
+public class _190_ReverseBits {
     public int reverseBits(int num) {
 
         for (int i = 0; i < num; i++) {
@@ -11,7 +15,8 @@ public class ReverseBits {
 
 
     public static void main(String[] args) {
-
+        _190_ReverseBits bits = new _190_ReverseBits();
+        System.out.println(bits.reverseBits1(19));
     }
 
     /**

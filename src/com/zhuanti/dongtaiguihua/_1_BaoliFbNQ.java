@@ -1,6 +1,6 @@
 package com.zhuanti.dongtaiguihua;
 
-public class BaoliFbNQ {
+public class _1_BaoliFbNQ {
     public int fib(int n){
         if (n == 0)return 0;
         if (n ==1 || n==2)return 1;
@@ -21,8 +21,7 @@ public class BaoliFbNQ {
         }
         if (arr[n]!=0){
             return arr[n];
-        }
-        else {
+        } else {
             arr[n] = fib1(arr,n-1) + fib1(arr,n-2);
             return arr[n];
         }

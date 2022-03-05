@@ -1,45 +1,11 @@
 package com.zhuanti.dongtaiguihua;
 
 public class Question3 {
-    /**
-     * 给一个正整数，  最少可以将它分为几个完全平方数之和
-     *
-     * 输入n=13
-     * 输出2（13 = 4 + 9）
-     *
-     * 分析：
-     *  - j^2最后一个
-     *  - 倒数第二个 n - j^2
-     *
-     *  转移方程
-     *  f[i] = min{f[i-j^2]+1}
-     *
-     *  初始f[0] = 0;
-     *
-     *  1~n  i   n^3/2
-     *
-     *
-     */
-    public static int mathodOne(int n){
-        int f[] = new int[n+1];
-        f[0] = 0;
-        for (int i = 1; i <= n; i++) {
-            System.out.println("------------");
-            f[i] = Integer.MAX_VALUE;
-            for (int j = 1; j*j <= i; j++) {
-                if (f[i-j*j]+1<f[i]){
-                    f[i] = f[i-j*j]+1;
-                    System.out.println(f[i]+"--"+i);
-                }
-            }
-        }
-        return f[n];
-    }
 
 
     /**
      * 给一个字符串s[0,N-1]
-     * 要求将字符串划分为若干段，没一段都是一个回文串
+     * 要求将字符串划分为若干段，每一段都是一个回文串
      * 求：最少划分几次
      *
      * 比如：
@@ -231,7 +197,7 @@ public class Question3 {
          * 有一个必胜，那么他就必败，因为不会傻到故意让对方胜利。
          */
         //
-        mathodOne(13);
+/*        mathodOne(13);*/
     }
 
 

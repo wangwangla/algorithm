@@ -10,8 +10,11 @@ package com.zhuanti.dongtaiguihua;
  * 输入4个物品，2，3，5，7.最大承重为10
  *
  * 输出10  2 3 5
+ *
+ *
+ * 和最接近的钱解法一样 完全背包问题
  */
-public class Question4 {
+public class wanquanbeibao {
     public int method(int target ,int arr[]){
         int n = arr.length;
         //没有物品就为0
@@ -102,7 +105,6 @@ public class Question4 {
                         dp[i][i1] = Math.max(dp[i - 1][i1], dp[i - 1][i1 - arr[i1 - 1]] + arr[i1 - 1]);
                     }
                 }
-
             }
         }
     }

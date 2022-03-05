@@ -5,15 +5,22 @@ public class BeiBao01 {
         int w[] = {2,1,3,2};
         int v[] = {3,2,4,2};
         BeiBao01 beiBao01 = new BeiBao01();
-        beiBao01.solution(w,v);
         System.out.println(beiBao01.nummm);
     }
 
-    public void solution(int w[],int v[]){
-        int arr[] = new int[5];
-        dp = new int[w.length+2][w.length+2];
-        System.out.println(rec2(0, 5, w.length, w, v));
-    }
+    /**
+     * 思想：
+     *   取第一个的时候最大
+     *   取第二个的时候最大
+     *   取第三个的时候最大
+     *   ……
+     * @param w
+     * @param v
+     * @return
+     */
+//    public int beibao01(int []w,int v){
+//        int [][]dp = new int[][]
+//    }
 
     /**
      *
@@ -109,11 +116,13 @@ public class BeiBao01 {
 
     /**
      * 一个数组  将值放入到 一个包中  从中得到最接近的值
+     *
+     * 比如只可以吃十斤，但是每一顿饭必须要吃完     ，可以吃的 最接近值
      * @param M
      * @param m
      */
     public void soul02(int M,int m[]){
-        //m个物体
+        //m个物体    总量为M
         int dp[][] = new int[m.length][M];
         for (int i = 0; i < M; i++) {
             dp[0][i] = 0;
@@ -125,13 +134,14 @@ public class BeiBao01 {
 
         for (int i = 1; i < m.length; i++) {
             for (int i1 = 1; i1 < M; i1++) {
+                //当前取出的重量比吃的总l大   就不吃
                 if (i1 < m[i-1]){
                     dp[i][i1] = dp[i-1][i1];
                 }else {
+                    //吃与不吃的最大值
                     dp[i][i1] = Math.max(dp[i-1][i1],dp[i-1][i1-m[i-1]]+m[i-1]);
                 }
             }
         }
     }
-
 }

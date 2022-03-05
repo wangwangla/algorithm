@@ -1,6 +1,6 @@
 package com.zhuanti.dongtaiguihua;
 
-public class Demo01 {
+public class CoinTarget {
     public static void method(int arr[],int K){
         //1.创建dp 从0开始，一直取值到k;
         int dp[] = new int[K+1];

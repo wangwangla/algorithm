@@ -1,6 +1,6 @@
 package com.zhuanti.dongtaiguihua;
 
-public class Demo02 {
+public class Jump {
     public void method(int arr[]){
         //0到k-1,所以创建k的数组就可以了
         boolean dp[] = new boolean[arr.length];

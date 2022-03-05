@@ -1,7 +1,7 @@
 package com.zhuanti.dongtaiguihua;
 
 //一个数组  数组组成的水槽，水槽可以装多少水
-public class Question02 {
+public class Trap {
 //    public int trap(int[] height) {
 //        int dp[] = new int[height.length];
 //        dp[0] = 0;
@@ -25,21 +25,21 @@ public class Question02 {
         //一层 一层求
         int max = 0;
         for (int i = 0; i < height.length; i++) {
-            if (height[i]>max)max = height.length;
+            if (height[i]>max)max = height[i];
         }
         int left = 0;
-        int right = 0 ;
         int length = height.length;
+        int right = length-1;
         int tatal = 0;
         for (int i = 0; i < max; i++) {
-            while (left<length){
+            while (left<right){
                 if (height[left]<=i){
                     left++;
                 }else {
                     break;
                 }
             }
-            while (right>0){
+            while (left<right){
                 if (height[right]<=i){
                     right--;
                 }else {
@@ -56,7 +56,7 @@ public class Question02 {
 
     public static void main(String[] args) {
         int height[] = {0,1,0,2,1,0,1,3,2,1,2,1};
-        Question02 question02 = new Question02();
-        question02.trap(height);
+        Trap question02 = new Trap();
+        System.out.println(question02.trap(height));
     }
 }

@@ -15,7 +15,7 @@ public class Demo04 {
             //shang房子染色为j
             for (int j = 0; j < K; j++) {
                 dp[i][j] = Integer.MAX_VALUE;
-                //dangqian一个为k
+                //dangqian一个为k    如果使用了j，就不可以接着使用j
                 for (int  k= 0; k < K; K++) {
                     if (j!=k){
                         if (dp[i-1][j]+arr[i-1][k]<dp[i][j]){
