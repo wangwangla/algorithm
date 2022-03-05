@@ -9,9 +9,9 @@ public class _1232_CheckStraightLine {
         for (int i = 2; i < coordinates.length; i++) {
             int tempX = coordinates[i][0] - coordinates[i-1][0];
             int tempY = coordinates[i][1] - coordinates[i-1][1];
-            if (Math.abs(tempX) != Math.abs(x) || Math.tempY != y){
-                return false;
-            }
+//            if (Math.abs(tempX) != Math.abs(x) || Math.tempY != y){
+//                return false;
+//            }
         }
         return true;
     }
