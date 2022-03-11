@@ -13,9 +13,10 @@ public class _135_Candy {
     /**
      *
      */
-    public int candy(int ratings[]){
+    public static int candy(int ratings[]){
         int n = ratings.length;
         int[] left = new int[n];
+        //初始化为1   比左边大  那么就+1
         for (int i = 0; i < n; i++) {
             if (i > 0 && ratings[i] > ratings[i - 1]) {
                 left[i] = left[i - 1] + 1;
@@ -23,16 +24,30 @@ public class _135_Candy {
                 left[i] = 1;
             }
         }
-        int right = 0, ret = 0;
-        for (int i = n - 1; i >= 0; i--) {
-            if (i < n - 1 && ratings[i] > ratings[i + 1]) {
-                right++;
-            } else {
-                right = 1;
+        for (int i = 0; i < n-1; i++) {
+            if (ratings[n- 1 - i]<ratings[n-2-i]){
+                left[n-2-i] = Math.max(left[n-2-i],left[n-1-i]+1);
             }
-            ret += Math.max(left[i], right);
+        }
+        //右边向左边
+//        int right = 0, ret = 0;
+//        for (int i = n - 1; i >= 0; i--) {
+//            if (i < n - 1 && ratings[i] > ratings[i + 1]) {
+//                right++;
+//            } else {
+//                right = 1;
+//            }
+//            ret += Math.max(left[i], right);
+//        }
+        int ret = 0;
+        for (int i = 0; i < left.length; i++) {
+            ret += left[i];
         }
         return ret;
     }
 
+    public static void main(String[] args) {
+        int arr[] = {1,0,2};
+        System.out.println(candy(arr));
+    }
 }
