@@ -1,4 +1,4 @@
-package com.grindcode.bina;
+package com.grindcode._4_bina;
 
 public class _69_Sqrt {
     public static void main(String[] args) {

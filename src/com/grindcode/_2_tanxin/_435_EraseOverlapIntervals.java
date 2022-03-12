@@ -1,6 +1,5 @@
-package com.grindcode.tanxin;
+package com.grindcode._2_tanxin;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 

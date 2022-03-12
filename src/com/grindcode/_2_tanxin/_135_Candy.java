@@ -1,4 +1,4 @@
-package com.grindcode.tanxin;
+package com.grindcode._2_tanxin;
 
 /**
  * 一群孩子站一排   每个孩子有自己的评分

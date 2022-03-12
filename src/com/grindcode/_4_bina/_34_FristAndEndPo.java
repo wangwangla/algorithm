@@ -1,4 +1,4 @@
-package com.grindcode.bina;
+package com.grindcode._4_bina;
 
 public class _34_FristAndEndPo {
     public static int left(int arr[],int target){

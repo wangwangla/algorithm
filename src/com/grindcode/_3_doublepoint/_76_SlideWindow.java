@@ -1,4 +1,4 @@
-package com.grindcode.doublepoint;
+package com.grindcode._3_doublepoint;
 
 public class _76_SlideWindow {
     public int minWindow(String s1, String target){

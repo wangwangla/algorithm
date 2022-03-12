@@ -1,4 +1,4 @@
-package com.grindcode.tanxin;
+package com.grindcode._2_tanxin;
 
 import java.util.Arrays;
 
