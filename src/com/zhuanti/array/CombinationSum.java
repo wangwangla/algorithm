@@ -26,14 +26,14 @@ public class CombinationSum {
 
 
     private void xxx(int arr[],int start,int target,int sum,List<Integer> list){
-        if (sum == target){
-            System.out.println(list);
-            listss.add(new ArrayList<>(list));
+        if (sum >= target){
+            if(sum == target) {
+                System.out.println(list);
+                listss.add(new ArrayList<>(list));
+            }
             return;
         }
-
         for (int i = start; i < arr.length; i++) {
-            if (sum > target)break;
             if (i>0){
                 if (arr[i] == arr[i-1]){
                     continue;

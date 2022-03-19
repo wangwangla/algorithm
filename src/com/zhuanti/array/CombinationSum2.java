@@ -27,9 +27,9 @@ public class CombinationSum2 {
             listss.add(new ArrayList<>(list));
             return;
         }
+        if (sum > target)return;
 
         for (int i = start; i < arr.length; i++) {
-            if (sum > target)break;
             if (i>start){
                 if (arr[i] == arr[i-1]){
                     continue;
