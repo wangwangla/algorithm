@@ -7,9 +7,9 @@ public class _34_FristAndEndPo {
         while (left <= right){
             int mid = (left + right) >> 1;
             if (arr[mid] > target){
-                right --;
+                right = mid - 1;
             }else if (arr[mid] < target){
-                left ++;
+                left = mid + 1;
             }else {
                 if (mid == 0){
                     return mid;
@@ -31,9 +31,9 @@ public class _34_FristAndEndPo {
         while (left <= right){
             int mid = (left + right) >> 1;
             if (arr[mid] > target){
-                right --;
+                right = mid - 1;
             }else if (arr[mid] < target){
-                left ++;
+                left = mid + 1;
             }else {
                 if (mid == arr.length-1){
                     return mid;
