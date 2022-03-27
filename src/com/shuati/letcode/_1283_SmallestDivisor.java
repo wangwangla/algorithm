@@ -42,6 +42,13 @@ public class _1283_SmallestDivisor {
         return left;
     }
 
+    public static void main(String[] args) {
+        int arr[] = {1,2,5,9};
+        int throa = 6;
+        _1283_SmallestDivisor divisor = new _1283_SmallestDivisor();
+        System.out.println(divisor.smallestDivisor(arr, throa));
+    }
+
     /**
      * @param nums
      * @param divisor

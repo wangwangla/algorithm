@@ -1,5 +1,9 @@
 package com.shuati.letcode;
 
+/**
+ * 从头到尾进行遍历一次，检查每个值是不是一个回文
+ *
+ */
 public class _5_LongestPalindrome {
     public String longestPalindrome(String s) {
 
@@ -8,6 +12,12 @@ public class _5_LongestPalindrome {
         }
         int start = 0, end = 0;
         for (int i = 0; i < s.length(); i++) {
+            /**
+             * 字符串：
+             * - 左边
+             * - 右边
+             * - 两个值相等   单个值相等
+             */
             int len1 = expandAroundCenter(s, i, i);
             int len2 = expandAroundCenter(s, i, i + 1);
             int len = Math.max(len1, len2);
@@ -15,6 +25,7 @@ public class _5_LongestPalindrome {
                 start = i - (len - 1) / 2;
                 end = i + len / 2;
             }
+            System.out.println(s.substring(start,end+1));
         }
         return s.substring(start, end + 1);
     }
