@@ -1,6 +1,7 @@
 package com.doul;
 
 public class _4_SumScores {
+    boolean last = false;
     public long sumScores(String s) {
         int ss = 0;
         StringBuilder builder = new StringBuilder();
@@ -24,4 +25,19 @@ public class _4_SumScores {
 //        System.out.println(x);
         return x;
     }
+
+    public int score1(StringBuilder builder,String src){
+        int x  =0;
+        for (int i = 0; i < builder.length(); i++) {
+            if (builder.charAt(i) == src.charAt(i)) {
+                x++;
+            }else {
+                break;
+            }
+        }
+//        System.out.println(x);
+        return x;
+    }
+
+
 }

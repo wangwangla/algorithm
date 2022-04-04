@@ -3,6 +3,9 @@ package com.grindcode._2_tanxin;
 import java.util.Arrays;
 
 /**
+ * 物尽其用
+ *
+ *
  * 一群孩子
  * 一堆饼干
  * 每个孩子有一个饥饿值

@@ -33,10 +33,38 @@ public class _135_Candy {
         }
         return c;
     }
+//    1 2 2 2 2
+//    1 2 2 2 2
+
+//    1 2 3 2 2
+//    1 2 3 3 3
+//    1 2 4 3 3   修正
 
     public static void main(String[] args) {
         int arr[] = {1,0,2};
         _135_Candy candy = new _135_Candy();
         System.out.println(candy.candy(arr));
+    }
+
+    public int candy1(int []arr){
+        int [] dp = new int[arr.length];
+        dp[0]  = 1;
+        for (int i = 1; i < arr.length; i++) {
+            if (dp[i] > dp[i-1]){
+                dp[i] = dp[i-1] + 1;
+            }else {
+                dp[i] = dp[i-1];
+            }
+        }
+        for (int i = arr.length; i > 0; i--) {
+            if (dp[i-1] > dp[i]){
+                dp[i] = Math.max(dp[i]+1,dp[i-1]);
+            }
+        }
+        int res = 0 ;
+        for (int i = 0; i < dp.length; i++) {
+            res += dp[i];
+        }
+        return res;
     }
 }
