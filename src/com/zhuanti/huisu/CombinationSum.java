@@ -22,7 +22,7 @@ public class CombinationSum {
         }
         for (int i = start; i < candidates.length; i++) {
             list.add(candidates[i]);
-            if (num + candidates[i]>target)break;
+            if (num + candidates[i]>target)break; //剪枝
             huisu(candidates,i,num+candidates[i],target,list);
             list.remove(list.size()-1);
         }
