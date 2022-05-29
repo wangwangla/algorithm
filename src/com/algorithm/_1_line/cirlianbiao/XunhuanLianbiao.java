@@ -1,5 +1,11 @@
 package com.algorithm._1_line.cirlianbiao;
 
+/**
+ * 循环链表
+ *
+ * 循环链表的使用
+ * @param <T>
+ */
 public class XunhuanLianbiao<T> {
 
     class Node<T>{
@@ -26,11 +32,44 @@ public class XunhuanLianbiao<T> {
         }
     }
 
+    public void addNodeDemo(int num){
+        Node node = null;
+        for (int i = 0; i < num; i++) {
+            Node<Integer> newNode = new Node<>();
+            newNode.no = i;
+            if (i == 0){
+                first = newNode;
+                first.next = first;
+                node = first;
+            }else {
+                node.next = newNode;
+                newNode.next = first;
+                node = newNode;
+            }
+        }
+    }
+
+
+    public void addNodeDemo1(int num){
+        Node node = null;
+        for (int i = 0; i < num; i++) {
+            Node<Integer> newNode = new Node<>();
+            newNode.no = i;
+            if (i == 0){
+                first = newNode;
+                node = first;
+            }else {
+                node.next = newNode;
+                node = newNode;
+            }
+        }
+        node.next = first;
+    }
+
     public static void main(String[] args) {
         XunhuanLianbiao<Integer> xunhuanLianbiao = new XunhuanLianbiao<>();
-        xunhuanLianbiao.addNode(10);
+        xunhuanLianbiao.addNodeDemo1(10);
         System.out.println("----------------------");
-
         xunhuanLianbiao.countBoy(0,3,3);
     }
 

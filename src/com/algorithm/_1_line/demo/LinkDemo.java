@@ -2,10 +2,9 @@ package com.algorithm._1_line.demo;
 
 import com.algorithm._1_line.node.Node;
 
+//单链表
 public class LinkDemo {
-
     private Node head;
-
     public int num(){
         Node temp = head;
         int num = 0;
