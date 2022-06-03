@@ -15,7 +15,6 @@ public class Offer078MergeKLists {
                 list = list.next;
             }
         }
-//        System.out.println(arrayList.size());
         ListNode [] arr = new ListNode[arrayList.size()];
         arrayList.toArray(arr);
         Arrays.sort(arr,new Comparator<ListNode>() {
