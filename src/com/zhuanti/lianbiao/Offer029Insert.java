@@ -2,6 +2,9 @@ package com.zhuanti.lianbiao;
 
 /**
  * 重新写一下
+ *
+ * 3，5，1
+ * 6
  */
 public class Offer029Insert {
     class Node{
@@ -25,6 +28,7 @@ public class Offer029Insert {
         Node cur = head;
         //如已经找到了最后一个，那就插入最后一个位置
         while (cur.next != head){
+            //如果到了开头
             if (cur.next.val < cur.val){
                 if (cur.val <= insertVal){
                     break;
