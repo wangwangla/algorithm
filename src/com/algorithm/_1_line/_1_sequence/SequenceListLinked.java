@@ -1,4 +1,4 @@
-package com.algorithm._1_line.sequence;
+package com.algorithm._1_line._1_sequence;
 
 import com.algorithm._1_line.node.Node;
 
@@ -6,9 +6,7 @@ import com.algorithm._1_line.node.Node;
  * 顺序表  链表方式实现
  */
 public class SequenceListLinked {
-
     private Node<Integer> head;
-
     public SequenceListLinked(){
         head = new Node<>();
     }

@@ -1,4 +1,4 @@
-package com.algorithm._1_line.sequence;
+package com.algorithm._1_line._1_sequence;
 
 /**
  * 线性表  数组实现
