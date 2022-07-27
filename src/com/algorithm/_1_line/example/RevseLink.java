@@ -3,6 +3,8 @@ package com.algorithm._1_line.example;
 import com.algorithm._1_line.node.Node;
 import com.zhuanti.binaryTree.ListNode;
 
+import java.util.Stack;
+
 public class RevseLink {
     public Node reverseList(Node head) {
         if(head == null){return null;}
@@ -11,21 +13,6 @@ public class RevseLink {
         Node cur = head;
 
         while(cur != null){
-            Node next = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = next;
-        }
-        return pre;
-    }
-
-    public Node re(Node node){
-        if (node == null)return null;
-        Node pre = null;
-        Node cur = node.next;
-
-        while (cur != null){
-            //先走到下一个
             Node next = cur.next;
             cur.next = pre;
             pre = cur;
@@ -50,38 +37,32 @@ public class RevseLink {
         node5.next = node6;
 
         RevseLink link = new RevseLink();
-        Node re = link.re(node0);
-        while (re!=null){
-            System.out.println(re.data);
-            re = re.next;
-        }
+        link.test1(node0);
+//        while (re!=null){
+//            System.out.println(re.data);
+//            re = re.next;
+//        }
     }
 
-    public void re1(Node node){
-        if (node == null){
-            return;
+    public void test(Node node){
+        Stack<Node> stack = new Stack();
+        while (node!=null) {
+            stack.add(node);
+            node = node.next;
         }
-        Node cur = node;
-        Node pre = null;
-        while (cur!=null){
-            Node next = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = next;
+        while (!stack.isEmpty()){
+            System.out.println(stack.pop().data);
         }
+//        for (Node o : stack) {
+//            System.out.println(o.data);
+//        }
     }
 
-    public void rrr(Node node){
-        if (node == null){
-            return;
-        }
-        Node cur = node;
-        Node pre = null;
-        while (cur != null){
-            Node next = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = next;
-        }
+
+    public void test1(Node node){
+        if (node==null)return;
+        test1(node.next);
+        System.out.println(node.data);
+
     }
 }

@@ -1,11 +1,10 @@
-package com.algorithm._1_line.link;
+package com.algorithm._1_line._2_link;
 
 import com.algorithm._1_line.node.Node;
 
 import java.util.Iterator;
 
 public class LianBiao<T> implements Iterable<T> {
-
     private Node head;
     private int N;
 
