@@ -1,5 +1,7 @@
 package com.zhuanti.doublepoint;
 
+import java.util.HashMap;
+
 /**
  * 给你一个字符数组 chars ，请使用下述算法压缩：
  *
@@ -36,11 +38,76 @@ package com.zhuanti.doublepoint;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class _443_Compress {
-    public int compress(char[] chars) {
+//    public int compress(char[] chars) {
+//        HashMap<Character,Integer> hashMap = new HashMap<>();
+//        for (int i = 0; i < chars.length; i++) {
+//            hashMap.put(chars[i],hashMap.getOrDefault(chars[i],0)+1);
+//        }
+//        int index = 0;
+//        for (char a = 'a';a < 'z';a++){
+//            Integer integer1 = hashMap.get(a);
+//            if (integer1 == null) {
+//                continue;
+//            }
+//            int integer = integer1;
+//            if (integer == 0)continue;
+//            if (integer==1){
+//                chars[index] = a;
+//                index ++;
+//            }else if (integer >= 2){
+//                if (integer<10) {
+//                    chars[index] = a;
+//                    index++;
+//                    chars[index] = (char) (integer + '0');
+//                    index++;
+//                }else {
+//                    chars[index++] = (char) (integer / 10 + '0');
+//                    chars[index++] = (char) (integer % 10 + '0');
+//                }
+//            }
+//        }
+//        return index;
+//    }
 
-        for (int i = 0; i < chars.length; i++) {
+
+    public int compress(char[] chars) {
+        if(chars.length <= 1)return chars.length;
+
+        int count = 1;
+        int index = 0;
+        for (int i = 1; i < chars.length; i++) {
+            if (chars[i-1] == chars[i]) {
+                count++;
+            }else {
+                if (count == 1){
+                    chars[index++] = chars[i - 1];
+                }else {
+                    chars[index++] = chars[i - 1];
+                    if(count<10){
+                        chars[index++] = (char) (count + '0');
+                    }else{
+                        chars[index++] = (char) (count / 10 + '0');
+                        chars[index++] = (char) (count % 10 + '0');
+
+                    }
+                    count = 1;
+                }
+            }
+        }
+        chars[index ++] = chars[chars.length-1];
+        if (count<10) {
+            chars[index++] = (char) (count + '0');
+        }else {
+            chars[index++] = (char) (count / 10 + '0');
+            chars[index++] = (char) (count % 10 + '0');
 
         }
-        return 0;
+        return index;
+    }
+
+    public static void main(String[] args) {
+        char str[] = {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
+        _443_Compress compress = new _443_Compress();
+        compress.compress(str);
     }
 }
