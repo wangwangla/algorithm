@@ -17,12 +17,13 @@ package com.shuati.letcode;
  * 链接：https://leetcode-cn.com/problems/add-two-numbers
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class AddTwoNumbers {
+public class _2_AddTwoNumbers {
     private static class ListNode{
         int val;
         ListNode next;
         ListNode(int x){
             val = x;
+            next = null;
         }
     }
 
@@ -216,12 +217,83 @@ public class AddTwoNumbers {
             return  root.next;
         }
 
-    public static void main(String[] args) {
-        ListNode node = new ListNode(3);
-        node.next = new ListNode(4);
 
-        ListNode node2 = new ListNode(4);
-        node2.next = new ListNode(3);
-        addTwoNumbers2(node,node2);
+    public static ListNode addTwo(ListNode node1,ListNode node2){
+        int jinwei = 0;
+        ListNode newHead = new ListNode(0);
+        ListNode temp1 = newHead;
+        while (node1!=null | node2 != null){
+//            if (node1==null){
+//                while (node2!=null){
+//                    ListNode listNode = new ListNode(node2.val+jinwei);
+//                    jinwei = 0;
+//                    newHead.next= listNode;
+//                    node2 = node2.next;
+//
+//                }
+//                break;
+//            }
+
+//            优化
+//            if (node1==null){
+//                newHead.next = node2;
+//            }else{
+//                newHead.next = node1;
+//            }
+            if (node1==null||node2==null) {
+                newHead.next = node1 == null ? node2 : node1;
+                break;
+            }
+//            if (node2 == null) {
+//                while (node1!=null){
+//                    ListNode listNode = new ListNode(node1.val+jinwei);
+//                    jinwei = 0;
+//                    newHead.next= listNode;
+//                    node1 = node1.next;
+//                }
+//                break;
+//            }
+
+            int num1 = node1.val;
+            int num2 = node2.val;
+            node1 = node1.next;
+            node2 = node2.next;
+            int i = num1 + num2;
+            ListNode listNode;
+            if (i>=10){
+                jinwei = 1;
+                listNode = new ListNode(i-10);
+            }else {
+                listNode = new ListNode(jinwei + i);
+                jinwei = 0;
+            }
+            newHead.next= listNode;
+            newHead = newHead.next;
+        }
+        if (jinwei !=0){
+            ListNode listNode = new ListNode(jinwei);
+            newHead.next = listNode;
+            newHead = newHead.next;
+        }
+        return temp1.next;
+    }
+
+    public static void main(String[] args) {
+        ListNode node = new ListNode(2);
+        ListNode head1 = node;
+        node.next = new ListNode(4);
+        node = node.next;
+        node.next = new ListNode(3);
+
+        ListNode node2 = new ListNode(5);
+        ListNode head2 = node2;
+        node2.next = new ListNode(6);
+        node2 = node2.next;
+        node2.next = new ListNode(4);
+        ListNode listNode = addTwo(head1, head2);
+        while (listNode!=null){
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
     }
 }

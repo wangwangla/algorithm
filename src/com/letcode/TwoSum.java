@@ -1,4 +1,4 @@
-package com.shuati.letcode;
+package com.letcode;
 
 import java.util.HashMap;
 import java.util.Map;

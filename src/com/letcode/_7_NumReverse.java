@@ -19,6 +19,16 @@ public class _7_NumReverse {
         return srcNum<0 ? -res : res    ;
     }
 
+    public void revserNum(int num){
+        int res = 0;
+        num = Math.abs(num);
+        while (num > 0){
+            res = res * 10 + num % 10;
+            num = num / 10;
+        }
+        return;
+    }
+
     public static void main(String[] args) {
         _7_NumReverse reverse = new _7_NumReverse();
         System.out.println(reverse.reverse(-998));

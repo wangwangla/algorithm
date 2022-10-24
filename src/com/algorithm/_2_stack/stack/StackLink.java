@@ -5,6 +5,8 @@ import java.util.Iterator;
 /**
  * 栈
  * @param <T>
+ *
+ *   使用前插入的方式
  */
 //一定要实现Iterable，一定要加上<T>
 public class StackLink<T> implements Iterable<T> {
@@ -66,6 +68,23 @@ public class StackLink<T> implements Iterable<T> {
         head.next = newNode;
         newNode.next = oldNode;
         N++;
+    }
+
+    public void qc(T t){
+        Node oldNode = head.next;
+        Node newNode = new Node(t,null);
+        head.next = newNode;
+        newNode.next = oldNode;
+        N++;
+    }
+
+    public T oo(){
+        Node next = head.next;
+        if (next != null){
+            head = next.next;
+            return next.item;
+        }
+        return null;
     }
 
     public T pop(){

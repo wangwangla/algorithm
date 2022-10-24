@@ -11,8 +11,20 @@ public class RevseLink {
         // 相当于设置头节点， 不需要考虑处理特殊情况(第一二个节点)
         Node pre = null;
         Node cur = head;
-
         while(cur != null){
+            Node next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
+
+    public Node revseLi(Node head){
+        if (head == null)return null;
+        Node pre = null;
+        Node cur = head;
+        while (cur != null){
             Node next = cur.next;
             cur.next = pre;
             pre = cur;

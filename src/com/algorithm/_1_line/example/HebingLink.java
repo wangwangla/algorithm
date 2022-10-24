@@ -2,6 +2,9 @@ package com.algorithm._1_line.example;
 
 import com.algorithm._1_line.node.Node;
 
+/**
+ * 合并两个有序数组
+ */
 public class HebingLink {
     public Node hebing(Node<Integer> node1,Node<Integer> node2){
         Node<Integer> head = new Node();
@@ -17,17 +20,34 @@ public class HebingLink {
             }
             if (node1.data>node2.data) {
                 temp.next = node2;
-
                 node2 = node2.next;
             }else {
                 temp.next = node1;
-
                 node1 = node1.next;
             }
             temp = temp.next;
             temp.next = null;
         }
         return temp;
+    }
+
+    public Node<Integer> hebing1(Node<Integer> node1, Node<Integer> node2){
+        Node<Integer> head = new Node<>();
+        Node<Integer> temp = head;
+        while (node1!=null || node2!=null){
+            if (node1==null){
+                temp.next = node2;
+                break;
+            }
+            if (node2 == null){
+                temp.next= node1;
+                break;
+            }
+            temp.next = node1.data > node2.data ? node2 : node1;
+            temp = temp.next;
+            temp.next = null;
+        }
+        return head;
     }
 
     public static void main(String[] args) {

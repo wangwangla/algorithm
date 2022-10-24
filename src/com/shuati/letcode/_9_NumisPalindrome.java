@@ -21,8 +21,10 @@ package com.shuati.letcode;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/palindrome-number
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ *
+ * 扩展 字符串  链表
  */
-public class NumisPalindrome {
+public class _9_NumisPalindrome {
     public static boolean isPalindrome(int x) {
         x = Math.abs(x);
         int num = 0;
@@ -36,6 +38,7 @@ public class NumisPalindrome {
         }
         return false;
     }
+
 
     public static void main(String[] args) {
         int x = 121;

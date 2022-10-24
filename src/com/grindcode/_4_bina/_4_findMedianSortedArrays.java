@@ -57,4 +57,14 @@ public class _4_findMedianSortedArrays {
             }
         }
     }
+
+    public void findMedianSortedArrays1(int[] nums1, int[] nums2){
+        int length = nums1.length;
+        int length1 = nums2.length;
+        if(( length + length1 ) %2 == 1){
+
+        }else {
+
+        }
+    }
 }

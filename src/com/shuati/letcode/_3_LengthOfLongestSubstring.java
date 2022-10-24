@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
  */
-public class LengthOfLongestSubstring {
+public class _3_LengthOfLongestSubstring {
     /**
      * 这个的解题思路：
      *  1.将String转化为char[]
@@ -60,4 +60,29 @@ public class LengthOfLongestSubstring {
         return ans;
     }
 
+    public static void lengthOfLongestSubstring3(String s){
+        int start = 0;
+        int end = 0;
+        int max = 0;
+        HashMap<Character,Integer> map = new HashMap<Character,Integer>();
+        char[] chars = s.toCharArray();
+        for (char m : chars) {
+            if (map.containsKey(m)) {
+                map.remove(chars[start]);
+                max = Math.max(max, end - start);
+                start++;
+            }
+            if (!map.containsKey(m)) {
+                map.put(m, 1);
+                end++;
+            }
+        }
+        max = Math.max(max,end - start);
+        System.out.println(max);
+    }
+
+    public static void main(String[] args) {
+        String str = "pwwkew";
+        lengthOfLongestSubstring3(str);
+    }
 }
