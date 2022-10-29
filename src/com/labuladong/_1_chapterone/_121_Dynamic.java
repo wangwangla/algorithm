@@ -43,6 +43,7 @@ public class _121_Dynamic {
 
     /**
      * 排列组合的方式
+     * 将所有的结果都展示出来
      * @param coins
      * @param amount
      * @return
@@ -53,17 +54,20 @@ public class _121_Dynamic {
         return 0;
     }
 
+    private static int mixNum = Integer.MAX_VALUE;
     public void cc(int arr[], int target, ArrayList<Integer> arrayList){
         int count = 0;
         for (int i = 0; i < arrayList.size(); i++) {
             count += arrayList.get(i);
         }
+
+        //大于或者等于就返回
         if (count == target){
+            mixNum = Math.min(mixNum,arrayList.size());
             System.out.println("找到了 --------"+ arrayList.size());
             return;
         }
         if (count>target)return;
-        int length = arr.length;
         for (int i = 0; i < arr.length; i++) {
             arrayList.add(arr[i]);
             cc(arr,target,arrayList);
@@ -75,5 +79,6 @@ public class _121_Dynamic {
         int arr[] = {1,2,5};
         _121_Dynamic dynamic = new _121_Dynamic();
         dynamic.coinChange3(arr,11);
+        System.out.println("最后的结果是："+mixNum);
     }
 }

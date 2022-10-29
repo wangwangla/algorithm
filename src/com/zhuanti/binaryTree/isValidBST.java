@@ -58,9 +58,4 @@ public class isValidBST {
         }
         tav(root.right);
     }
-
-
-
-
-
 }
