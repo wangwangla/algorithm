@@ -1,7 +1,7 @@
 package com.algorithmessentials;
 
 /**
- * 排序数组中最多n个
+ * 排序数组中某个元素最多n个
  */
 public class _3_RemoveN {
     public int remoeDuplicates(int []arr,int n){

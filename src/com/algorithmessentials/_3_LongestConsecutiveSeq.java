@@ -22,6 +22,11 @@ public class _3_LongestConsecutiveSeq {
         return maxLenth;
     }
 
+    /**
+     * O(n)的时候就考虑一下  hash然后从当中删除元素
+     * @param nums
+     * @return
+     */
     public int longestConsecutive1(int[] nums) {
         final HashSet<Integer> hashSet = new HashSet<>();
         for (int num : nums) {
@@ -43,6 +48,4 @@ public class _3_LongestConsecutiveSeq {
         }
         return longest;
     }
-
-
 }

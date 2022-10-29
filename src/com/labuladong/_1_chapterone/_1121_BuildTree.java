@@ -25,17 +25,32 @@ public class _1121_BuildTree {
         return helper(0,0,inorder.length-1,pre,inorder);
     }
 
+    /**
+     * @param preStart 前序开始的位置
+     * @param inStart 中间开始的位置
+     * @param inEnd 中序结束的大小
+     * @param pre 前序数组
+     * @param inorder 中序数组
+     * @return
+     */
     public TreeNode helper(int preStart,int inStart,int inEnd,int []pre,int []inorder){
         if (preStart>pre.length-1||inStart>inEnd)return null;
+        //前序第一个为根
         TreeNode root = new TreeNode(pre[preStart]);
         int index = 0;
+        //从中间找出第一个和前序根节点相同的为左子树分界点
         for (int i = inStart;i<inEnd;i++){
             if (inorder[i]==root.val){
                 index = i;
                 break;
             }
         }
+        // 左边 开始root已经使用 所有前序到pre+1
+        // 中间开始不变没问题
+        // 根已经使用了，所以到index-1
         root.left = helper(preStart+1,inStart,index-1,pre,inorder);
+        //中序和前序个数是相同的pre+index+1+中间开始的位置（i是从instart开始的) 中间开始是index+1
+        // 结束位置是中间的最后
         root.right = helper(preStart+index-inStart+1,index+1,inEnd,pre,inorder);
         return root;
     }

@@ -21,6 +21,7 @@ public class _112_Traverse {
             System.out.println(node.val);
         }
     }
+
     /************    链表前后续      ***************/
     private void travese3(ListNode head){
         ListNode temp = head;
@@ -29,6 +30,7 @@ public class _112_Traverse {
             temp = temp.next;
         }
     }
+
 
     private void travese4(ListNode head){
         if (head == null)return;

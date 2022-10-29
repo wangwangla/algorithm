@@ -29,7 +29,9 @@ public class _121_Dynamic {
             //当前值
             dp[i] = Integer.MAX_VALUE;
             for (int i1 = 0; i1 < coins.length; i1++) {
+                //目标需要大于等于硬币的面值
                 if (i - coins[i1] <0)continue;
+                //如果取不到值就跳过
                 if (dp[i - coins[i1]] == Integer.MAX_VALUE){
                     continue;
                 }

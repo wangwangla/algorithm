@@ -3,6 +3,11 @@ package com.labuladong._1_chapterone;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * 滑动窗口,从一头进，一头出去
+ *
+ * 出去使用for循环
+ */
 public class _171_SlipeWindow {
     public void moban(String[]a){
         ArrayList<String> arrayList = new ArrayList<>();
