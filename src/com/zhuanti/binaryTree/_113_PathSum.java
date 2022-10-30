@@ -20,6 +20,7 @@ public class _113_PathSum {
         if (root==null){
             return;
         }
+        //因为需要到达根，所有左右都得为null
         if (root.left==null&&root.right==null) {
             if (num == ccc) {
                 ArrayList<Integer> temp = new ArrayList<>();
@@ -36,5 +37,27 @@ public class _113_PathSum {
         dfs(root.right,list,num);
         list.remove(root);
         num -= root.val;
+    }
+
+
+
+    private ArrayList<List<Integer>> resultList = new ArrayList<>();
+    private ArrayList<TreeNode> lists = new ArrayList<>();
+    public boolean pathSum1(TreeNode root, int targetSum) {
+        if (root==null)return false;
+        lists.add(root);
+        int result = targetSum- root.val;
+        if (result == 0 && null == root.left && null == root.right){
+            List<Integer> list = new ArrayList<>();
+            for (TreeNode node : lists) {
+                list.add(node.val);
+            }
+            resultList.add(list);
+            return true;
+        }else{
+            boolean flag = pathSum1(root.left, result) || pathSum1(root.right, result);
+            lists.remove(root);
+            return flag;
+        }
     }
 }
