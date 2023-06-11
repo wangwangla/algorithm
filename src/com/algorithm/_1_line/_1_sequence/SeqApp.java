@@ -6,12 +6,15 @@ public class SeqApp<T> implements Iterable<T> {
 
     private T[] elements;
     private int N;
+    private int capacity;
     public SeqApp(){
-        elements = (T[]) new Object[10];
+        this.capacity = 10;
+        elements = (T[]) new Object[capacity];
         this.N = 0;
     }
 
     public SeqApp(int capacity){
+        this.capacity = capacity;
         elements = (T[])new Object[capacity];
         this.N = 0;
     }
@@ -29,7 +32,10 @@ public class SeqApp<T> implements Iterable<T> {
     }
 
     public T get(int i){
-        return elements[i];
+        if (checkIndex(i)) {
+            return elements[i];
+        }
+        return null;
     }
 
     public void insert(T t){
@@ -51,8 +57,11 @@ public class SeqApp<T> implements Iterable<T> {
         N--;
     }
 
-    public void checkIndex(int index){
-        
+    public boolean checkIndex(int index){
+        if (index<0 || index > capacity) {
+            return false;
+        }
+        return true;
     }
 
     @Override
