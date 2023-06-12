@@ -29,10 +29,10 @@ public class LianBiao<T> implements Iterable<T> {
         int i =1 ;
         while (currentNode.next!=null){
             currentNode = currentNode.next;
-            i++;
             if (i==index){
                 break;
             }
+            i++;
         }
         temp.next = currentNode.next;
         currentNode.next = temp;

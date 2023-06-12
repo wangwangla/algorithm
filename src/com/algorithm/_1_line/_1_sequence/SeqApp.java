@@ -2,6 +2,10 @@ package com.algorithm._1_line._1_sequence;
 
 import java.util.Iterator;
 
+/**
+ * 拥有迭代的能力
+ * @param <T>
+ */
 public class SeqApp<T> implements Iterable<T> {
 
     private T[] elements;
@@ -54,6 +58,7 @@ public class SeqApp<T> implements Iterable<T> {
         for (int j = index-1; j < N-1; j++) {
             elements[j] = elements[j+1];
         }
+        elements[N] = null;
         N--;
     }
 
@@ -69,6 +74,9 @@ public class SeqApp<T> implements Iterable<T> {
         return new It();
     }
 
+    /**
+     * 迭代器这是一个接口，并没有什么高深的实现，如果使用增强for，那么就必须实现迭代器
+     */
     private class It implements Iterator{
         private int index;
         @Override
@@ -86,9 +94,15 @@ public class SeqApp<T> implements Iterable<T> {
         SeqApp s = new SeqApp<Integer>();
         s.insert(2);
         s.insert(3);
+        s.print();
         s.insert(5,2);
         s.delete(1);
-        Iterator iterator = s.iterator();
+        s.print();
+    }
+
+    private void print(){
+        System.out.println("--------------------------------");
+        Iterator iterator = iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }

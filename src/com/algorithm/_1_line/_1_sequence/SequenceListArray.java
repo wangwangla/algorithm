@@ -32,6 +32,7 @@ public class SequenceListArray<T> {
     }
 
     public void insert(T t){
+        //可以进行修改，比如到底百分之多少开始扩容   ArrayList是0.7倍开始扩容
         if (N>=elements.length){
             kuorong();
         }

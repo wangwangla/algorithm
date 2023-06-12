@@ -1,8 +1,5 @@
 package com.zhuanti.binaryTree;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
-
 import java.util.ArrayDeque;
 import java.util.Queue;
 

@@ -1,7 +1,5 @@
 package com.letcode;
 
-import com.sun.xml.internal.ws.api.ha.HaInfo;
-
 import java.util.HashMap;
 
 /**

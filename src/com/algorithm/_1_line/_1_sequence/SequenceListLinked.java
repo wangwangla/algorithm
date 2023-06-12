@@ -15,6 +15,8 @@ public class SequenceListLinked {
      * 头节点没有数据，从第二个节点开始加入
      * 存储但是需要知道上一个节点
      *
+     * 创建出节点   前面我们链接谁   谁跟我后面
+     * 如果是添加末尾，就无需关心
      * @param num
      */
     private void addData(int num){
@@ -46,13 +48,16 @@ public class SequenceListLinked {
      */
     public void deleteRear(){
         Node x = head;
+        Node oldNode =  null;
         while (x.next != null) {
             if (x.next.next == null){
+                oldNode = x.next.next;
                 x.next = null;
                 break;
             }
             x = x.next;
         }
+        oldNode = null;
     }
 
     //删除开头
@@ -60,20 +65,23 @@ public class SequenceListLinked {
         Node x = head;
         if (x.next!=null){
             x.next = x.next.next;
+        }else {
+            System.out.println("no data delete!");
         }
     }
 
     public void insert(int i,int data){
         if (i<0)return;
         Node x = head;
-        int index = 0;
         Node node = new Node();
         node.data = data;
+        int index = 0;
         while (x.next != null) {
             if (index == i){
                 break;
             }
             x = x.next;
+            index ++;
         }
         if (x!=null){
             Node next = x.next;
