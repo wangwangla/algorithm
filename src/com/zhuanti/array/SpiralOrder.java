@@ -11,14 +11,10 @@ import java.util.List;
  */
 public class SpiralOrder {
     public List<Integer> spiralOrder(int[][] matrix) {
-        int j = matrix.length;
-        int i = matrix[0].length;
+        int endY = matrix.length /2;
+        int endX = matrix[0].length -endY;
         ArrayList<Integer> list = new ArrayList();
 
-        while (true){
-            for (int i1 = 0; i1 < j; i1++) {
-//                list.add()
-            }
-        }
+        return null;
     }
 }

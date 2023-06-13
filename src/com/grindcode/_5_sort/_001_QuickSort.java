@@ -6,7 +6,7 @@ package com.grindcode._5_sort;
  */
 public class _001_QuickSort {
     public void sort(int arr[],int left,int right){
-        if (left>right){
+        if (left+1>=right){
             return;
         }
         int frist = left;
@@ -16,7 +16,14 @@ public class _001_QuickSort {
             while (frist<end && arr[end]>=key){
                 --end;
             }
-
+            arr[frist] = arr[end];
+            while (frist < end && arr[frist] <= key){
+                ++frist;
+            }
+            arr[end] = arr[frist];
         }
+        arr[frist] = key;
+        sort(arr,left,frist);
+        sort(arr,frist+1,end);
     }
 }

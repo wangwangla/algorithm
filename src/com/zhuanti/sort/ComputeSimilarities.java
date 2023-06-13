@@ -21,6 +21,7 @@ public class ComputeSimilarities {
         computeSimilarities.computeSimilarities(aa);
     }
     public List<String> computeSimilarities(int[][] docs) {
+        //两个for循环对所有的数组进行一次遍历
         List<String> list = new ArrayList<>();
         for (int i = 0; i < docs.length; i++) {
             int src[] = docs[i];

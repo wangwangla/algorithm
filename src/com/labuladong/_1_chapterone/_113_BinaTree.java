@@ -3,11 +3,13 @@ package com.labuladong._1_chapterone;
 import com.zhuanti.binaryTree.TreeNode;
 
 public class _113_BinaTree {
+    //二叉树的遍历
     public void traverse(TreeNode head){
         traverse(head.left);
         traverse(head.right);
     }
 
+    //最大路径
     int ans = Integer.MIN_VALUE; 
     public int maxPathSum(TreeNode head){
         int left = maxPathSum(head.left);

@@ -3,6 +3,11 @@ package com.grindcode._2_tanxin;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * 先排序
+ *
+ * 开始的结尾 大于  开头的  需要删除
+ */
 public class _435_EraseOverlapIntervals {
     public static int eraseOverlapIntervals(int [][] arr){
         Arrays.sort(arr, new Comparator<int[]>() {

@@ -7,7 +7,7 @@ public class AppStack {
     public boolean isMatch(String str){
         StackLink<String> chars = new StackLink<>();
         //遍历字符串
-        for (int i = 0; i < chars.size(); i++) {
+        for (int i = 0; i < str.length(); i++) {
             //获取当前的字符
             String currChar = str.charAt(i) + "";
             //左括号就存起来

@@ -1,6 +1,6 @@
 //package kw.loader;
 //
-//import sun.text.resources.ar.CollationData_ar;
+//import sun.text.resources.ext.CollationData_ar;
 //
 //public class App {
 //    public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package com.algorithm._1_line.doublelink;
 
+//双向链表
 public class DoubleLianbiao<T> {
 
     private Node head;
