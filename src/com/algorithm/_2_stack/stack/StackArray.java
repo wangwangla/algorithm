@@ -14,7 +14,32 @@ public class StackArray<T> {
     }
 
     public void insert(T t){
+        if (length >= element.length-1){
+            int newlength = kuorong(length);
+            T []newElement = (T[])new Object[newlength];
+
+            for (int i = 0; i <= length; i++) {
+                newElement[i] = element[i];
+            }
+
+            element = newElement;
+        }
+
+        System.out.println(length);
         element[++length] = t;
+    }
+
+    public int kuorong(int oldLength){
+        if (oldLength>=Integer.MAX_VALUE){
+            throw new IndexOutOfBoundsException("无法添加");
+        }else {
+            int i = Integer.MAX_VALUE - oldLength;
+            if (i>=oldLength){
+                return oldLength * 2;
+            }else {
+                return Integer.MAX_VALUE;
+            }
+        }
     }
 
     public T pop(){
@@ -25,11 +50,11 @@ public class StackArray<T> {
     }
 
     public int getLength() {
-        return length;
+        return length + 1;
     }
 
     public boolean isEmpty(){
-        return length == 0;
+        return length == -1;
     }
 
     public T peek(){
@@ -38,13 +63,27 @@ public class StackArray<T> {
 
     public static void main(String[] args) {
         StackArray stack = new StackArray(10);
+        System.out.println("stack size:"+stack.getLength());
+        System.out.println("stack isEmpty:"+stack.isEmpty());
         stack.insert("3");
         stack.insert("32");
+        System.out.println("stack size" + stack.getLength());
+        System.out.println("stack isEmpty:"+stack.isEmpty());
         stack.insert("6");
         stack.insert("4");
+
+        System.out.println("stack peek pre size" + stack.getLength());
+        System.out.println("peek top:"+stack.peek());
+        System.out.println("stack peek after size" + stack.getLength());
+
+        for (int i = 0; i < 100; i++) {
+            stack.insert(i);
+        }
+
         int lenth = stack.getLength();
-        for (int i = 0; i <= lenth; i++) {
+        for (int i = 0; i < lenth; i++) {
             System.out.println(stack.pop());
         }
+
     }
 }
