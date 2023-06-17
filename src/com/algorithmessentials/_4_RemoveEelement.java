@@ -1,5 +1,8 @@
 package com.algorithmessentials;
 
+/**
+ * 排序数组中不重复的个数
+ */
 public class _4_RemoveEelement {
     public int removeEelement(int arr[],int target){
         int index = 0;

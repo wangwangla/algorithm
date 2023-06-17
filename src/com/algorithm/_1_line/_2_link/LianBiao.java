@@ -84,24 +84,40 @@ public class LianBiao<T> implements Iterable<T> {
         }
     }
 
-    public static void main(String[] args) {
-        LianBiao lianBiao = new LianBiao();
-        lianBiao.insertNode(3);
-        lianBiao.insertNode(4);
-        lianBiao.insertNode(6);
-        lianBiao.insert(7,2);
-        lianBiao.edit(0,2);
-        lianBiao.delete(2);
-        Iterator iterator = lianBiao.iterator();
-
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-        }
-    }
-
     @Override
     public Iterator<T> iterator() {
         return new It<T>();
     }
 
+    public void print(){
+        System.out.println("--------------print-----------------");
+//        Node headTemp = head;
+//        while (headTemp.next!=null) {
+//            Node next = headTemp.next;
+//            System.out.println(next.data);
+//            headTemp = next;
+//        }
+        Iterator iterator = iterator();
+
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+        System.out.println("-----------------end-------------------");
+    }
+
+
+    public static void main(String[] args) {
+        LianBiao lianBiao = new LianBiao();
+        lianBiao.insertNode(3);
+        lianBiao.insertNode(4);
+        lianBiao.insertNode(6);
+        lianBiao.print();
+        lianBiao.insert(7,2);
+        lianBiao.print();
+        lianBiao.edit(0,2);
+        lianBiao.print();
+        lianBiao.delete(2);
+        lianBiao.print();
+
+    }
 }
