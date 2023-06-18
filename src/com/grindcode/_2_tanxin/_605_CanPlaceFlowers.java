@@ -1,7 +1,5 @@
 package com.grindcode._2_tanxin;
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 /*
 * 题目大意：
 * 给定一个数组，表示种花的场地，0表示空的，1表示已经种上花了。
