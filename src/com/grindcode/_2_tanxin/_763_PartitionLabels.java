@@ -6,7 +6,8 @@ import java.util.List;
 /**
  * 切字母
  *
- * 字符串 S 由小写字母组成。我们要把这个字符串划分为尽可能多的片段，同一字母最多出现在一个片段中。返回一个表示每个字符串片段的长度的列表。
+ * 字符串 S 由小写字母组成。我们要把这个字符串划分为尽可能多的片段，同一字母最多出现在一个片段中。返回一个表
+ * 示每个字符串片段的长度的列表。
  *
  *  
  *
@@ -25,6 +26,7 @@ import java.util.List;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class _763_PartitionLabels {
+    //这个解法就比较巧妙了  找到最后一个出现位置  如果下标和顺序相同，那就分一次
     public List<Integer> partitionLabels(String s) {
         int maxpos[] = new int[26];
         for (int i = 0; i < s.length(); i++) {
@@ -42,5 +44,10 @@ public class _763_PartitionLabels {
             }
         }
         return res;
+    }
+
+    public List<Integer> partitionLabels1(String s) {
+//        找到第一个，一直找到最后一个   在判断这个串中间的
+        return null;
     }
 }
