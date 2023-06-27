@@ -8,9 +8,10 @@ public class Game01 {
     public static void main(String[] args) {
         int index = 1;
         int dd = 1;
-        int table = 3;
+        int row = 6;
+        int table = row ;
         ArrayList<Bean> arrayList = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < row; i++) {
             for (int i1 = 0; i1 < table; i1++) {
                 System.out.print(" ");
             }

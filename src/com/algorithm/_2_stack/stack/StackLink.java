@@ -89,7 +89,7 @@ public class StackLink<T> implements Iterable<T> {
 
     public T pop(){
         Node oldFrist = head.next;
-        if (oldFrist.next == null){
+        if (oldFrist == null){
             return null;
         }
         head.next = oldFrist.next;

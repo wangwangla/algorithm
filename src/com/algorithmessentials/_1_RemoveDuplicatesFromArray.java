@@ -11,10 +11,17 @@ public class _1_RemoveDuplicatesFromArray {
     public int remoeDuplicates(int arr[]){
         int index = 1;
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] != arr[index]){
+            //如果是排好序的，只需要比较相邻的
+            if (arr[i] != arr[index-1]){
                 arr[index++] = arr[i];
             }
         }
-        return index+1;
+        return index;
+    }
+
+    public static void main(String[] args) {
+        _1_RemoveDuplicatesFromArray fromArray = new _1_RemoveDuplicatesFromArray();
+        int arr[] = new int[] {1,9,3,2};
+        System.out.println(fromArray.remoeDuplicates(arr));
     }
 }

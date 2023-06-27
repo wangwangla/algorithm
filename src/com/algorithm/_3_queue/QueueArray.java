@@ -1,7 +1,5 @@
 package com.algorithm._3_queue;
 
-import org.omg.CORBA.Object;
-
 /**
  * 单队列（非循环）
  * @param <T>

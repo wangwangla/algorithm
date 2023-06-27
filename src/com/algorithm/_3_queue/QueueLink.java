@@ -9,7 +9,7 @@ public class QueueLink<T> implements Iterable<T>{
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new MyIter();
     }
 
     private class MyIter implements Iterator{
@@ -57,7 +57,8 @@ public class QueueLink<T> implements Iterable<T>{
     public void enqueue(T t){
         if (last == null){
             last = new Node(t,null);
-            head = last;
+            //修改，这个是带头的
+            head.next = last;
         }else {
             Node node = new Node(t,null);
             Node oldLast = last;

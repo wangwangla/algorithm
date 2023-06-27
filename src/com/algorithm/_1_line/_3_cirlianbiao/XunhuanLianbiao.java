@@ -103,7 +103,7 @@ public class XunhuanLianbiao<T> {
 
     public void countBoy(int startNo,int countNum,int nums){
         Node helper = first;
-        //为了找打最后一个节点
+        //为了找到最后一个节点
         while (helper.next != first){
             helper = helper.next;
         }

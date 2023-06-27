@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="xx">
+      <change afterPath="$PROJECT_DIR$/src/kw/java/string/StringCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kw/java/string/ValidParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kw/java/string/WordLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithmessentials/_2_removeDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithmessentials/_2_removeDuplicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_122_MaxProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_122_MaxProfit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_135_Candy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_135_Candy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_406_ReconstructQueue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_406_ReconstructQueue$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_406_ReconstructQueue$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_406_ReconstructQueue$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_406_ReconstructQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_406_ReconstructQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_435_EraseOverlapIntervals$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_435_EraseOverlapIntervals$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_435_EraseOverlapIntervals$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_435_EraseOverlapIntervals$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_435_EraseOverlapIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_435_EraseOverlapIntervals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_452_findMinArrowShots$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_452_findMinArrowShots$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_452_findMinArrowShots.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_452_findMinArrowShots.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_605_CanPlaceFlowers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_605_CanPlaceFlowers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_665_checkPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_665_checkPossibility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_763_PartitionLabels.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_763_PartitionLabels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/letcode/_36_IsValidSudoku.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/letcode/_36_IsValidSudoku.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/letcode/_37_SolveSudoku.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/letcode/_37_SolveSudoku.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/cipher/Ceasercipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/cipher/Ceasercipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/dyn/Edist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/dyn/Edist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/dyn/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/dyn/Fibonacci.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/dyn/MaximumSubArraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/dyn/MaximumSubArraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/link/DoubleLink$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/link/DoubleLink$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/link/DoubleLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/link/DoubleLink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/math/MathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/math/MathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/string/LevenshteinDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/string/LevenshteinDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/java/tree/MaxHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/java/tree/MaxHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_3_queue/QueueArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_3_queue/QueueArray.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RhYm1g3KTGHTbAMvG2058clTdD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "E:/algorithm/Java",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="StringCompression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.java.string.StringCompression" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kw.java.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StringCompression" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="" />
+      <created>1687703934809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687703934809</updated>
+    </task>
+    <task id="LOCAL-00001" summary="xx">
+      <created>1687703964141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687703964141</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xx" />
+    <option name="LAST_COMMIT_MESSAGE" value="xx" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kw/java/string/StringCompression.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
