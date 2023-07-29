@@ -23,7 +23,11 @@ public class LianBiao<T> implements Iterable<T> {
         N++;
     }
 
-    public void insert(T t,int index){
+    public int getN() {
+        return N;
+    }
+
+    public void insert(T t, int index){
         Node temp = new Node(t,null);
         Node currentNode = head;
         int i =1 ;

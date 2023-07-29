@@ -12,9 +12,7 @@ public class SeqApp<T> implements Iterable<T> {
     private int N;
     private int capacity;
     public SeqApp(){
-        this.capacity = 10;
-        elements = (T[]) new Object[capacity];
-        this.N = 0;
+        this(10);
     }
 
     public SeqApp(int capacity){
@@ -25,8 +23,12 @@ public class SeqApp<T> implements Iterable<T> {
 
     public void clear(){
         //为了赶紧释放
-        for (T element : elements) {
-            element = null;
+//        for (T element : elements) {
+//            element = null;
+//        }
+//        这个才是对的吧
+        for (int i = 0; i < elements.length; i++) {
+            elements[i] = null;
         }
         this.N = 0;
     }
@@ -43,10 +45,13 @@ public class SeqApp<T> implements Iterable<T> {
     }
 
     public void insert(T t){
-        elements[N++] = t;
+        if (checkIndex(N + 1)){
+            elements[N++] = t;
+        }
     }
 
     public void insert(T t,int index){
+        if (!checkIndex(N + 1))return;
         for (int i = N; i > index-1; i--) {
             elements[i] = elements[i-1]; 
         }
@@ -55,6 +60,7 @@ public class SeqApp<T> implements Iterable<T> {
     }
 
     public void delete(int index){
+        if (!checkIndex(index))return;
         for (int j = index-1; j < N-1; j++) {
             elements[j] = elements[j+1];
         }
@@ -63,7 +69,7 @@ public class SeqApp<T> implements Iterable<T> {
     }
 
     public boolean checkIndex(int index){
-        if (index<0 || index > capacity) {
+        if (index<0 || index >= capacity) {
             return false;
         }
         return true;
