@@ -4,10 +4,18 @@ import java.util.Locale;
 
 public class App {
     public static void main(String[] args) {
+        for (int i = 0; i < 100; i++) {
+            int vvv = (int) (Math.random() * 6) + 1;
+            System.out.println(vvv);
+        }
+
+//        xxx();
+    }
+
+    private static void xxx() {
         String str1 = "i";
         Locale locale = new Locale("az","");
         str1.toUpperCase(locale);
-
 
 
         String str = "";

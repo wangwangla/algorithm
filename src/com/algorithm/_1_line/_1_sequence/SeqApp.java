@@ -1,6 +1,7 @@
 package com.algorithm._1_line._1_sequence;
 
 import java.util.Iterator;
+import java.util.function.UnaryOperator;
 
 /**
  * 拥有迭代的能力
@@ -104,6 +105,14 @@ public class SeqApp<T> implements Iterable<T> {
         s.insert(5,2);
         s.delete(1);
         s.print();
+
+        s.replaceAll(new UnaryOperator<Integer>() {
+
+            @Override
+            public Integer apply(Integer integer) {
+                return integer * 3;
+            }
+        });
     }
 
     private void print(){
@@ -111,6 +120,13 @@ public class SeqApp<T> implements Iterable<T> {
         Iterator iterator = iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
+        }
+    }
+
+    public void replaceAll(UnaryOperator<T> integerUnaryOperator){
+        int length = elements.length;
+        for (int i = 0; i < length; i++) {
+            elements[i] = integerUnaryOperator.apply(elements[i]);
         }
     }
 }
