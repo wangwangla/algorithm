@@ -21,7 +21,7 @@ public class LinkDemo {
     }
 
     /**
-     * 快慢指针
+     * 快慢指针  找出第i个节点的值
      * @param i
      */
     public void findLastIndexData(int i){
@@ -51,10 +51,23 @@ public class LinkDemo {
 //            head.next = temp;
 //            next.next = temp.next;
 //        }
+//        Node t = head;
+//        while (t!=null){
+//            Node te = t.next; //第二个节点
+//            t.next = head; //第二个节点下一个是第一个
+//            head = t;
+//            t = te;
+//        }
+
+
         Node t = head;
         while (t!=null){
             Node te = t.next;
-            t.next = head;
+            if (t!=head) {
+                t.next = head;
+            }else {
+                head.next = null;
+            }
             head = t;
             t = te;
         }
