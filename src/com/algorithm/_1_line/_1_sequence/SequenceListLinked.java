@@ -7,6 +7,7 @@ import com.algorithm._1_line.node.Node;
  */
 public class SequenceListLinked {
     private Node<Integer> head;
+    //存在空头的链表
     public SequenceListLinked(){
         head = new Node<>();
     }
@@ -20,13 +21,14 @@ public class SequenceListLinked {
      * @param num
      */
     private void addData(int num){
-        Node<Integer> node = new Node<>();
-        node.data = num;
+        Node<Integer> addNode = new Node<>();
+        addNode.data = num;
         Node temp = head;
+        //走到结尾
         while (temp.next != null){
             temp = temp.next;
         }
-        temp.next = node;
+        temp.next = addNode;
     }
 
 
@@ -48,16 +50,15 @@ public class SequenceListLinked {
      */
     public void deleteRear(){
         Node x = head;
-        Node oldNode =  null;
+        if (x.next == null)return;
+        //下一个不为null，下下为null
         while (x.next != null) {
             if (x.next.next == null){
-                oldNode = x.next.next;
                 x.next = null;
                 break;
             }
             x = x.next;
         }
-        oldNode = null;
     }
 
     //删除开头
@@ -90,15 +91,15 @@ public class SequenceListLinked {
         }
     }
 
-    public void inset(int data){
-        Node x = head;
-        while (x.next!=null){
-            x = x.next;
-        }
-        Node node = new Node();
-        node.data = data;
-        x.next = node;
-    }
+//    public void inset(int data){
+//        Node x = head;
+//        while (x.next!=null){
+//            x = x.next;
+//        }
+//        Node node = new Node();
+//        node.data = data;
+//        x.next = node;
+//    }
 
 
     public static void main(String[] args) {
@@ -106,7 +107,7 @@ public class SequenceListLinked {
         sequence.addData(1);
         sequence.addData(3);
         sequence.addData(4);
-        sequence.inset(5);
+        sequence.insert(4,5);
 //        sequence.insert(0,1);
         sequence.deleteRear();
         sequence.deleteStart();

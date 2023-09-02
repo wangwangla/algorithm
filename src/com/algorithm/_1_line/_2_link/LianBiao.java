@@ -4,6 +4,10 @@ import com.algorithm._1_line.node.Node;
 
 import java.util.Iterator;
 
+/**
+ * 链表
+ * @param <T>
+ */
 public class LianBiao<T> implements Iterable<T> {
     private Node head;
     private int N;

@@ -103,7 +103,7 @@ public class XunhuanLianbiao<T> {
 
     public void countBoy(int startNo,int countNum,int nums){
         Node helper = first;
-        //为了找到最后一个节点
+        //为了找到最后一个节点  因为删除需要有前一个节点， 所以需要循环一次 ，找到那个点
         while (helper.next != first){
             helper = helper.next;
         }
@@ -118,7 +118,7 @@ public class XunhuanLianbiao<T> {
                 first = first.next;
                 helper = helper.next;
             }
-            System.out.println(helper.no);
+            System.out.println(first.no);
             //头走一步    helper下一个直接跳过
             first = first.next;
             helper.next = first;

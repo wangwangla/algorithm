@@ -8,22 +8,25 @@ import java.util.function.UnaryOperator;
  * @param <T>
  */
 public class SeqApp<T> implements Iterable<T> {
-
+    //存储在数组中
     private T[] elements;
+    //当前数据个数
     private int N;
+    //容量 == 数组大小
     private int capacity;
+    //默认是10
     public SeqApp(){
         this(10);
     }
 
     public SeqApp(int capacity){
         this.capacity = capacity;
-        elements = (T[])new Object[capacity];
+        this.elements = (T[])new Object[capacity];
         this.N = 0;
     }
 
     public void clear(){
-        //为了赶紧释放
+        //为了赶快释放
 //        for (T element : elements) {
 //            element = null;
 //        }
@@ -54,7 +57,10 @@ public class SeqApp<T> implements Iterable<T> {
     public void insert(T t,int index){
         if (!checkIndex(N + 1))return;
         for (int i = N; i > index-1; i--) {
-            elements[i] = elements[i-1]; 
+            //ArrayList使用System.copy
+            elements[i] = elements[i-1];
+            //
+//            System.arraycopy(elements,index-1,elements,index,N-index);
         }
         elements[index-1] = t;
         N ++;

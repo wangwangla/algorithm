@@ -5,6 +5,11 @@ import com.algorithm._1_line.node.Node;
 //单链表
 public class LinkDemo {
     private Node head;
+
+    /**
+     * 统计个数
+     * @return
+     */
     public int num(){
         Node temp = head;
         int num = 0;
