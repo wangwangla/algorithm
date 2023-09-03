@@ -3,6 +3,9 @@ package com.zhuanti.array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 计算偏移
+ */
 public class _54_spiralOrder {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> list = new ArrayList<>();
@@ -48,22 +51,6 @@ public class _54_spiralOrder {
 //    19  32  31   30  29  28  10
 //    18  16  15   14  13  12  11
 
-    public void printSpiral(int num){
-//        for (int i = 0; i < num; i++) {
-//            for (int i1 = 0; i1 < num; i1++) {
-//
-//            }
-//        }
-        double v = num / 2.0;
-        int vv = (int)v;
-        for (int i = 0; i < vv; i++) {
-            //heng
-            for (int i1 = 0; i1 < num - i; i1++) {
-                System.out.println();
-            }
-        }
-    }
-
     public void test(int matrix[][]){
         //如果为null，或者没数据就返回
         if(matrix == null || matrix.length == 0)
@@ -83,15 +70,17 @@ public class _54_spiralOrder {
              * 左到右
               */
             for (int j = i; j < n-i; j++) {
-                System.out.println(matrix[i][j]);
+                System.out.print(matrix[i][j]);
             }
+            //上 -> 下
             for (int j = i+1; j < m-i; j++) {
                 System.out.println(matrix[j][(n-1)-i]);
             }
-
+            //回
             for (int j = (n-1)-(i+1); j >= i && (m-1-i != i); j--) {
                 System.out.println(matrix[(m-1)-i][j]);
             }
+            //下->上
             for (int j = (m-1)-(i+1); j >= i+1 && (n-1-i) != i; j--) {
                 System.out.println(matrix[j][i]);
             }

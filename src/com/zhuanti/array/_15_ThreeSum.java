@@ -20,12 +20,11 @@ public class _15_ThreeSum {
     public List<List<Integer>> threeSum121(int[] arr) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         int t[] = new int[arr.length];
-        xxx(arr,arrayList,t);
+        pailiezuhe(arr,arrayList,t);
         return a;
     }
 
-    private int xxks = 0;
-    private void xxx(int arr[],ArrayList<Integer> arrayList,int[]dp){
+    private void pailiezuhe(int arr[], ArrayList<Integer> arrayList, int[]dp){
         if (arrayList.size() == 3){
             int sum = 0;
             for (Integer integer : arrayList) {
@@ -40,13 +39,13 @@ public class _15_ThreeSum {
             if (dp[i] == 1)continue;
             dp[i] = 1;
             arrayList.add(arr[i]);
-            xxx(arr,arrayList,dp);
+            pailiezuhe(arr,arrayList,dp);
             arrayList.remove(arrayList.size()-1);
             dp[i] = 0;
         }
     }
     /**
-     * 暴力解法
+     * 暴力解法  暴力存在重复
      * @param nums
      * @return
      */
@@ -202,7 +201,6 @@ public class _15_ThreeSum {
      */
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> list = new ArrayList<List<Integer>>();
-
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
             nums[i] = 0;
@@ -221,6 +219,13 @@ public class _15_ThreeSum {
         return list;
     }
 
+    /**
+     * 两数之和  hash存储值，找出target-num的对应值
+     * @param nums
+     * @param target
+     * @param i1
+     * @return
+     */
     public int[] twoSum(int[] nums, int target,int i1) {
         HashMap<Integer,Integer> hashMap = new HashMap();
         for (int i = 0; i < nums.length; i++) {

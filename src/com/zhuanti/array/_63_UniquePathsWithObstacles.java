@@ -5,6 +5,7 @@ public class _63_UniquePathsWithObstacles {
         int j = obstacleGrid.length;
         int i = obstacleGrid[0].length;
         int dp[][] = new int[j][i];
+        //第一行  第一列为1，但是如果存在障碍，后面的就停止
         for (int i1 = 0; i1 < j; i1++) {
             if (obstacleGrid[i1][0] == 0) {
                 dp[i1][0] = 1;
@@ -19,7 +20,6 @@ public class _63_UniquePathsWithObstacles {
                 break;
             }
         }
-
         for (int i1 = 1; i1 < j; i1++) {
             for (int i2 = 1; i2 < i; i2++) {
                 if (obstacleGrid[i1][i2] != 1) {
@@ -35,6 +35,6 @@ public class _63_UniquePathsWithObstacles {
     public static void main(String[] args) {
         int arr[][] = {{0,0,0},{0,1,0},{0,0,0}};
         _63_UniquePathsWithObstacles uniquePathsWithObstacles = new _63_UniquePathsWithObstacles();
-        uniquePathsWithObstacles.uniquePathsWithObstacles(arr);
+        System.out.println(uniquePathsWithObstacles.uniquePathsWithObstacles(arr));
     }
 }

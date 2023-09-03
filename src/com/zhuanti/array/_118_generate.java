@@ -3,6 +3,9 @@ package com.zhuanti.array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 金三角
+ */
 public class _118_generate {
     public List<List<Integer>> generate(int numRows){
         List<List<Integer>> ret = new ArrayList<List<Integer>>();

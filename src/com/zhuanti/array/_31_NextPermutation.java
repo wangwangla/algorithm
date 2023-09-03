@@ -9,7 +9,8 @@ import com.zhuanti.binaryTree._124_maxPathSum;
  */
 public class _31_NextPermutation {
     public void nextPermutation(int[] nums) {
-        //从后向前找逆序
+        //从后向前找逆序  降序
+        //最后一位是否达成两位交换，可以是的数值更大
         int i = nums.length - 2;
         while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
@@ -25,6 +26,10 @@ public class _31_NextPermutation {
         }
         //逆序
         reverse(nums, i + 1);
+
+        for (int num : nums) {
+            System.out.println(num);
+        }
     }
 
     public void swap(int[] nums, int i, int j) {
@@ -44,6 +49,7 @@ public class _31_NextPermutation {
 
     public static void main(String[] args) {
         _31_NextPermutation nextPermutation = new _31_NextPermutation();
-        nextPermutation.nextPermutation(new int[]{1,2,3});
+        nextPermutation.nextPermutation(new int[]{1,2,3,4,5});
+        nextPermutation.nextPermutation(new int[]{1,2,3,5,4});
     }
 }
