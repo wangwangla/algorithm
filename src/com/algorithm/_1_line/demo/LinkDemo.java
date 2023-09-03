@@ -62,14 +62,15 @@ public class LinkDemo {
 
         Node t = head;
         while (t!=null){
+            //当前节点的下一个节点存储起来，
             Node te = t.next;
             if (t!=head) {
-                t.next = head;
+                t.next = head; //重新给下一个节点
             }else {
                 head.next = null;
             }
-            head = t;
-            t = te;
+            head = t; //当前节点为头
+            t = te; //更新当前节点
         }
     }
 

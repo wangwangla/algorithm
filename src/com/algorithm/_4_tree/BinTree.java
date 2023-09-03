@@ -4,6 +4,10 @@ import com.algorithm._4_tree.node.TreeNode;
 
 import java.util.Objects;
 
+/**
+ * 删除存在问题
+ * @param <T>
+ */
 public class BinTree<T extends Comparable> {
 
     private TreeNode root;
@@ -17,9 +21,9 @@ public class BinTree<T extends Comparable> {
              return new TreeNode(t,null,null);
          }
          if (t.compareTo(root.t)>0){
-             root.left = insert(root.left,t);
-         }else if (t.compareTo(root.t)<0){
              root.right = insert(root.right,t);
+         }else if (t.compareTo(root.t)<0){
+             root.left = insert(root.left,t);
          }else {
              root.t = t;
          }
@@ -54,11 +58,13 @@ public class BinTree<T extends Comparable> {
                 rNode = rNode.left;
             }
             TreeNode n = rNode.right;
-            while (n.left!=null){
-                if (n.left.left==null){
-                    n.left = null;
-                }else {
-                    n = n.left;
+            if (n!=null) {
+                while (n.left != null) {
+                    if (n.left.left == null) {
+                        n.left = null;
+                    } else {
+                        n = n.left;
+                    }
                 }
             }
             root = rNode;
@@ -110,17 +116,14 @@ public class BinTree<T extends Comparable> {
 
     public static void main(String[] args) {
         BinTree tree = new BinTree();
+        tree.insert(10);
+        tree.insert(5);
+        tree.insert(15);
         tree.insert(3);
-        tree.insert(4);
-        tree.insert(34);
-        tree.insert(42);
-        tree.insert(36);
-        tree.insert(45);
-        tree.insert(31);
-        tree.insert(47);
-        tree.insert(33);
-        tree.insert(40);
-        tree.delete(45);
+        tree.insert(6);
+        tree.insert(14);
+        tree.insert(16);
+        tree.delete(15);
         tree.printH(tree.root);
     }
 }

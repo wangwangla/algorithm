@@ -1,5 +1,7 @@
 package kw.io;
 
+import com.offer.rowoffer.RandomizedSet;
+
 import java.io.*;
 
 public class FileReaderApp {
@@ -12,9 +14,13 @@ public class FileReaderApp {
         int read1 = reader.read(b);
         System.out.println(new String(b,0,read1));
 
-
         BufferedReader bufferedReader = new BufferedReader(reader);
         System.out.println(bufferedReader.readLine());
+
+        RandomAccessFile randomAccessFile = new RandomAccessFile("demo.txt","r");
+        System.out.println(randomAccessFile.readLine());
+
+        System.out.println(randomAccessFile.readLine());
 
     }
 }

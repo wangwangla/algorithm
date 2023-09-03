@@ -5,7 +5,10 @@ import kw.ref.bean.User;
 import java.lang.ref.SoftReference;
 
 public class SoftRef {
-
+    /**
+     * 软
+     * @param args
+     */
     public static void main(String[] args) {
 //        String str1 = n
         User user = new User();

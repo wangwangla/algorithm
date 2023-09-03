@@ -25,6 +25,7 @@ public class _3_LongestConsecutiveSeq {
                 len = 1;
             }
         }
+        //最后一次
         max = Math.max(len,max);
         return max;
     }

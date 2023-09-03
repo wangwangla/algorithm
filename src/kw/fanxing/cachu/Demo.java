@@ -15,7 +15,14 @@ public class Demo {
         Class<People> peopleClass = People.class;
         Field[] fields = peopleClass.getDeclaredFields();
         for (int i = 0; i < fields.length; i++) {
-            System.out.println("name    :"+fields[i].getName()+"\n类型    :"+fields[i].getType());
+            Field field = fields[i];
+            System.out.println("name    :"+
+                    field.getName()+"\n类型    :"+
+                    field.getType()+" \n"+
+                    field.getGenericType()+"\n"+
+                    field.toGenericString()+"\n"+
+                    field.getDeclaringClass()+"\n"+
+                    field.getModifiers());
         }
 //        name    :name
 //        类型    :class java.lang.Object

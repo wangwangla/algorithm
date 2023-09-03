@@ -3,6 +3,7 @@ package com.algorithm._3_queue;
 /**
  * 为了可以适应所以类型的数据，所以适应泛型，为了可以比较我们需要实现比较接口
  *
+ * 最大堆
  */
 public class MaxPriorityQueue<T extends Comparable>{
     //使用数组来存储
@@ -17,10 +18,12 @@ public class MaxPriorityQueue<T extends Comparable>{
     public boolean isEmpty(){
         return N==0;
     }
+
     //判断索引i是否小于索引j的元素
     private boolean less(int i,int j){
         return item[i].compareTo(item[j])<0;
     }
+
     public void exch(int i,int j){
         T temp = item[i];
         item[i] = item[j];
@@ -32,6 +35,7 @@ public class MaxPriorityQueue<T extends Comparable>{
         swim(N);
     }
 
+    //大的上浮
     private void swim(int n) {
         while (n>1){
             if (less(n/2,n)){

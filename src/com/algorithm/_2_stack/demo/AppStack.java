@@ -2,6 +2,9 @@ package com.algorithm._2_stack.demo;
 
 import com.algorithm._2_stack.stack.StackLink;
 
+/**
+ * 括号匹配
+ */
 public class AppStack {
 
     public boolean isMatch(String str){
