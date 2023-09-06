@@ -5,23 +5,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kw/annotation/Annotation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/annotation/TestAni.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/bit/Bits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/bit/BitsApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/fanxing/feild/FeildDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/fanxing/feild/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/java/test/ArrayCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/java/test/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/lang/IntegerDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SeqApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SeqApp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/SeqApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/SeqApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/SequenceListLinked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/SequenceListLinked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_1_line/_2_link/LianBiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/_2_link/LianBiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_1_line/_3_cirlianbiao/XunhuanLianbiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/_3_cirlianbiao/XunhuanLianbiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_1_line/demo/LinkDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/demo/LinkDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kw/java/test/ArrayListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kw/java/test/ArrayListDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SeqApp$It.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SeqApp$It.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SeqApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SeqApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SequenceListLinked.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_1_sequence/SequenceListLinked.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_2_link/LianBiao$It.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_2_link/LianBiao$It.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_2_link/LianBiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_2_link/LianBiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_3_cirlianbiao/XunhuanLianbiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/_3_cirlianbiao/XunhuanLianbiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/demo/LinkDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_1_line/demo/LinkDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_2_stack/demo/AppStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_2_stack/demo/AppStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_3_queue/MaxPriorityQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_3_queue/MaxPriorityQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_4_tree/BinTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_4_tree/BinTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_4_tree/node/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithm/_4_tree/node/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithmessentials/_3_LongestConsecutiveSeq.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/algorithmessentials/_3_LongestConsecutiveSeq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/algorithmessentials/_3_RemoveN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_118_generate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_118_generate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_121_MaxProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_121_MaxProfit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_15_ThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_15_ThreeSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_31_NextPermutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_31_NextPermutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_54_spiralOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_54_spiralOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_57_insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_57_insert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_62_UniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_62_UniquePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_63_UniquePathsWithObstacles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_63_UniquePathsWithObstacles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/cha/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/data/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/down/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/fanxing/cachu/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/fanxing/cachu/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/io/DemoData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/io/DemoData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/io/FileApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/io/FileReaderApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/io/FileReaderApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/jiajiemi/EncryptionTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/learn/src/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/local/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/builder/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/builder/ManTou$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/builder/ManTou.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/fanshe/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/fanshe/InstanceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/fanxing/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/fanxing/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/fanxing/BaseActor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/Collection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/arraylist/ArrayList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/arraylist/KwArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/arraylist/MyArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/clone/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/clone/DepthClone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/clone/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/clone/QianClone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/clone/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/hashMap/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/hashMap/HashMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/hashMap/KwHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/hashMap/SingleLinkToDoubleLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/iterator/Iterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/linklist/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/linklist/LinkedList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/serializable/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/serializable/People.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/vector/Vector.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/list/vector/VectorApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/observer/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/readsrc/HashMpSrc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/single/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/single/bean/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/single/bean/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/single/bean/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/single/bean/People.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/DeathThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/join/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/looper/Looper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/looper/LooperThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/looper/MesageQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/looper/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/thread/looper/Target.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/yuanxing/原型模式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/zhiyinyongchuandi/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/zhiyinyongchuandi/People.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/zlink/AbstractLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/zlink/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/zlink/ErrorLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/other/zlink/InfoLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/print/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/ref/QiangRef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/ref/QiangRef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/ref/SoftRef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/ref/SoftRef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/thread/App$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/thread/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/timer/MyTimer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/video/VideoParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/algorithmessentials/_3_LongestConsecutiveSeq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithmessentials/_3_LongestConsecutiveSeq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_121_MaxProfit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_121_MaxProfit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_122_MaxProfit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_122_MaxProfit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_125_IsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_125_IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_189_RotateArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_189_RotateArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_31_NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_31_NextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_328_oddEvenList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_328_oddEvenList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_387_firstUniqChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_387_firstUniqChar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_54_spiralOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_54_spiralOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_57_insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_57_insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/array/_63_UniquePathsWithObstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/array/_63_UniquePathsWithObstacles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +150,13 @@
       <recent name="E:\github\algorithm\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.XunhuanLianbiao">
-    <configuration name="ArrayListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.java.test.ArrayListDemo" />
+  <component name="RunManager" selected="Application._125_IsPalindrome">
+    <configuration name="_118_generate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhuanti.array._118_generate" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.java.test.*" />
+          <option name="PATTERN" value="com.zhuanti.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BitsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.bit.BitsApp" />
+    <configuration name="_125_IsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhuanti.array._125_IsPalindrome" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.bit.*" />
+          <option name="PATTERN" value="com.zhuanti.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeildDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.fanxing.feild.FeildDemo" />
+    <configuration name="_31_NextPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhuanti.array._31_NextPermutation" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.fanxing.feild.*" />
+          <option name="PATTERN" value="com.zhuanti.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.lang.IntegerDemo" />
+    <configuration name="_57_insert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhuanti.array._57_insert" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.lang.*" />
+          <option name="PATTERN" value="com.zhuanti.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +203,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XunhuanLianbiao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.algorithm._1_line._3_cirlianbiao.XunhuanLianbiao" />
+    <configuration name="_63_UniquePathsWithObstacles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhuanti.array._63_UniquePathsWithObstacles" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algorithm._1_line._3_cirlianbiao.*" />
+          <option name="PATTERN" value="com.zhuanti.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XunhuanLianbiao" />
-        <item itemvalue="Application.BitsApp" />
-        <item itemvalue="Application.IntegerDemo" />
-        <item itemvalue="Application.FeildDemo" />
-        <item itemvalue="Application.ArrayListDemo" />
+        <item itemvalue="Application._125_IsPalindrome" />
+        <item itemvalue="Application._31_NextPermutation" />
+        <item itemvalue="Application._118_generate" />
+        <item itemvalue="Application._63_UniquePathsWithObstacles" />
+        <item itemvalue="Application._57_insert" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +266,39 @@
       <option name="project" value="LOCAL" />
       <updated>1692145268757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="保存">
+      <option name="closed" value="true" />
+      <created>1693647514856</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693647514856</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改bug">
+      <option name="closed" value="true" />
+      <created>1693697584331</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693697584331</updated>
+    </task>
+    <task id="LOCAL-00007" summary="整理">
+      <option name="closed" value="true" />
+      <created>1693725917903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693725917903</updated>
+    </task>
+    <task id="LOCAL-00008" summary="整理">
+      <option name="closed" value="true" />
+      <created>1693737870167</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693737870167</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +315,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xx" />
     <MESSAGE value="保存" />
-    <option name="LAST_COMMIT_MESSAGE" value="保存" />
+    <MESSAGE value="修改bug" />
+    <MESSAGE value="整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="整理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,16 +343,6 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/kw/lang/IntegerDemo.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/kw/lang/IntegerDemo.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/kw/bit/BitsApp.java</url>
           <line>7</line>
           <option name="timeStamp" value="14" />
@@ -249,16 +358,6 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/kw/lang/IntegerDemo.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/kw/lang/IntegerDemo.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/algorithm/_1_line/_3_cirlianbiao/XunhuanLianbiao.java</url>
           <line>115</line>
           <option name="timeStamp" value="19" />
@@ -268,8 +367,53 @@
           <line>110</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/_1_line/demo/LinkDemo.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/_1_line/demo/LinkDemo.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/_4_tree/BinTree.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/_4_tree/BinTree.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kw/io/DemoData.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/Program Files/jdk/lib/src.zip!/java.base/java/io/DataInputStream.java</url>
+          <line>665</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zhuanti/array/_31_NextPermutation.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zhuanti/array/_31_NextPermutation.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.algorithm._4_tree.BinTree" memberName="root" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

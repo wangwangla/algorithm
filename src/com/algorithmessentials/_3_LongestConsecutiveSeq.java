@@ -41,11 +41,12 @@ public class _3_LongestConsecutiveSeq {
 
         for (int i = 1; i < num.length; i++) {
             len = 1;
-            for (int i1 = i-1; hashSet.contains(i1); i1--) {
+            int vv = num[i];
+            for (int i1 = vv-1; hashSet.contains(i1); i1--) {
                 len ++;
                 hashSet.remove(i1);
             }
-            for (int i1 = i+1; hashSet.contains(i1); i1++) {
+            for (int i1 = vv+1; hashSet.contains(i1); i1++) {
                 len ++;
                 hashSet.remove(i1);
             }

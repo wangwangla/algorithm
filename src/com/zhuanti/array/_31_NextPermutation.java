@@ -15,6 +15,7 @@ public class _31_NextPermutation {
         while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
         }
+        //找到降序  在找比当前值大的移动到这里，然后将后面的逆序。
         if (i >= 0) {
             //从后向前找出比逆序小的一个
             int j = nums.length - 1;
@@ -49,7 +50,7 @@ public class _31_NextPermutation {
 
     public static void main(String[] args) {
         _31_NextPermutation nextPermutation = new _31_NextPermutation();
-        nextPermutation.nextPermutation(new int[]{1,2,3,4,5});
+//        nextPermutation.nextPermutation(new int[]{1,2,3,4,5});
         nextPermutation.nextPermutation(new int[]{1,2,3,5,4});
     }
 }

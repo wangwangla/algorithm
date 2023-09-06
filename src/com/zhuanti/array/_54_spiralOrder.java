@@ -96,7 +96,6 @@ public class _54_spiralOrder {
         };
         _54_spiralOrder spiralOrder = new _54_spiralOrder();
         spiralOrder.test(arr);
-
-
     }
+
 }

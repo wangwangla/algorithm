@@ -1,5 +1,8 @@
 package com.zhuanti.array;
 
+/**
+ * 中间有不可以通过的点
+ */
 public class _63_UniquePathsWithObstacles {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int j = obstacleGrid.length;

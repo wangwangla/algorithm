@@ -37,6 +37,18 @@ public class _189_RotateArray {
         System.arraycopy(temp,0,nums,0,temp.length);
     }
 
+    public void sss(int num[],int k){
+        int i = num.length - k;
+        int arr[] = new int[num.length];
+        int index = 0;
+        for (int i1 = 0; i1 < k; i1++) {
+            arr[index++] = num[i1+i];
+        }
+
+        for (int i1 = 0; i1 < i; i1++) {
+            arr[index++] = num[i1];
+        }
+    }
     public static void main(String[] args) {
         _189_RotateArray array = new _189_RotateArray();
         array.rotate(new int[]{1,2,3,4,5},3);

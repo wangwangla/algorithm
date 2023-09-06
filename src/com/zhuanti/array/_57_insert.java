@@ -63,15 +63,17 @@ public class _57_insert {
         int left = 0;
         int right = 0;
         for (int[] interval : intervals) {
-            if (interval[1]>newInterval[0]) {
-                left = Math.min(interval[0],newInterval[0]);
-                right = Math.max(interval[1],newInterval[1]);
+            if (left==0) {
+                if (interval[1] > newInterval[0]) {
+                    left = Math.min(interval[0], newInterval[0]);
+                    right = Math.max(interval[1], newInterval[1]);
+                }
             }else {
-                if (interval[0]>newInterval[1]){
+                if (interval[0] > newInterval[1]) {
 //                    System.out.println(left + newInterval[1]);
-                    right = newInterval[1];
-                }else {
-                    right = Math.max(interval[1],newInterval[1]);
+//                    right = newInterval[1];
+//                } else {
+                    right = Math.max(interval[1], newInterval[1]);
                 }
             }
         }

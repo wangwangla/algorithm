@@ -42,6 +42,13 @@ public class _328_oddEvenList {
         }
         return jicur;
     }
+
+    public void chai(ListNode node){
+        ListNode head = node;
+        while (head.next != null) {
+            head = head.next;
+        }
+    }
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);

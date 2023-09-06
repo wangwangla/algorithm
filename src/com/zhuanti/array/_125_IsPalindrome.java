@@ -17,7 +17,9 @@ public class _125_IsPalindrome {
     }
 
     public static void main(String[] args) {
-        String s = "A man, a plan, a canal: Panama";
+//        String s = "A man, a plan, a canal: Panama";
+        String s = "ABCDCBA";
+
         _125_IsPalindrome palindrome = new _125_IsPalindrome();
         System.out.println(palindrome.isPalindrome(s));
     }
