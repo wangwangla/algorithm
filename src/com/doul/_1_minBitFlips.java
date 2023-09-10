@@ -1,5 +1,11 @@
 package com.doul;
 
+/**
+ * 最小反转几次将start值变为goal。
+ *
+ * 1.一位一位移动，如果当前位的值不同就需要反转
+ * 2.int一共存在32位，需要32此遍历（O(1)）
+ */
 public class _1_minBitFlips {
     public int minBitFlips(int start, int goal) {
         int count = 0;

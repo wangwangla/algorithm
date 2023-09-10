@@ -43,13 +43,20 @@ public class _Mst79_Subsets {
         for (int i = start; i < nums.length; i++) {
             a.add(nums[i]);
             sub(a,i+1,nums);
-            a.remove(nums[i]);
+            a.remove(a.size()-1);
         }
     }
 
     public static void main(String[] args) {
         int num[] = {1,2,3};
         _Mst79_Subsets subsets = new _Mst79_Subsets();
-        subsets.subsets(num);
+        List<List<Integer>> subsets1 = subsets.subsets(num);
+        for (List<Integer> integers : subsets.arrayList) {
+            for (Integer integer : integers) {
+                System.out.print(integer);
+            }
+            System.out.println();
+        }
+
     }
 }

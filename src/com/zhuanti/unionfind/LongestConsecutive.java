@@ -2,6 +2,9 @@ package com.zhuanti.unionfind;
 
 import java.util.Arrays;
 
+/**
+ * 最长连续子集
+ */
 public class LongestConsecutive {
     public int longestConsecutive(int[] nums) {
         int count = 1;
@@ -18,13 +21,7 @@ public class LongestConsecutive {
         max = Math.max(max,count);
         return max;
     }
-    public int longestConsecutive1(int[] nums) {
-        int count = 1;
-        int max = 0;
 
-        max = Math.max(max,count);
-        return max;
-    }
 
     public static void main(String[] args) {
         int nums[] = {100,4,200,1,3,2};

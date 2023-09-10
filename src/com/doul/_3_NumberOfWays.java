@@ -2,8 +2,10 @@ package com.doul;
 
 import java.util.ArrayList;
 
+/**
+ * 给你一个长度为n的数组，将其分成三个连续的区间，且每个区间的总和相等，问一共有多少种分法？
+ */
 public class _3_NumberOfWays {
-
     static long zz = 0;
     public static long numberOfWays(String s) {
 //        StringBuilder nb = new StringBuilder();
@@ -20,16 +22,15 @@ public class _3_NumberOfWays {
     }
 
     public static void xxx(ArrayList<Character> arrayList,String s,int start){
-
         if (arrayList.size()>=3){
             if (arrayList.size()==3) {
                 zz++;
                 return;
             }
             return;
-        } long base = zz;
+        }
+        long base = zz;
         for (int i = start; i < s.length(); i++) {
-
             if (start>0){
                 if (s.charAt(i)==s.charAt(i-1)){
                     zz += (zz - base);

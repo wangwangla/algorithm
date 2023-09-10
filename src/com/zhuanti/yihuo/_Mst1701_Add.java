@@ -1,5 +1,8 @@
 package com.zhuanti.yihuo;
 
+/**
+ * 不用加法做加法
+ */
 public class _Mst1701_Add {
     public int add(int a, int b) {
         return a + b;
