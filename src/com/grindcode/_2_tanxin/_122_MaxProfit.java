@@ -7,6 +7,9 @@ package com.grindcode._2_tanxin;
  * 你也可以购买它，然后在 同一天 出售。
  * 返回 你能获得的 最大 利润 。
  *
+ *
+ * 多次购买
+ *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
@@ -39,5 +42,15 @@ public class _122_MaxProfit {
             dp[i][1] = Math.max(dp[i-1][1],dp[i-1][0] - prices[i]);  // 买与不买应该是不合适，应该改为受否拥有
         }
         return dp[prices.length-1][0];
+    }
+
+    public void maxCalip1(int price[]){
+        int dp[][] = new int[price.length][2];
+        dp[0][0] = 0;
+        dp[0][1] = -price[0];//持有
+        for (int i = 1; i < price.length; i++) {
+            dp[i][0] = Math.max(dp[i-1][0],dp[i-1][1]+price[i]); //不持有  有就买了
+            dp[i][1] = Math.max(dp[i-1][1],dp[i-1][0]-price[i]); //卖
+        }
     }
 }

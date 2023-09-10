@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kw/time/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_122_MaxProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_122_MaxProfit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_125_IsPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_125_IsPalindrome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_189_RotateArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_189_RotateArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_328_oddEvenList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_328_oddEvenList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_387_firstUniqChar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/zhuanti/array/_387_firstUniqChar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/doul/_1_minBitFlips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doul/_1_minBitFlips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/doul/_2_TriangularSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doul/_2_TriangularSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/doul/_3_NumberOfWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doul/_3_NumberOfWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/uf/_128_longestConsecutive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/uf/_128_longestConsecutive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/uf/_130_solve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/uf/_130_solve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/unionfind/LongestConsecutive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/unionfind/LongestConsecutive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst067_FindMaximumXOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst067_FindMaximumXOR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst1701_Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst1701_Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst79_Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst79_Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst_1607_Maximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst_1607_Maximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kw/learn/src/collection/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kw/learn/src/collection/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/doul/_3_NumberOfWays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/doul/_3_NumberOfWays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_122_MaxProfit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_122_MaxProfit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_135_Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_135_Candy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +52,26 @@
       <recent name="E:\github\algorithm\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._3_NumberOfWays">
+  <component name="RunManager" selected="Application._135_Candy">
     <configuration name="_128_longestConsecutive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhuanti.uf._128_longestConsecutive" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zhuanti.uf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_135_Candy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.grindcode._2_tanxin._135_Candy" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grindcode._2_tanxin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,19 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_Mst067_FindMaximumXOR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhuanti.yihuo._Mst067_FindMaximumXOR" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhuanti.yihuo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_Mst79_Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhuanti.yihuo._Mst79_Subsets" />
       <module name="algorithm" />
@@ -134,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._135_Candy" />
         <item itemvalue="Application._3_NumberOfWays" />
         <item itemvalue="Application._2_TriangularSum" />
         <item itemvalue="Application._128_longestConsecutive" />
         <item itemvalue="Application._Mst79_Subsets" />
-        <item itemvalue="Application._Mst067_FindMaximumXOR" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693960914806</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="整理">
+      <option name="closed" value="true" />
+      <created>1694349883813</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694349883813</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,6 +339,11 @@
           <url>file://$PROJECT_DIR$/src/com/zhuanti/yihuo/_Mst79_Subsets.java</url>
           <line>41</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_135_Candy.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
