@@ -6,7 +6,7 @@ public class Time {
         long l = time / 1000; //秒
 
 
-        tableSizeFor(1 << 30);
+        tableSizeFor(5);
 
     }
 

@@ -36,6 +36,7 @@ public class _763_PartitionLabels {
         List<Integer> res = new ArrayList<>();
 
         for (int i = 0; i < s.length(); i++) {
+            //得到字符的位置
             int currentCharMaxPos = maxpos[s.charAt(i) - 'a'];
             scannedCharMaxPos = Math.max(scannedCharMaxPos, currentCharMaxPos);
             if (i == scannedCharMaxPos) {

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/doul/_3_NumberOfWays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/doul/_3_NumberOfWays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_122_MaxProfit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_122_MaxProfit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_135_Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_135_Candy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_122_MaxProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_122_MaxProfit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_135_Candy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_135_Candy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/time/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/time/Time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_763_PartitionLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_763_PartitionLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kw/time/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kw/time/Time.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,20 @@
       <recent name="E:\github\algorithm\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._135_Candy">
+  <component name="RunManager" selected="Application.Time">
+    <configuration name="Time" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.time.Time" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kw.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_128_longestConsecutive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhuanti.uf._128_longestConsecutive" />
       <module name="algorithm" />
@@ -105,26 +120,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_Mst79_Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhuanti.yihuo._Mst79_Subsets" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhuanti.yihuo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Time" />
         <item itemvalue="Application._135_Candy" />
         <item itemvalue="Application._3_NumberOfWays" />
         <item itemvalue="Application._2_TriangularSum" />
         <item itemvalue="Application._128_longestConsecutive" />
-        <item itemvalue="Application._Mst79_Subsets" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694349883813</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="整理">
+      <option name="closed" value="true" />
+      <created>1694352204538</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694352204538</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
