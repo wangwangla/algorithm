@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_122_MaxProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_122_MaxProfit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_135_Candy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_135_Candy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/kw/time/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/kw/time/Time.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_763_PartitionLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/grindcode/_2_tanxin/_763_PartitionLabels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kw/time/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kw/time/Time.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694352204538</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="整理">
+      <option name="closed" value="true" />
+      <created>1694478628333</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694478628334</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
