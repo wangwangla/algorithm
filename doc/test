@@ -1,0 +1,12 @@
+步骤：
+
+1.加载csv
+
+```java
+
+Sharp mSharp = Sharp.loadAsset(ColorPaintApplication.getAppContext().getAssets(), path);
+mSharp.setOnElementListener(vectorImageView);
+
+```
+
+fileInputStream--->byteInputstream---->xml解析 ----->  sharpPicture 
