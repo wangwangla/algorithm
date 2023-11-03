@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/算法训练营/第一章 实用的数据结构.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algortest/wk/chapterOne/ChapterOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/算法hello/1.复杂的评估.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/算法hello/1.复杂的评估.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +52,13 @@
       <recent name="E:\github\algorithm\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Time">
-    <configuration name="Time" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.time.Time" />
+  <component name="RunManager" selected="Application.ChapterOne">
+    <configuration name="ChapterOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algortest.wk.chapterOne.ChapterOne" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.time.*" />
+          <option name="PATTERN" value="algortest.wk.chapterOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_128_longestConsecutive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhuanti.uf._128_longestConsecutive" />
+    <configuration name="Time" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.time.Time" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhuanti.uf.*" />
+          <option name="PATTERN" value="kw.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChapterOne" />
         <item itemvalue="Application.Time" />
         <item itemvalue="Application._135_Candy" />
         <item itemvalue="Application._3_NumberOfWays" />
         <item itemvalue="Application._2_TriangularSum" />
-        <item itemvalue="Application._128_longestConsecutive" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694911143847</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="下来看">
+      <option name="closed" value="true" />
+      <created>1695082760022</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695082760022</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +284,8 @@
     <MESSAGE value="修改bug" />
     <MESSAGE value="整理" />
     <MESSAGE value="贪心" />
-    <option name="LAST_COMMIT_MESSAGE" value="贪心" />
+    <MESSAGE value="下来看" />
+    <option name="LAST_COMMIT_MESSAGE" value="下来看" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
