@@ -1,4 +1,4 @@
-package algortest.wk.chapterOne;
+package algortest.wk.book2.chapterOne;
 
 public class ChapterOne {
     private int fa[];

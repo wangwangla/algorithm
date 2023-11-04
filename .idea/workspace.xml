@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/算法训练营/第一章 实用的数据结构.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algortest/wk/chapterOne/ChapterOne.java" afterDir="false" />
+    <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="看看">
+      <change afterPath="$PROJECT_DIR$/doc/算法训练营/基础部分/1.第一章 基础.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algortest/wk/book1/chapterOne/ChapterOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/算法hello/1.复杂的评估.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/算法hello/1.复杂的评估.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_763_PartitionLabels.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_763_PartitionLabels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algortest/wk/chapterOne/ChapterOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algortest/wk/book2/chapterOne/ChapterOne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <recent name="E:\github\algorithm\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChapterOne">
+  <component name="RunManager" selected="Application.algortest.wk.book1.chapterOne.ChapterOne">
     <configuration name="ChapterOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algortest.wk.chapterOne.ChapterOne" />
       <module name="algorithm" />
@@ -92,19 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_2_TriangularSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.doul._2_TriangularSum" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doul.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_3_NumberOfWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.doul._3_NumberOfWays" />
       <module name="algorithm" />
@@ -118,13 +106,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="algortest.wk.book1.chapterOne.ChapterOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algortest.wk.book1.chapterOne.ChapterOne" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algortest.wk.book1.chapterOne.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.algortest.wk.book1.chapterOne.ChapterOne" />
         <item itemvalue="Application.ChapterOne" />
         <item itemvalue="Application.Time" />
         <item itemvalue="Application._135_Candy" />
         <item itemvalue="Application._3_NumberOfWays" />
-        <item itemvalue="Application._2_TriangularSum" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695082760022</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="看看">
+      <option name="closed" value="true" />
+      <created>1699018390401</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699018390401</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +294,8 @@
     <MESSAGE value="整理" />
     <MESSAGE value="贪心" />
     <MESSAGE value="下来看" />
-    <option name="LAST_COMMIT_MESSAGE" value="下来看" />
+    <MESSAGE value="看看" />
+    <option name="LAST_COMMIT_MESSAGE" value="看看" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
