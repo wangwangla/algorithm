@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="看看">
-      <change afterPath="$PROJECT_DIR$/doc/算法训练营/基础部分/1.第一章 基础.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algortest/wk/book1/chapterOne/ChapterOne.java" afterDir="false" />
+    <list default="true" id="8b152ee8-f634-4416-81d7-195dadecc799" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_763_PartitionLabels.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/grindcode/_2_tanxin/_763_PartitionLabels.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algortest/wk/chapterOne/ChapterOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algortest/wk/book2/chapterOne/ChapterOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/算法训练营/基础部分/1.第一章 基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/算法训练营/基础部分/1.第一章 基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/2048AI&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "F:/kotlionLearn/Learn",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\github\algorithm\libs" />
@@ -273,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699018390401</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="看看">
+      <option name="closed" value="true" />
+      <created>1699099203869</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699099203869</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
