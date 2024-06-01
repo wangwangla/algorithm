@@ -30,7 +30,7 @@ public class _704_Search {
     public int search1(int arr[],int target){
         int left = 0;
         int right = arr.length - 1;
-        //为什么要等于  加入只有一个元素怎么搞
+        //为什么要等于  假如只有一个元素怎么搞
         while (left <= right){
             int mid = left + (right - left) / 2;
             if (arr[mid]>target){
