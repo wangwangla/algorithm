@@ -1,5 +1,8 @@
 package com.letcode;
 
+/**
+ * 插入正确的位置
+ */
 public class _35_SearchInsert {
     public int searchInsert(int[] nums, int target) {
         int right = nums.length - 1;
