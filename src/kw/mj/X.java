@@ -6,6 +6,18 @@ import java.util.List;
 import java.util.Map;
 
 public class X {
+    public  final int MJ_WAN = 1;
+    public  final int MJ_TIAO = 2;
+    public  final int MJ_BING = 3;
+    public  final int MJ_FENG = 4;
+    public  final int MJ_ZFB = 5;
+
+    public  final int PAI_MY = 0;
+    public  final int PAI_CHI = 1;
+    public  final int PAI_PENG = 2;
+    public  final int PAI_GANG = 3;
+    public  final int PAI_TING = 4;
+
     public  int checkSinglePaiMingAn(int pai) {
         return (pai % 10000) / 1000;
     }
@@ -37,17 +49,7 @@ public class X {
     public  boolean checkAAAPai(int value1, int value2, int value3) {
         return (value1 == value2) && (value2 == value3);
     }
-    public  final int MJ_WAN = 1;
-    public  final int MJ_TIAO = 2;
-    public  final int MJ_BING = 3;
-    public  final int MJ_FENG = 4;
-    public  final int MJ_ZFB = 5;
 
-    public  final int PAI_MY = 0;
-    public  final int PAI_CHI = 1;
-    public  final int PAI_PENG = 2;
-    public  final int PAI_GANG = 3;
-    public  final int PAI_TING = 4;
 
     public  Map<String, List<List<Integer>>> sortByType(int[] userPai) {
         Map<String, List<List<Integer>>> sortPai = new HashMap<>();
@@ -133,50 +135,7 @@ public class X {
     
         return new Result(false, 0);
     }
-//
-//    private  boolean validAA(List<Integer> pai, int i, int n) {
-//        return i + 1 <= n && pai.get(i).equals(pai.get(i + 1));
-//    }
-//
-//    private  boolean validAAA(List<Integer> pai, int i, int n) {
-//        return i + 2 <= n && pai.get(i).equals(pai.get(i + 1)) && pai.get(i).equals(pai.get(i + 2));
-//    }
 
-//    private  boolean validABC(List<Integer> pai, int i, int n) {
-//        if (n - i < 2) return false;
-//
-//        List<Integer> tPai = copyPai(pai);
-//        boolean foundB = false;
-//        boolean foundC = false;
-//        for (int j = i + 1; j < tPai.size(); j++) {
-//            if (!foundB && tPai.get(j) == tPai.get(i) + 1) {
-//                foundB = true;
-//                int t = tPai.get(i + 1);
-//                tPai.set(i + 1, tPai.get(j));
-//                tPai.set(j, t);
-//            }
-//        }
-//
-//        for (int k = i + 2; k < tPai.size(); k++) {
-//            if (!foundC && tPai.get(k) == tPai.get(i) + 2) {
-//                foundC = true;
-//                int t = tPai.get(i + 2);
-//                tPai.set(i + 2, tPai.get(k));
-//                tPai.set(k, t);
-//            }
-//        }
-//
-//        if (foundB && foundC) {
-//            List<Integer> newList = new ArrayList<>();
-//            for (int j = i + 3; j < tPai.size(); j++) {
-//                newList.add(tPai.get(j));
-//            }
-//            newList.sort(Integer::compareTo);
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
     private  boolean validAA(List<Integer> pai, int i, int n) {
         if (i + 1 <= n && pai.get(i).equals(pai.get(i + 1))) {
             return true;
