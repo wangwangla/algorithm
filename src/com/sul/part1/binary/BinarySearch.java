@@ -1,4 +1,4 @@
-package com.sul.part1;
+package com.sul.part1.binary;
 
 public class BinarySearch {
     //给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，
