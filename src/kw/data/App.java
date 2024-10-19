@@ -21,8 +21,6 @@ public class App {
     public void test03(){
         storage = new WordStorage();
         String word = "zymologies";
-
-
         try {
             File file = new File("word.txt");
             FileOutputStream fos = new FileOutputStream("words.bin");
@@ -38,9 +36,5 @@ public class App {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
-
-
-
     }
 }

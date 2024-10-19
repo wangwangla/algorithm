@@ -34,6 +34,4 @@ public class BitsApp {
         return (char) ((b[off + 1] & 0xFF) +
                 (b[off] << 8));
     }
-
-
 }

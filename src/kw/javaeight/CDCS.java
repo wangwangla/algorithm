@@ -23,8 +23,6 @@ public class CDCS {
         //lambda
         cdcs.demo2(list,(Apple apple)->apple.getPrice()>10);
         //将他们进行类型抽象化
-
-
     }
 
     public void demo(List<Apple> list,Filter filter){
