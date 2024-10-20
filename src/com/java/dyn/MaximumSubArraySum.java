@@ -1,4 +1,4 @@
-package kw.java.dyn;
+package com.java.dyn;
 
 public class MaximumSubArraySum {
     public void sum(int []num){

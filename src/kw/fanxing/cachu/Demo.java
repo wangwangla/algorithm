@@ -2,6 +2,9 @@ package kw.fanxing.cachu;
 
 import java.lang.reflect.Field;
 
+/**
+ * 类型擦除就是在开始书写的时候会进行判断
+ */
 public class Demo {
     public static void main(String[] args) {
 //        ArrayList<String> strList = new ArrayList<>();

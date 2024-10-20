@@ -10,10 +10,17 @@ public class PhantomReferenceDemo {
         // 创建一个对象和一个引用队列
         Object obj = new Object();
         ReferenceQueue<Object> referenceQueue = new ReferenceQueue<>();
-
         // 创建一个虚引用指向对象，并与引用队列关联
-        PhantomReference<User> phantomReference = new PhantomReference(obj, referenceQueue);
 
+
+//        gc before: java.lang.Object@3d24753a
+//        gc after: null
+        PhantomReference<User> phantomReference = new PhantomReference(obj, referenceQueue);
+        Object user = referenceQueue.poll();
+        System.out.println("gc before: "+obj); //
+        System.gc();
+        user = referenceQueue.poll();
+        System.out.println("gc after: "+user);
         // 在这里，obj可以随时被回收，phantomReference不会被回收，但也不会再指向原来的对象
         // 可以通过referenceQueue来检查对象是否已经被回收
 

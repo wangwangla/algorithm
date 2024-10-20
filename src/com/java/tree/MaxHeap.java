@@ -1,4 +1,4 @@
-package kw.java.tree;
+package com.java.tree;
 
 public class MaxHeap {
     protected int capacity;

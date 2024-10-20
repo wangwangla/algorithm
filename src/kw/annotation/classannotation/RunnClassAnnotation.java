@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ClassAnnotation {
+public @interface RunnClassAnnotation {
     String value() default "null";
 }

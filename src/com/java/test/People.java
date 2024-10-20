@@ -1,4 +1,4 @@
-package kw.java.test;
+package com.java.test;
 
 public
 class People{

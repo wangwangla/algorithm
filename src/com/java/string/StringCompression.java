@@ -1,4 +1,4 @@
-package kw.java.string;
+package com.java.string;
 
 public class StringCompression {
     public int stringCompression(String str){

@@ -7,7 +7,8 @@ public class QiangRef {
      */
     public static void main(String[] args) {
         String ref = new String("xx");
-        String str1 = ref;
-        System.out.println(ref == str1);
+        System.out.println(ref);
+        System.gc();
+        System.out.println(ref);
     }
 }

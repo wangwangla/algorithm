@@ -1,4 +1,4 @@
-package kw.java.string;
+package com.java.string;
 
 import java.util.HashSet;
 import java.util.LinkedList;

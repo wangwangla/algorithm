@@ -1,4 +1,4 @@
-package kw.java.string;
+package com.java.string;
 
 public class LevenshteinDistance {
     private static int minimum(int a, int b, int c) {

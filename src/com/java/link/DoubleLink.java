@@ -1,4 +1,4 @@
-package kw.java.link;
+package com.java.link;
 
 public class DoubleLink {
     private class Node {

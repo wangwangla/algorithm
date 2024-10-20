@@ -2,19 +2,19 @@ package kw.bit;
 
 class Bits {
 
-    /*
+    /**
      * Methods for unpacking primitive values from byte arrays starting at
      * given offsets.
      *
      * 某一个bit位
      */
-
     static boolean getBoolean(byte[] b, int off) {
         return b[off] != 0;
     }
 
     /**
-     * char是两位  读取off 和 off+1位  各位 十位
+     * char是两字节  读取off 和 off+1位  各位 十位
+     *
      * @param b
      * @param off
      * @return
@@ -25,7 +25,8 @@ class Bits {
     }
 
     /**
-     * 为什么求&,这是为了值得到ff位的数据
+     * 为什么求&,只取后面几位的数据
+     *
      * @param b
      * @param off
      * @return

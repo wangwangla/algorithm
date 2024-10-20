@@ -15,7 +15,7 @@ public class App {
      * 1 2 4 8 16
      *
      *
-     * 5位存储一个值
+     * 5位存储一个值  没啥用
      *
      */
     public void test03(){

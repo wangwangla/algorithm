@@ -1,4 +1,4 @@
-package kw.java.test;
+package com.java.test;
 
 import java.util.Arrays;
 

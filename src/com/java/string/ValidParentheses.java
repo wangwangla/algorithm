@@ -1,4 +1,4 @@
-package kw.java.string;
+package com.java.string;
 
 public class ValidParentheses {
     public static boolean isValid(String s) {

@@ -1,8 +1,6 @@
-package kw.java.test;
+package com.java.test;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.function.Consumer;
-import java.util.stream.IntStream;
 
 public class ArrayListDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package kw.java.dyn;
+package com.java.dyn;
 
 public class Edist {
     static int min(int x, int y, int z) {

@@ -1,6 +1,7 @@
 package kw.annotation.classannotation;
 
-@ClassAnnotation(value = "xx")
+@RunnClassAnnotation(value = "xx")
+@ClassClassAnnotation(classT = App.class)
 public class NumberAnnotation {
 
 }
