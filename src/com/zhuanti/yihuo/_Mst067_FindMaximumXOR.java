@@ -32,7 +32,6 @@ public class _Mst067_FindMaximumXOR {
 //        int[] nums = {3,10,5,25,2,8};
 //        int maximumXOR = findMaximumXOR.findMaximumXOR(nums);
 //        System.out.println(maximumXOR);
-        int a = 10;
         System.out.println(10 ^ 10);
     }
     static class TrieNode{

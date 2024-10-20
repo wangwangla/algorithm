@@ -1,4 +1,8 @@
 package com.zhuanti.alphabate;
+
+/**
+ *
+ */
 public class AlphaBeta {
     public static int alphaBeta(int depth, int nodeIndex, int alpha, int beta, boolean maximizingPlayer, int[] values) {
         if (depth == 0) {
@@ -38,7 +42,8 @@ public class AlphaBeta {
 
     public static void main(String[] args) {
         int[] values = {3, 5, 6, 9, 1, 2, 0, -1};
-        int result = alphaBeta(3, 0, Integer.MIN_VALUE, Integer.MAX_VALUE, true, values);
+        int result = alphaBeta(3, 0,
+                Integer.MIN_VALUE, Integer.MAX_VALUE, true, values);
         System.out.println("最优解为：" + result);
     }
 

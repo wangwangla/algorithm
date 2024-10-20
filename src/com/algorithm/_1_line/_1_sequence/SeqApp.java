@@ -14,6 +14,7 @@ public class SeqApp<T> implements Iterable<T> {
     private int N;
     //容量 == 数组大小
     private int capacity;
+
     //默认是10
     public SeqApp(){
         this(10);
@@ -111,18 +112,17 @@ public class SeqApp<T> implements Iterable<T> {
         s.insert(5,2);
         s.delete(1);
         s.print();
-
         s.replaceAll(new UnaryOperator<Integer>() {
-
             @Override
             public Integer apply(Integer integer) {
                 return integer * 3;
             }
         });
+        s.clear();
+        s.print();
     }
 
     private void print(){
-        System.out.println("--------------------------------");
         Iterator iterator = iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
@@ -130,8 +130,7 @@ public class SeqApp<T> implements Iterable<T> {
     }
 
     public void replaceAll(UnaryOperator<T> integerUnaryOperator){
-        int length = elements.length;
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < N; i++) {
             elements[i] = integerUnaryOperator.apply(elements[i]);
         }
     }
