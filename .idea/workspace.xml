@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fb9f5a3-2f10-4a90-9e18-456532ca8317" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/other/other.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/TestSystemCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk11/jdk11learn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/defaultmethod/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/defaultmethod/DefaultInteface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/defaultmethod/IConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/hsjk/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/hsjk/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/lambda/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/lambda/MathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/jdk8/stream/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/httpclient_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jcommander_1_82.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jmdns_3_5_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/slf4j_api_2_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/SeqApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/_1_line/_1_sequence/SeqApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kw/string/StringStuDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kw/string/StringStuDemo.java" afterDir="false" />
+    <list default="true" id="3fb9f5a3-2f10-4a90-9e18-456532ca8317" name="Changes" comment="尝试新功能">
+      <change afterPath="$PROJECT_DIR$/src/kw/backrun/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kw/backrun/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +44,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.kw.jdk8.stream.App">
+  <component name="RunManager" selected="应用程序.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.jdk8.hsjk.App" />
+      <option name="MAIN_CLASS_NAME" value="kw.backrun.App" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.jdk8.hsjk.*" />
+          <option name="PATTERN" value="kw.backrun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kw.jdk11.jdk11learn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.jdk11.jdk11learn" />
+    <configuration name="kw.backrun.App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.backrun.App" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.jdk11.*" />
+          <option name="PATTERN" value="kw.backrun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kw.jdk8.defaultmethod.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.jdk8.defaultmethod.App" />
+    <configuration name="kw.backrun.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.backrun.App" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.jdk8.defaultmethod.*" />
+          <option name="PATTERN" value="kw.backrun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.App" />
+        <item itemvalue="应用程序.kw.backrun.App (1)" />
+        <item itemvalue="应用程序.kw.backrun.App" />
         <item itemvalue="应用程序.kw.jdk8.stream.App" />
         <item itemvalue="应用程序.kw.jdk8.stream.App (1)" />
-        <item itemvalue="应用程序.kw.jdk8.defaultmethod.App" />
-        <item itemvalue="应用程序.App" />
-        <item itemvalue="应用程序.kw.jdk11.jdk11learn" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +129,15 @@
       <option name="presentableId" value="Default" />
       <updated>1729907239028</updated>
     </task>
+    <task id="LOCAL-00001" summary="尝试新功能">
+      <option name="closed" value="true" />
+      <created>1734617279001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734617279001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,5 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="尝试新功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="尝试新功能" />
   </component>
 </project>

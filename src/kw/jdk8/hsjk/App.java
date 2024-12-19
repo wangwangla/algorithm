@@ -44,7 +44,7 @@ public class App {
         System.out.println(supplier.get());
 
         Predicate<String> stringPredicate = s-> s.length()>0;
-
+        System.out.println(supplier);
 
     }
 
