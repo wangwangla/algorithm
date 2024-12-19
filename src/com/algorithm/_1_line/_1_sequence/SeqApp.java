@@ -27,11 +27,7 @@ public class SeqApp<T> implements Iterable<T> {
     }
 
     public void clear(){
-        //为了赶快释放
-//        for (T element : elements) {
-//            element = null;
-//        }
-//        这个才是对的吧
+        //为了快速释放
         for (int i = 0; i < elements.length; i++) {
             elements[i] = null;
         }
@@ -58,9 +54,9 @@ public class SeqApp<T> implements Iterable<T> {
     public void insert(T t,int index){
         if (!checkIndex(N + 1))return;
         for (int i = N; i > index-1; i--) {
-            //ArrayList使用System.copy
             elements[i] = elements[i-1];
-            //
+            //ArrayList使用System.copy
+            //起身数组  目标数组
 //            System.arraycopy(elements,index-1,elements,index,N-index);
         }
         elements[index-1] = t;
