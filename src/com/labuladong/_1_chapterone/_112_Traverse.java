@@ -94,9 +94,15 @@ public class _112_Traverse {
     }
 
 
+
+
     public void br(int arr[], LinkedList<Integer> track){
         if (track.size() == arr.length){
-            System.out.println("----");
+            StringBuilder builder = new StringBuilder();
+            for (Integer i : track) {
+                builder.append(i);
+            }
+            System.out.println(builder.toString());
         }
         for (int i = 0; i < arr.length; i++) {
             if (track.contains(arr[i])){
@@ -184,11 +190,14 @@ public class _112_Traverse {
 //        traverse.rev(node1);
 //        System.out.println("--------------------------");
 //        traverse.eight(0);
-        int pre[] = {1,2,4,5,3,6,7};
-        int mid[] = {4,2,5,1,6,3,7};
-        _112_Traverse traverse = new _112_Traverse();
+//        int pre[] = {1,2,4,5,3,6,7};
+//        int mid[] = {4,2,5,1,6,3,7};
+//        _112_Traverse traverse = new _112_Traverse();
 //        TreeNode root = traverse.bu(pre,mid,Integer.MAX_VALUE+1);
-        System.out.println("--------------------");
+//        System.out.println("--------------------");
+        _112_Traverse traverse = new _112_Traverse();
+        LinkedList<Integer> integers = new LinkedList<>();
+        traverse.br(new int[]{1,2,3,4},integers);
     }
 
 }

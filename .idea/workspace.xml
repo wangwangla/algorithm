@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fb9f5a3-2f10-4a90-9e18-456532ca8317" name="Changes" comment="尝试新功能">
-      <change afterPath="$PROJECT_DIR$/src/kw/backrun/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kw/backrun/UserInfo.java" afterDir="false" />
+    <list default="true" id="3fb9f5a3-2f10-4a90-9e18-456532ca8317" name="Changes" comment="不依赖于runnable下次换一个">
+      <change afterPath="$PROJECT_DIR$/BIRDS_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/draft_content.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l1l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blokie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Blokie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/base64/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/learn/thread/nt/App/AppThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/word/shuffle/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/word/shuffle/BbRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kw/backrun/Ab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xv.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/labuladong/_1_chapterone/_112_Traverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/labuladong/_1_chapterone/_112_Traverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/offer/rowoffer/DFS_cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/offer/rowoffer/DFS_cut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxx" beforeDir="false" afterPath="$PROJECT_DIR$/xxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,28 +43,68 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2nxGJBE0lq7nULIKPCrb3LqbIIz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Algorithm/algorithm/src/kw&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Algorithm/algorithm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/Algorithm/algorithm/src/kw",
+    "last_opened_file_path": "D:/Algorithm/algorithm/src",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "应用程序.Aa.executor": "Run",
+    "应用程序.Ab.executor": "Run",
+    "应用程序.Add.executor": "Run",
+    "应用程序.App.executor": "Run",
+    "应用程序.AppThread (1).executor": "Run",
+    "应用程序.AppThread.executor": "Run",
+    "应用程序.Blokie.executor": "Run",
+    "应用程序.CompactGameState.executor": "Run",
+    "应用程序.DFS_cut.executor": "Debug",
+    "应用程序.GameState.executor": "Run",
+    "应用程序._112_Traverse.executor": "Run",
+    "应用程序.com.Blokie.executor": "Run",
+    "应用程序.com.base64.App.executor": "Run"
   }
-}</component>
-  <component name="RunManager" selected="应用程序.App">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Algorithm\algorithm\src" />
+      <recent name="D:\Algorithm\algorithm" />
+      <recent name="D:\Algorithm\algorithm\src\ai" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.com.Blokie">
+    <configuration name="Add" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Add" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.backrun.App" />
+      <option name="MAIN_CLASS_NAME" value="com.word.shuffle.App" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.backrun.*" />
+          <option name="PATTERN" value="com.word.shuffle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -58,12 +112,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kw.backrun.App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.backrun.App" />
+    <configuration name="Blokie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Blokie" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.Blokie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Blokie" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.backrun.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,38 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kw.backrun.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.backrun.App" />
+    <configuration name="com.base64.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.base64.App" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.backrun.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="kw.jdk8.stream.App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.jdk8.stream.App" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kw.jdk8.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="kw.jdk8.stream.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.jdk8.stream.App" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kw.jdk8.stream.*" />
+          <option name="PATTERN" value="com.base64.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.com.Blokie" />
+        <item itemvalue="应用程序.Blokie" />
+        <item itemvalue="应用程序.Add" />
+        <item itemvalue="应用程序.com.base64.App" />
         <item itemvalue="应用程序.App" />
-        <item itemvalue="应用程序.kw.backrun.App (1)" />
-        <item itemvalue="应用程序.kw.backrun.App" />
-        <item itemvalue="应用程序.kw.jdk8.stream.App" />
-        <item itemvalue="应用程序.kw.jdk8.stream.App (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734617279001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="不依赖于runnable下次换一个">
+      <option name="closed" value="true" />
+      <created>1734622287332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734622287332</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +196,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试新功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试新功能" />
+    <MESSAGE value="不依赖于runnable下次换一个" />
+    <option name="LAST_COMMIT_MESSAGE" value="不依赖于runnable下次换一个" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/labuladong/_1_chapterone/_112_Traverse.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/labuladong/_1_chapterone/_112_Traverse.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Add.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Add.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

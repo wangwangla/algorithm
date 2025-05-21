@@ -10,9 +10,13 @@ public class DFS_cut {
     }
 
     public void dfs(int arr[],List<Integer> list,int pos,int target,int sum){
-        if (sum > target)return;
+        if (sum > target){
+            System.out.println("大于返回了");
+        }
         if (sum == target){
             //记录   目标出现，处理一下
+            System.out.println("success");
+            return;
         }
         for (int i = pos; i < arr.length; i++) {
             list.add(arr[i]);
@@ -28,8 +32,13 @@ public class DFS_cut {
 //            重复
 //            dfs(arr,list,i,target,sum + arr[i]);
 //            不重复
-            dfs(arr,list,i+1,target,sum + arr[i]);
-            list.remove(arr[i]);
+//            dfs(arr,list,i+1,target,sum + arr[i]);
+            list.remove(Integer.valueOf(arr[i]));
         }
+    }
+
+    public static void main(String[] args) {
+        DFS_cut dfsCut = new DFS_cut();
+        dfsCut.dfs_cut(new int[]{1,2,3,4,5},100);
     }
 }
